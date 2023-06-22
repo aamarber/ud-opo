@@ -1,0 +1,5 @@
+@import './colors';
+body{
+    background: radial-gradient(circle, $main-color 0%, $main-dark-color 100%, $main-bright-color 100%);
+    background: linear-gradient(135deg, $main-bright-color 0%, $main-super-bright-color 74%, $main-bright-color 100%);
+}
