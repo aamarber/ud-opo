@@ -9,17 +9,22 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('fonts', () => {
+  return gulp.src('styles/**/*.woff2')
+  .pipe(gulp.dest('dist/'));
+})
+
 gulp.task(
   'watch',
   gulp.series('sass', function(cb) {
-    gulp.watch('*/*.scss', gulp.series('sass'));
+    gulp.watch('*/*.scss', gulp.series(['sass', 'fonts']));
     cb();
   })
 );
 
 gulp.task(
   'default',
-  gulp.series('sass', function(cb) {
+  gulp.series(['sass', 'fonts'], function(cb) {
     cb();
   })
 );
