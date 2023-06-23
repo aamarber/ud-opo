@@ -1,4 +1,6 @@
 @use './colors';
+@use './sizes';
+@use "sass:math";
 
 nav.navbar{
     background-color: white;
@@ -9,14 +11,31 @@ nav.navbar{
         .nav-item{
             display: flex;
             align-items: center;
-            justify-content: start;
+            justify-content: space-between;
 
-            border: solid black 1px;
+            border: solid black sizes.$border-width;
             border-top: none;
 
             min-width: 180px;
             min-height: 60px;
             padding: 1em;
+
+            &:not(:first-child){
+                border-left: none;
+            }
+
+            svg.nav-icon{
+                width: sizes.$navbar-icons-size;
+                height: sizes.$navbar-icons-size;
+
+                margin-left: 1em;
+
+                circle{
+                    cx: math.div(sizes.$navbar-icons-size, 2);
+                    cy: math.div(sizes.$navbar-icons-size, 2);
+                    r: math.div(sizes.$navbar-icons-size, 2);
+                }
+            }
         }
     }
 }

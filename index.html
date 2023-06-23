@@ -7,55 +7,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./dist/styles/index.css">
   <title>UD Frameworks CSS - Secundaria Sistemas y Aplicaciones Informáticas</title>
 </head>
 
 <body class="container-fluid">
-  <nav class="navbar" id="navbar">
+  <nav class="navbar fixed-top" id="navbar">
     <ul class="navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link" href="#presentation">Presentación</a>
+        <svg class="nav-icon presentation"><circle></circle></svg>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#objetivos">Objetivos y Resultados de Aprendizaje</a>
+        <a class="nav-link" href="#objetivos">Objetivos</a>
+        <svg class="nav-icon presentation"><circle></circle></svg>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resultados">Resultados</a>
+        <svg class="nav-icon presentation"><circle></circle></svg>
       </li>
     </ul>
   </nav>
   <div class="row">
-    <section class="col-10 offset-2 title">
+    <section class="col-lg-2 col-md-6 col-sm-12 offset-2 title">
       <h1>Unidad Didáctica</h1>
     </section>
   </div>
   <div class="row">
-    <section class="slides-container col-10 container-fluid"
+    <section id="presentation" class="slides-container col-12 container-fluid"
       data-bs-spy="scroll" data-bs-target="#navbar">
-      <section class="row">
-        <article class="col-11 offset-1">
-          <div class="card">
-            <div class="card-body">
-              <h2 id="presentation" class="card-title">Presentación</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      <section class="row slide">
+        <section class="col-2">
+          <img class="portrait" src="./images/CRNT-1.jpg">
+        </section>
+        <article class="col-10">
+          <h2 class="card-title">Presentación</h2>
+          <p>Ingeniero Técnico en Informática de Sistemas por la UPV 2009-2012</p>
+          <p>Máster en Ingeniería Software y Métodos Formales por la UPV 2012-2013</p>
         </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#objetivos"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
       </section>
 
-      <section class="row">
-        <article class="col-11 offset-1">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title" id="objetivos">Objetivos y Resultados de Aprendizaje</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <section class="row slide" id="objetivos">
+        <article class="col-10">
+          <h2>Objetivos</h2>
+          <section class="objetivos-container">
+            <div class="row">
+              <ul class="list-group col-6">
+                <li class="list-group-item">
+                  <h3>Objetivos Real Decreto 686/2010</h3>
+                </li>
+                <li class="list-group-item">
+                  i) Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar interfaces en aplicaciones web.
+                </li>
+                <li class="list-group-item">
+                  j) Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar componentes multimedia.</h3>
+                </li>
+              </ul>
+              <ul class="list-group col-6">
+                <li class="list-group-item">
+                  <h3>Objetivos de la unidad</h3>
+                </li>
+                <li class="list-group-item">
+                  Entender el concepto de framework CSS
+                </li>
+                <li class="list-group-item">
+                  Aplicar técnicas de layout responsive y componentes CSS del framework
+                </li>
+                <li class="list-group-item">
+                  Construir webs usando conjuntamente frameworks y técnicas de desarrollo web
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </article>
+        <article class="col-2">
+          <img src="./images/stable-diffusion-xl.jpeg">
+        </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#resultados"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
       </section>
 
+      <section class="row slide" id="resultados">
+        <article class="col-2">
+          <img src="./images/ux.svg">
+        </article>
+        <article class="col-10">
+          <h2>Resultados <br> de <br> Aprendizaje</h2>
+          <section class="resultados-container">
+            <div class="row">
+              <ul class="list-group col-6">
+                <li class="list-group-item">
+                  <h3>Objetivos Real Decreto 686/2010</h3>
+                </li>
+                <li class="list-group-item">
+                  i) Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar interfaces en aplicaciones web.
+                </li>
+                <li class="list-group-item">
+                  j) Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar componentes multimedia.</h3>
+                </li>
+              </ul>
+              <ul class="list-group col-6">
+                <li class="list-group-item">
+                  <h3>Objetivos de la unidad</h3>
+                </li>
+                <li class="list-group-item">
+                  Entender el concepto de framework CSS
+                </li>
+                <li class="list-group-item">
+                  Aplicar técnicas de layout responsive y componentes CSS del framework
+                </li>
+                <li class="list-group-item">
+                  Construir webs usando conjuntamente frameworks y técnicas de desarrollo web
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#objetivos"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
+      </section>
     </section>
   </div>
 </body>

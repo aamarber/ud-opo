@@ -30,6 +30,7 @@ body {
 body {
   height: 100vh;
   font-family: Poppins;
+  font-size: 16px;
 }
 body.container-fluid {
   padding: 0;
@@ -42,19 +43,60 @@ nav.navbar {
 nav.navbar .navbar-nav .nav-item {
   display: flex;
   align-items: center;
-  justify-content: start;
-  border: solid black 1px;
+  justify-content: space-between;
+  border: solid black 2px;
   border-top: none;
   min-width: 180px;
   min-height: 60px;
   padding: 1em;
 }
-
-.card {
-  height: 100vh;
-  background-color: #1C5739;
+nav.navbar .navbar-nav .nav-item:not(:first-child) {
+  border-left: none;
+}
+nav.navbar .navbar-nav .nav-item svg.nav-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 1em;
+}
+nav.navbar .navbar-nav .nav-item svg.nav-icon circle {
+  cx: 7.5px;
+  cy: 7.5px;
+  r: 7.5px;
 }
 
-.slides-container .row {
-  margin-top: 1em;
+.slides-container .row.slide {
+  padding: 10%;
+}
+.slides-container .row.slide:nth-child(odd) {
+  background-color: #caeffb;
+}
+.slides-container .row.slide:nth-child(even) {
+  background-color: #4928f5;
+  color: white;
+}
+.slides-container .row.slide:nth-child(even) h2 {
+  color: #D1FBE0;
+}
+.slides-container .row.slide:nth-child(even) article.col-2 {
+  justify-content: end;
+}
+.slides-container .row.slide h2 {
+  color: #005477;
+  font-size: 100px;
+  text-align: center;
+}
+.slides-container .row.slide article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slides-container .row.slide img {
+  width: 100%;
+}
+.slides-container .row.slider-container {
+  margin-top: 5em;
+}
+.slides-container .row.slider-container .slider-button {
+  align-self: center;
+  font-size: 5em;
 }

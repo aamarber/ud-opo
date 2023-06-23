@@ -1,6 +1,9 @@
+@use './sizes';
+
 body{
     height: 100vh;
     font-family: Poppins;
+    font-size: sizes.$font-size;
 
     &.container-fluid{
         padding: 0;

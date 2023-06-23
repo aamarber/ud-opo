@@ -1,5 +1,56 @@
+@use './colors';
+@use './sizes';
+
+@mixin slides-color(){
+    &:nth-child(odd){
+        background-color: colors.$slide-color-1;
+    }
+
+    &:nth-child(even){
+        background-color: colors.$slide-color-2;
+        color: white;
+
+        h2{
+            color: colors.$main-super-bright-color;
+        }
+
+        article.col-2{
+            justify-content: end;
+        }
+    }
+}
+
 .slides-container{
     .row{
-        margin-top: 1em;
+        &.slide{
+            @include slides-color();
+
+            padding: 10%;
+
+            h2{
+                color: colors.$main-contrast-color;
+                font-size: sizes.$title-size;
+                text-align: center;
+            }
+
+            article{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &.slider-container{
+            margin-top: sizes.$slider-buttons-size;
+
+            .slider-button{
+                align-self: center;
+                font-size: sizes.$slider-buttons-size;
+            }
+        }
     }
 }
