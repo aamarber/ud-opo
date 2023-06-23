@@ -65,6 +65,7 @@ nav.navbar .navbar-nav .nav-item svg.nav-icon circle {
 }
 
 .slides-container .row.slide {
+  min-height: 100vh;
   padding: 10%;
 }
 .slides-container .row.slide:nth-child(odd) {

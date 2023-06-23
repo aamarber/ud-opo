@@ -13,7 +13,7 @@
 </head>
 
 <body class="container-fluid">
-  <nav class="navbar fixed-top" id="navbar">
+  <nav class="navbar fixed-top" id="main-navbar">
     <ul class="navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link" href="#presentation">Presentación</a>
@@ -24,23 +24,14 @@
         <svg class="nav-icon presentation"><circle></circle></svg>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#resultados">Resultados</a>
-        <svg class="nav-icon presentation"><circle></circle></svg>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#competencias">Competencias</a>
+        <a class="nav-link" href="#metodologia">Metodología</a>
         <svg class="nav-icon presentation"><circle></circle></svg>
       </li>
     </ul>
   </nav>
   <div class="row">
-    <section class="col-lg-2 col-md-6 col-sm-12 offset-2 title">
-      <h1>Unidad Didáctica</h1>
-    </section>
-  </div>
-  <div class="row">
     <section id="presentation" class="slides-container col-12 container-fluid"
-      data-bs-spy="scroll" data-bs-target="#navbar">
+      data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true">
       <section class="row slide">
         <section class="col-2">
           <img class="portrait" src="./images/CRNT-1.jpg">
@@ -142,9 +133,6 @@
       </section>
 
       <section class="row slide" id="competencias">
-        <article class="col-2">
-          <img src="./images/download.jpeg">
-        </article>
         <article class="col-10">
           <h2>Competencias</h2>
           <section class="competencias-container">
@@ -161,9 +149,60 @@
             </div>
           </section>
         </article>
+        <article class="col-2">
+          <img src="./images/1107344200_Illustration about software development formal but_xl-beta-v2-2-2.png">
+        </article>
         <div class="row slider-container">
           <div class="col-1 offset-11">
-            <a class="slider-button" href="#"><i class="bi bi-chevron-down"></i></a>
+            <a class="slider-button" href="#metodologia"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="row slide" id="metodologia">
+        <article class="col-2">
+          <img src="./images/1517038684_Illustration about software development formal but_xl-beta-v2-2-2.png">
+        </article>
+        <article class="col-10">
+          <h2>Metodología</h2>
+          <h3>Recursos Didácticos</h3>
+          <h4><a href="#tutorias">Tutorías</a></h4>
+          <h4><a href="#materiales">Materias del aula virtual</a></h4>
+          <h4><a href="#actividades">Actividades</a></h4>
+        </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#tutorias"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="row slide" id="tutorias">
+        <article class="col-10">
+          <h2>Tutorías</h2>
+          <h3>Tutorías Colectivas</h3>
+          <h3>Tutorías Individuales</h3>
+        </article>
+        <article class="col-2">
+          <img src="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png">
+        </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#materiales"><i class="bi bi-chevron-down"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="row slide" id="materiales">
+        <article class="col-10">
+          <h2>Materiales</h2>
+          <h3>Vídeos</h3>
+        </article>
+        <article class="col-2">
+          <img src="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png">
+        </article>
+        <div class="row slider-container">
+          <div class="col-1 offset-11">
+            <a class="slider-button" href="#materiales"><i class="bi bi-chevron-down"></i></a>
           </div>
         </div>
       </section>
