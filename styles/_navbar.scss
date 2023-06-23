@@ -1,0 +1,22 @@
+@use './colors';
+
+nav.navbar{
+    background-color: white;
+
+    justify-content: center;
+
+    .navbar-nav{
+        .nav-item{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            border: solid black 1px;
+            border-top: none;
+
+            min-width: 180px;
+            min-height: 60px;
+            padding: 1em;
+        }
+    }
+}

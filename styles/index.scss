@@ -1,1 +1,6 @@
-@import './background';
+@use './fonts';
+@use './background';
+@use './body';
+@use './navbar';
+@use './card';
+@use './slides';
