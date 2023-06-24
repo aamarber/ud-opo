@@ -32,30 +32,28 @@
   <div class="row">
     <section id="presentation" class="slides-container col-12 container-fluid"
       data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true">
-      <section class="row slide">
-        <section class="col-2">
-          <img class="portrait" src="./images/CRNT-1.jpg">
-        </section>
-        <article class="col-10">
-          <h2>¿Quién soy?</h2>
-          <h3>Ingeniero Técnico en Informática de Sistemas por la UPV 2009-2012</h3>
-          <h3>Máster en Ingeniería Software y Métodos Formales por la UPV 2012-2013</h3>
-          <p></p>
-          <h3>Ingeniero Software 2010-2021</h3>
-          <p>Backend, Frontend, DevOps, QA...</p>
-          <p>ITI, ZeppelinTV, SNCF...</p>
-          <p></p>
-          <h3>Docente PT Sistemas y Aplicaciones Informáticas 2021-</h3>
-          <h4>FP Básica - Tutor 1º - IES Conselleria</h4>
-          <h4>DAW, DAM: Sistemas, <strong>DIW</strong> - Tutor 1º DAM - CEEDCV</h4>
-          <p></p>
-        </article>
-        <div class="row slider-container">
-          <div class="col-1 offset-11">
-            <a class="slider-button" href="#objetivos"><i class="bi bi-chevron-down"></i></a>
-          </div>
-        </div>
-      </section>
+      <slide-component id="presentation" 
+        title="¿Quién soy?"
+        image="./images/CRNT-1.jpg"
+        image-position="left"
+        text-h-1="Ingeniero Técnico en Informática de Sistemas UPV 2009-2012"
+        text-h-2="Máster en Ingeniería Software y Métodos Formales UPV 2012-2013"
+        text-p-3=""
+        text-h-4="Ingeniero Software 2010-2021"
+        text-p-5="Backend, Frontend, DevOps, QA..."
+        text-p-6="ITI, ZeppelinTV, SNCF..."
+        next-slide="presentation-2">
+      </slide-component>
+      
+      <slide-component id="presentation-2" 
+        title="¿Quién soy?"
+        image="./images/CRNT-1.jpg"
+        image-position="right"
+        text-h-8="PT Sistemas y Aplicaciones Informáticas 2021-"
+        text-p-9="FP Básica - Tutor 1º - IES Conselleria"
+        text-p-10="DAW, DAM: Sistemas, <strong>DIW</strong> - Tutor 1º DAM - CEEDCV"
+        next-slide="objetivos">
+      </slide-component>
 
       <section class="row slide" id="objetivos">
         <article class="col-10">
@@ -132,32 +130,20 @@
         </div>
       </section>
 
-      <section class="row slide" id="competencias">
-        <article class="col-10">
-          <h2>Competencias</h2>
-          <section class="competencias-container">
-            <div class="row">
-              <h3>Competencia General</h3>
-              <h4>Capacidad de desarrollar y mantener aplicaciones web, utilizando tecnologías específicas y cumpliendo los criterios de accesibilidad y usabilidad</h4>
-            </div>
-
-            <div class="row">
-              <h3>Competencias específicas</h3>
-              <h4>g) Desarrollar interfaces en aplicaciones web de acuerdo con un manual de estilo, utilizando lenguajes de marcas y estándares web.</h4>
-              <h4>h) Desarrollar componentes multimedia para su integración en aplicaciones web, empleando herramientas específicas y siguiendo las especificaciones establecidas.</h4>
-              <h4>i) Integrar componentes multimedia en el interface de una aplicación web, realizando el análisis de interactividad, accesibilidad y usabilidad de la aplicación.</h4>
-            </div>
-          </section>
-        </article>
-        <article class="col-2">
-          <img src="./images/1107344200_Illustration about software development formal but_xl-beta-v2-2-2.png">
-        </article>
-        <div class="row slider-container">
-          <div class="col-1 offset-11">
-            <a class="slider-button" href="#metodologia"><i class="bi bi-chevron-down"></i></a>
-          </div>
-        </div>
-      </section>
+      <slide-component id="competencias" 
+        title="Competencias"
+        image="./images/1107344200_Illustration about software development formal but_xl-beta-v2-2-2.png"
+        image-position="right"
+        text-h-1="Competencia General"
+        text-p-2="Capacidad de desarrollar y mantener aplicaciones web, utilizando tecnologías específicas y cumpliendo los criterios de accesibilidad y usabilidad"
+        text-p-3=""
+        text-p-4=""
+        text-h-5="Competencias específicas"
+        text-p-6="g) Desarrollar interfaces en aplicaciones web de acuerdo con un manual de estilo, utilizando lenguajes de marcas y estándares web."
+        text-p-7="h) Desarrollar componentes multimedia para su integración en aplicaciones web, empleando herramientas específicas y siguiendo las especificaciones establecidas."
+        text-p-8="i) Integrar componentes multimedia en el interface de una aplicación web, realizando el análisis de interactividad, accesibilidad y usabilidad de la aplicación."
+        next-slide="metodologia">
+      </slide-component>
 
       <section class="row slide" id="metodologia">
         <article class="col-2">
@@ -188,26 +174,41 @@
         </article>
         <div class="row slider-container">
           <div class="col-1 offset-11">
-            <a class="slider-button" href="#materiales"><i class="bi bi-chevron-down"></i></a>
+            <a class="slider-button" href="#colectivas"><i class="bi bi-chevron-down"></i></a>
           </div>
         </div>
       </section>
-      <section class="row slide" id="materiales">
-        <article class="col-10">
-          <h2>Materiales</h2>
-          <h3>Vídeos</h3>
-        </article>
-        <article class="col-2">
-          <img src="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png">
-        </article>
-        <div class="row slider-container">
-          <div class="col-1 offset-11">
-            <a class="slider-button" href="#materiales"><i class="bi bi-chevron-down"></i></a>
-          </div>
-        </div>
-      </section>
+
+      <slide-component id="colectivas" 
+      title="Tutorías Colectivas"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="left"
+      text-p-1="2 tutorías semanales"
+      text-p-2="Mañana y tarde"
+      text-p-3="Grabadas"
+      text-p-4="Transcritas, subtituladas, tiempo real y grabación"
+      next-slide="individuales"></slide-component>
+
+      <slide-component id="individuales" 
+      title="Tutorías Individuales"
+      image="./images/3210129399_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="left"
+      text-p-1="A demanda"
+      text-p-2="En un rango horario del docente"
+      text-p-3="Personalizadas, refuerzo, repaso, dudas, soporte..."
+      text-p-4="Instrumento más potente"
+      next-slide="materiales"></slide-component>
+
+      <slide-component id="materiales" 
+      title="Materiales"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="right"
+      text-h-1="Vídeos"
+      text-h-2="Actividades"
+      next-slide=""></slide-component>
     </section>
   </div>
+  <script src="./slide/slideComponent.js"></script>
 </body>
 
 </html>

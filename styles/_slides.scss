@@ -20,10 +20,12 @@
     }
 }
 
-.slides-container{
+.slides-container,
+slide-component{
     .row{
         &.slide{
             min-height: 100vh;
+            max-height: 100vh;
 
             @include slides-color();
 
@@ -33,6 +35,14 @@
                 color: colors.$main-contrast-color;
                 font-size: sizes.$title-size;
                 text-align: center;
+            }
+
+            h3{
+                font-size: sizes.$secondary-title-size;
+            }
+
+            p{
+                font-size: sizes.$secondary-title-size * 0.5;
             }
 
             article{
