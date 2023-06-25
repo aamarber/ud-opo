@@ -23,17 +23,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 body {
-  background: radial-gradient(circle, #1C5739 0%, #697B70 100%, #9CB0A3 100%);
-  background: linear-gradient(135deg, #9CB0A3 0%, #D1FBE0 74%, #9CB0A3 100%);
-}
-
-body {
   height: 100vh;
   font-family: Poppins;
   font-size: 16px;
 }
 body.container-fluid {
   padding: 0;
+}
+body p, body li, body a {
+  font-size: 2.4vh;
 }
 
 nav.navbar {
@@ -100,42 +98,37 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(4) {
   color: white;
 }
 
-.slides-container .row.slide,
-slide-component .row.slide {
-  min-height: 100vh;
-  max-height: 100vh;
-  padding: 10%;
-}
-.slides-container .row.slide:nth-child(odd),
-slide-component .row.slide:nth-child(odd) {
+slide-component:nth-child(odd) .row.slide {
   background-color: #caeffb;
 }
-.slides-container .row.slide:nth-child(even),
-slide-component .row.slide:nth-child(even) {
+slide-component:nth-child(odd) .row.slide a {
+  color: #4928f5;
+}
+slide-component:nth-child(even) .row.slide {
   background-color: #4928f5;
   color: white;
 }
-.slides-container .row.slide:nth-child(even) h2,
-slide-component .row.slide:nth-child(even) h2 {
+slide-component:nth-child(even) .row.slide a {
+  color: #caeffb;
+}
+slide-component:nth-child(even) .row.slide h2 {
   color: #D1FBE0;
 }
-.slides-container .row.slide:nth-child(even) article.col-2,
-slide-component .row.slide:nth-child(even) article.col-2 {
-  justify-content: end;
+
+.slides-container .row.slide,
+slide-component .row.slide {
+  min-height: 100vh;
+  padding: 10%;
 }
 .slides-container .row.slide h2,
 slide-component .row.slide h2 {
   color: #005477;
-  font-size: 100px;
+  font-size: 12vh;
   text-align: center;
 }
 .slides-container .row.slide h3,
 slide-component .row.slide h3 {
-  font-size: 40px;
-}
-.slides-container .row.slide p,
-slide-component .row.slide p {
-  font-size: 20px;
+  font-size: 4.8vh;
 }
 .slides-container .row.slide article,
 slide-component .row.slide article {

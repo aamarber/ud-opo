@@ -66,16 +66,17 @@ class Slide extends HTMLElement {
 
     hydrateImageTemplate(image){
         return `
-        <section class="col-2">
+        <section class="col-lg-2 col-md-4">
             <img src="${image}">
         </section>`;
     }
 
     hydrateSlideContentTemplate(title, texts){
         return `
-        <article class="col-10">
+        <article class="col-lg-10 col-md-8">
             <h2>${title}</h2>
             ${this.hydrateTexts(texts)}
+            ${this.innerHTML}
         </article>`
     }
 

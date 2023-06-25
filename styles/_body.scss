@@ -8,4 +8,8 @@ body{
     &.container-fluid{
         padding: 0;
     }
+
+    p, li, a{
+        font-size: sizes.$secondary-title-size * 0.5;
+    }
 }

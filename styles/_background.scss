@@ -1,5 +1,0 @@
-@use './colors';
-body{
-    background: radial-gradient(circle, colors.$main-color 0%, colors.$main-dark-color 100%, colors.$main-bright-color 100%);
-    background: linear-gradient(135deg, colors.$main-bright-color 0%, colors.$main-super-bright-color 74%, colors.$main-bright-color 100%);
-}

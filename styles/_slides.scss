@@ -1,21 +1,29 @@
 @use './colors';
 @use './sizes';
 
-@mixin slides-color(){
+slide-component{
     &:nth-child(odd){
-        background-color: colors.$slide-color-1;
+        .row.slide{
+            background-color: colors.$slide-color-1;
+
+            a{
+                color: colors.$slide-color-2;
+            }
+        }
     }
 
     &:nth-child(even){
-        background-color: colors.$slide-color-2;
-        color: white;
+        .row.slide{
+            background-color: colors.$slide-color-2;
+            color: white;
 
-        h2{
-            color: colors.$main-super-bright-color;
-        }
+            a{
+                color: colors.$slide-color-1;
+            }
 
-        article.col-2{
-            justify-content: end;
+            h2{
+                color: colors.$main-super-bright-color;
+            }
         }
     }
 }
@@ -25,9 +33,6 @@ slide-component{
     .row{
         &.slide{
             min-height: 100vh;
-            max-height: 100vh;
-
-            @include slides-color();
 
             padding: 10%;
 
@@ -39,10 +44,6 @@ slide-component{
 
             h3{
                 font-size: sizes.$secondary-title-size;
-            }
-
-            p{
-                font-size: sizes.$secondary-title-size * 0.5;
             }
 
             article{
