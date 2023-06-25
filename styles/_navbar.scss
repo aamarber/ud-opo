@@ -33,8 +33,35 @@ nav.navbar{
                 circle{
                     cx: math.div(sizes.$navbar-icons-size, 2);
                     cy: math.div(sizes.$navbar-icons-size, 2);
-                    r: math.div(sizes.$navbar-icons-size, 2);
+                    r: math.div(sizes.$navbar-icons-size, 2.5);
                 }
+            }
+
+            @mixin active-colors(){
+                @for $counter from 1 through 4{
+                    &:nth-child(#{$counter}){
+                        background-color: map-get(colors.$nav-colors, 'nav-color-' + #{$counter});
+                        color: white;
+                    }
+                }
+            }
+
+            @mixin icons-colors(){
+                @for $counter from 1 through 4{
+                    &:nth-child(#{$counter}){
+                        > svg.nav-icon > circle{
+                            stroke: black;
+                            stroke-width: 3px;
+                            fill: map-get(colors.$nav-colors, 'nav-color-' + #{$counter});
+                        }
+                    }
+                }
+            }
+
+            @include icons-colors();
+
+            &:has(.nav-link.active){
+                @include active-colors();
             }
         }
     }

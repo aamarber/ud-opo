@@ -54,14 +54,50 @@ nav.navbar .navbar-nav .nav-item:not(:first-child) {
   border-left: none;
 }
 nav.navbar .navbar-nav .nav-item svg.nav-icon {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin-left: 1em;
 }
 nav.navbar .navbar-nav .nav-item svg.nav-icon circle {
-  cx: 7.5px;
-  cy: 7.5px;
-  r: 7.5px;
+  cx: 10px;
+  cy: 10px;
+  r: 8px;
+}
+nav.navbar .navbar-nav .nav-item:nth-child(1) > svg.nav-icon > circle {
+  stroke: black;
+  stroke-width: 3px;
+  fill: #563cf6;
+}
+nav.navbar .navbar-nav .nav-item:nth-child(2) > svg.nav-icon > circle {
+  stroke: black;
+  stroke-width: 3px;
+  fill: #d85af7;
+}
+nav.navbar .navbar-nav .nav-item:nth-child(3) > svg.nav-icon > circle {
+  stroke: black;
+  stroke-width: 3px;
+  fill: #73b993;
+}
+nav.navbar .navbar-nav .nav-item:nth-child(4) > svg.nav-icon > circle {
+  stroke: black;
+  stroke-width: 3px;
+  fill: #ce4167;
+}
+nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(1) {
+  background-color: #563cf6;
+  color: white;
+}
+nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(2) {
+  background-color: #d85af7;
+  color: white;
+}
+nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(3) {
+  background-color: #73b993;
+  color: white;
+}
+nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(4) {
+  background-color: #ce4167;
+  color: white;
 }
 
 .slides-container .row.slide,
