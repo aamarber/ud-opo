@@ -130,6 +130,10 @@ slide-component .row.slide h2 {
 slide-component .row.slide h3 {
   font-size: 4.8vh;
 }
+.slides-container .row.slide h4,
+slide-component .row.slide h4 {
+  font-size: 3.6vh;
+}
 .slides-container .row.slide article,
 slide-component .row.slide article {
   display: flex;
@@ -139,6 +143,19 @@ slide-component .row.slide article {
 .slides-container .row.slide img,
 slide-component .row.slide img {
   width: 100%;
+}
+.slides-container .row.slide h2, .slides-container .row.slide h3, .slides-container .row.slide h4, .slides-container .row.slide p,
+slide-component .row.slide h2,
+slide-component .row.slide h3,
+slide-component .row.slide h4,
+slide-component .row.slide p {
+  margin-top: 0.25em;
+}
+.slides-container .row.slide .centered,
+slide-component .row.slide .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slides-container .row.slider-container,
 slide-component .row.slider-container {

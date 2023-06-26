@@ -6,6 +6,8 @@ class Slide extends HTMLElement {
         this.textAttributeName = 'text';
         this.headingType = 'h';
         this.paragraphType = 'p';
+
+        this.navbarSpiedId = 'main-navbar';
     }
 
     connectedCallback(){
@@ -73,7 +75,7 @@ class Slide extends HTMLElement {
 
     hydrateSlideContentTemplate(title, texts){
         return `
-        <article class="col-lg-10 col-md-8">
+        <article class="col-lg-10 col-md-8 col-xxl-9 offset-xxl-1">
             <h2>${title}</h2>
             ${this.hydrateTexts(texts)}
             ${this.innerHTML}

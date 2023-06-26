@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="unidaddidactica.appcache">
 
 <head>
   <meta charset="UTF-8">
@@ -18,20 +18,50 @@
       <li class="nav-item">
         <a class="nav-link" href="#presentation">Presentación</a>
         <svg class="nav-icon presentation"><circle></circle></svg>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#presentation-2">Presentación 2</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#objetivos">Objetivos</a>
         <svg class="nav-icon presentation"><circle></circle></svg>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#resultados"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#competencias"></a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#metodologia">Metodología</a>
         <svg class="nav-icon presentation"><circle></circle></svg>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#tutorias"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#colectivas"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#individuales"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#materiales"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#actividades"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#temporalizacion"></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#evaluacion" class="nav-link">Evaluación</a>
+        <svg class="nav-icon presentation"><circle></circle></svg>
       </li>
     </ul>
   </nav>
-  <div class="row">
-    <section id="presentation" class="slides-container col-12 container-fluid"
-      data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true">
+  <div class="row col-12 container-fluid slides-container"
+  data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true">
       <slide-component id="presentation" 
         title="¿Quién soy?"
         image="./images/CRNT-1.jpg"
@@ -138,7 +168,7 @@
         next-slide="tutorias">
           <h3>Recursos Didácticos</h3>
           <h4><a href="#tutorias">Tutorías</a></h4>
-          <h4><a href="#materiales">Materias del aula virtual</a></h4>
+          <h4><a href="#materiales">Materiales del aula virtual</a></h4>
           <h4><a href="#actividades">Actividades</a></h4>
       </slide-component>
 
@@ -147,7 +177,7 @@
         image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
         image-position="right"
         text-h-1="Tutorías Colectivas"
-        text-h-1="Tutorías Individuales"
+        text-h-2="Tutorías Individuales"
         next-slide="colectivas">
       </slide-component>
 
@@ -176,9 +206,65 @@
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="right"
       text-h-1="Vídeos"
-      text-h-2="Actividades"
-      next-slide=""></slide-component>
-    </section>
+      next-slide="actividades">
+      <section class="row videos-container">
+        <section class="col-12 centered">
+          <h4>Bootstrap I Introducción, Layout</h4>
+          <h4>Layout</h4>
+        </section>
+        <!-- <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/o4pCl719PWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jylzVuqPnTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6lmI6-uRc5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E6f4Gu7l2CM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section> -->
+      </section>
+      <section class="row videos-container">
+        <!-- <section class="col-12 centered">
+          <h4>Bootstrap II</h4>
+          <h4>Componentes y Formularios</h4>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/flL8fLFAK1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sx-jyUIFQ7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="col-3 video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dEkJ-o3n6p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section> -->
+      </section>
+    </slide-component>
+
+    <slide-component id="actividades" 
+      title="Actividades"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="left"
+      next-slide="temporalizacion">
+      <!-- TODO -->
+    </slide-component>
+
+    <slide-component id="temporalizacion" 
+      title="Temporalización"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="right"
+      next-slide="evaluacion">
+      <!-- TODO -->
+    </slide-component>
+
+    <slide-component id="evaluacion" 
+      title="Evaluación"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="left"
+      next-slide="">
+      <!-- TODO -->
+    </slide-component>
   </div>
   <script src="./slide/slideComponent.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

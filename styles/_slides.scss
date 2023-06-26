@@ -46,6 +46,10 @@ slide-component{
                 font-size: sizes.$secondary-title-size;
             }
 
+            h4{
+                font-size: sizes.$secondary-title-size * 0.75;
+            }
+
             article{
                 display: flex;
                 flex-direction: column;
@@ -54,6 +58,16 @@ slide-component{
 
             img{
                 width: 100%;
+            }
+
+            h2, h3, h4, p{
+                margin-top: 0.25em;
+            }
+
+            .centered{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
