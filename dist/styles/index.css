@@ -169,7 +169,8 @@ slide-component .row.slider-container .slider-button {
 }
 
 #resultados h2,
-#competencias h2 {
+#competencias h2,
+#criterios h2 {
   font-size: 8.4vh;
 }
 
@@ -177,9 +178,11 @@ slide-component .row.slider-container .slider-button {
   text-align: center;
 }
 
-#competencias h3 {
+#competencias h3,
+#criterios h3 {
   font-size: 3.36vh;
 }
-#competencias p {
+#competencias p,
+#criterios p {
   font-size: 1.92vh;
 }

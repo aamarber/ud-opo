@@ -59,6 +59,15 @@
       <li class="nav-item">
         <a href="#evaluacion" class="nav-link">Evaluación</a>
         <svg class="nav-icon presentation"><circle></circle></svg>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#instrumentos"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#criterios"></a>
+        </div>
+        <div class="nav-item d-none">
+          <a class="nav-link" href="#autoevaluacion"></a>
+        </div>
       </li>
     </ul>
   </nav>
@@ -95,9 +104,9 @@
         <div class="row">
           <div class="col-6">
             <h3>Objetivos de la unidad</h3>
-            <p>Entender el concepto de framework CSS</p>
-            <p>Aplicar técnicas de layout responsive y componentes CSS del framework</p>
-            <p>Construir webs usando conjuntamente frameworks y técnicas de desarrollo web</p>
+            <p>1. Entender el concepto de framework CSS</p>
+            <p>2. Aplicar técnicas de layout responsive y componentes CSS del framework</p>
+            <p>3. Construir webs usando conjuntamente frameworks y técnicas de desarrollo web</p>
           </div>
           <div class="col-6">
             <h3>Objetivos RD 686/2010</h3>
@@ -141,22 +150,12 @@
         title="Metodología"
         image="./images/1517038684_Illustration about software development formal but_xl-beta-v2-2-2.png"
         image-position="left"
-        next-slide="tutorias">
+        next-slide="colectivas">
           <h4>Recursos Didácticos</h3>
-          <h4><a href="#tutorias">Tutorías</a></h4>
+          <h4><a href="#colectivas">Tutorías</a></h4>
           <h4><a href="#materiales">Materiales del aula virtual</a></h4>
           <h4><a href="#actividades">Actividades</a></h4>
           <h4><a href="#temporalizacion">Temporalización</a></h4> 
-      </slide-component>
-
-      <slide-component id="tutorias" 
-        title="Tutorías"
-        image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
-        image-position="right"
-        text-h-1="Tutorías Colectivas"
-        text-h-2="Tutorías Individuales"
-        text-h-3="Flipped Classroom"
-        next-slide="colectivas">
       </slide-component>
 
       <slide-component id="colectivas" 
@@ -167,6 +166,7 @@
       text-p-2="Mañana y tarde"
       text-p-3="Grabadas"
       text-p-4="Transcritas, subtituladas, tiempo real y grabación"
+      text-p-5="Flipped Classroom"
       next-slide="individuales"></slide-component>
 
       <slide-component id="individuales" 
@@ -244,7 +244,6 @@
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="left"
       next-slide="instrumentos">
-      <!-- TODO -->
       <h4><a href="#instrumentos">Instrumentos de evaluación</a></h4>
       <h4><a href="#criterios">Criterios de evaluación</a></h4>
       <h4><a href="#autoevaluacion">Autoevaluación</a></h4>
@@ -257,8 +256,43 @@
       text-h-1="Entrega de proyecto"
       text-p-2="Exámenes Ordinaria"
       text-h-3=""
+      next-slide="criterios">
+    </slide-component>
+
+    <slide-component id="criterios" 
+      title="Criterios de Evaluación"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="left"
       next-slide="">
-      <!-- TODO -->
+      <div class="row">
+        <div class="col-4">
+          <h3>1) Entender el concepto de framework CSS 20% </h3>
+          <div class="row">
+            <p>Aplica estilos mediante clases del framework</p>
+          </div>
+          <div class="row">
+            <p>Configura los estilos del framework para que se adapten a los requisitos</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>2) Aplicar técnicas de layout responsive y componentes CSS del framework 25%</h3>
+          <div class="row">
+            <p>Construye diseños responsive adaptados a los requisitos</p>
+          </div>
+          <div class="row">
+            <p>Utiliza y configura componentes adaptados a los requisitos</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>3) Construir webs usando conjuntamente frameworks y técnicas de desarrollo web 35%</h3>
+          <div class="row">
+            <p>Integra el framework y las técnicas previas: CSS3, SASS, HTML5</p>
+          </div>
+          <div class="row">
+            <p>El código es de calidad, eficiente y adecuado a los requisitos</p>
+          </div>
+        </div>
+      </div>
     </slide-component>
   </div>
   <script src="./slide/slideComponent.js"></script>
