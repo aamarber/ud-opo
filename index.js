@@ -14,5 +14,5 @@ $('#calendar').multiDatesPicker({
     firstDay: 1,
     defaultDate:"10/09/2023",
     addDates: selectedDates,
-    numberOfMonths: [1, 2]
+    numberOfMonths: [1,2]
 });

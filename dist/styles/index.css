@@ -118,6 +118,7 @@ slide-component:nth-child(even) .row.slide h2 {
 .slides-container .row.slide,
 slide-component .row.slide {
   min-height: 100vh;
+  max-height: 100vh;
   padding: 10%;
 }
 .slides-container .row.slide h2,
@@ -144,11 +145,11 @@ slide-component .row.slide article {
 slide-component .row.slide img {
   width: 100%;
 }
-.slides-container .row.slide h2, .slides-container .row.slide h3, .slides-container .row.slide h4, .slides-container .row.slide p,
-slide-component .row.slide h2,
-slide-component .row.slide h3,
-slide-component .row.slide h4,
-slide-component .row.slide p {
+.slides-container .row.slide h2:not(:first-child), .slides-container .row.slide h3:not(:first-child), .slides-container .row.slide h4:not(:first-child), .slides-container .row.slide p:not(:first-child),
+slide-component .row.slide h2:not(:first-child),
+slide-component .row.slide h3:not(:first-child),
+slide-component .row.slide h4:not(:first-child),
+slide-component .row.slide p:not(:first-child) {
   margin-top: 0.25em;
 }
 .slides-container .row.slide .centered,
@@ -165,4 +166,20 @@ slide-component .row.slider-container {
 slide-component .row.slider-container .slider-button {
   align-self: center;
   font-size: 5em;
+}
+
+#resultados h2,
+#competencias h2 {
+  font-size: 8.4vh;
+}
+
+#resultados p {
+  text-align: center;
+}
+
+#competencias h3 {
+  font-size: 3.36vh;
+}
+#competencias p {
+  font-size: 1.92vh;
 }

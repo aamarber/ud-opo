@@ -1,0 +1,23 @@
+@use './sizes';
+
+#resultados,
+#competencias {
+    h2{
+        font-size: sizes.$title-size * 0.7;
+    }
+}
+
+#resultados{
+    p{
+        text-align: center;
+    }
+}
+
+#competencias{
+    h3{
+        font-size: sizes.$secondary-title-size * 0.7;
+    }
+    p{
+        font-size: sizes.$secondary-title-size * 0.4;
+    }
+}
