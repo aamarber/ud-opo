@@ -1,0 +1,17 @@
+@use './colors';
+
+.hasDatepicker{
+    a{
+        text-decoration: none;
+    }
+
+    .ui-datepicker .ui-datepicker-calendar .ui-state-highlight {
+        background-color: colors.$main-super-bright-color;
+        border: none;
+        
+        a{
+            background: none;
+            color: colors.$main-contrast-color;
+        }
+    }
+}

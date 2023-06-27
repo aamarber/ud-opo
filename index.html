@@ -8,6 +8,8 @@
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./node_modules/jquery-ui-multidatespicker/jquery-ui.multidatespicker.css">
+  <link rel="stylesheet" href="./dist/styles/calendar.css">
   <link rel="stylesheet" href="./dist/styles/index.css">
   <title>UD Frameworks CSS - Secundaria Sistemas y Aplicaciones Informáticas</title>
 </head>
@@ -89,61 +91,26 @@
         title="Objetivos"
         image="./images/stable-diffusion-xl.jpeg"
         image-position="left"
+        text-h-1="Objetivos Real Decreto 686/2010"
+        text-p-2="i) Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar interfaces en aplicaciones web."
+        text-p-3="j) Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar componentes multimedia.</h3>"
+        text-p-4=""
+        text-h-5="Objetivos de la unidad"
+        text-p-6="Entender el concepto de framework CSS"
+        text-p-7="Aplicar técnicas de layout responsive y componentes CSS del framework"
+        text-p-8="Construir webs usando conjuntamente frameworks y técnicas de desarrollo web"
         next-slide="resultados">
-        <section class="objetivos-container">
-          <div class="row">
-            <ul class="list-group col-6">
-              <li class="list-group-item">
-                <h3>Objetivos Real Decreto 686/2010</h3>
-              </li>
-              <li class="list-group-item">
-                i) Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar interfaces en aplicaciones web.
-              </li>
-              <li class="list-group-item">
-                j) Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar componentes multimedia.</h3>
-              </li>
-            </ul>
-            <ul class="list-group col-6">
-              <li class="list-group-item">
-                <h3>Objetivos de la unidad</h3>
-              </li>
-              <li class="list-group-item">
-                Entender el concepto de framework CSS
-              </li>
-              <li class="list-group-item">
-                Aplicar técnicas de layout responsive y componentes CSS del framework
-              </li>
-              <li class="list-group-item">
-                Construir webs usando conjuntamente frameworks y técnicas de desarrollo web
-              </li>
-            </ul>
-          </div>
-        </section>
       </slide-component>
 
       <slide-component id="resultados" 
         title="Resultados <br> Aprendizaje"
         image="./images/5ccd9fb3-8fd5-4c35-8b77-f87448258387.png"
         image-position="right"
+        text-h-1="Real Decreto 686/2010"
+        text-p-2="RA2 Crea interfaces Web homogéneos definiendo y aplicando estilos."
+        text-p-3="RA5 (Parcial) Desarrolla interfaces Web accesibles, analizando las pautas establecidas y aplicando técnicas de verificación"
+        text-p-4="RA6 (Parcial) Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas"
         next-slide="competencias">
-        <section class="resultados-container">
-          <div class="row">
-            <ul class="list-group col-12">
-              <li class="list-group-item">
-                <h3>Real Decreto 686/2010</h3>
-              </li>
-              <li class="list-group-item">
-                RA2 Crea interfaces Web homogéneos definiendo y aplicando estilos.
-              </li>
-              <li class="list-group-item">
-                RA5 (Parcial) Desarrolla interfaces Web accesibles, analizando las pautas establecidas y aplicando técnicas de verificación
-              </li>
-              <li class="list-group-item">
-                RA6 (Parcial) Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas
-              </li>
-            </ul>
-          </div>
-        </section>
       </slide-component>
 
       <slide-component id="competencias" 
@@ -166,10 +133,11 @@
         image="./images/1517038684_Illustration about software development formal but_xl-beta-v2-2-2.png"
         image-position="left"
         next-slide="tutorias">
-          <h3>Recursos Didácticos</h3>
+          <h4>Recursos Didácticos</h3>
           <h4><a href="#tutorias">Tutorías</a></h4>
           <h4><a href="#materiales">Materiales del aula virtual</a></h4>
           <h4><a href="#actividades">Actividades</a></h4>
+          <h4><a href="#temporalizacion">Temporalización</a></h4> 
       </slide-component>
 
       <slide-component id="tutorias" 
@@ -178,6 +146,7 @@
         image-position="right"
         text-h-1="Tutorías Colectivas"
         text-h-2="Tutorías Individuales"
+        text-h-3="Flipped Classroom"
         next-slide="colectivas">
       </slide-component>
 
@@ -210,7 +179,9 @@
       <section class="row videos-container">
         <section class="col-12 centered">
           <h4>Bootstrap I Introducción, Layout</h4>
-          <h4>Layout</h4>
+        </section>
+        <section class="col-12 centered">
+          <h4>Bootstrap II, Componentes y Formularios</h4>
         </section>
         <!-- <section class="col-3 video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/o4pCl719PWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -256,18 +227,37 @@
       image-position="right"
       next-slide="evaluacion">
       <!-- TODO -->
+        <div id="calendar"></div>
     </slide-component>
 
     <slide-component id="evaluacion" 
       title="Evaluación"
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="left"
+      next-slide="instrumentos">
+      <!-- TODO -->
+      <h4><a href="#instrumentos">Instrumentos de evaluación</a></h4>
+      <h4><a href="#criterios">Criterios de evaluación</a></h4>
+      <h4><a href="#autoevaluacion">Autoevaluación</a></h4>
+    </slide-component>
+
+    <slide-component id="instrumentos" 
+      title="Instrumentos de Evaluación"
+      image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
+      image-position="right"
+      text-h-1="Entrega de proyecto"
+      text-p-2="Exámenes Ordinaria"
+      text-h-3=""
       next-slide="">
       <!-- TODO -->
     </slide-component>
   </div>
   <script src="./slide/slideComponent.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+  <script src="./node_modules/jquery-ui-multidatespicker/jquery-ui.multidatespicker.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
