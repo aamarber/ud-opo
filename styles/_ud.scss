@@ -20,7 +20,7 @@ $multiplier: 0.7;
 #presentation,
 #criterios,
 #criterios-2,
-#objetivos-rd,
+#objetivos .objetivos-rd,
 #criterios-rd,
 #actividades{
     @include smaller-h2();
@@ -34,8 +34,12 @@ $multiplier: 0.7;
     h4{
         font-size: $smaller-secondary-title-size * 0.7;
     }
-    
+
     p{
         font-size: sizes.$secondary-title-size * 0.4;
     }
+}
+
+#contextualizacion{
+    text-align: center;
 }

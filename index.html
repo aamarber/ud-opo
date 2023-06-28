@@ -81,6 +81,9 @@
           <a class="nav-link" href="#criterios"></a>
         </div>
         <div class="nav-item d-none">
+          <a class="nav-link" href="#criterios-2"></a>
+        </div>
+        <div class="nav-item d-none">
           <a class="nav-link" href="#autoevaluacion"></a>
         </div>
       </li>
@@ -108,15 +111,21 @@
 
     <slide-component id="objetivos" title="Objetivos" image="./images/stable-diffusion-xl-working.jpeg"
       image-position="left" next-slide="resultados">
-      <div class="row">
+      <div class="row col-12">
         <div class="col-6">
           <h3>Objetivos de la unidad</h3>
+        </div>
+        <div class="col-6 objetivos-rd">
+          <h3>Objetivos RD 686/2010</h3>
+        </div>
+      </div>
+      <div class="row col-12">
+        <div class="col-6">
           <p>1. Entender el concepto de framework CSS</p>
           <p>2. Aplicar técnicas de layout responsive y componentes CSS del framework</p>
           <p>3. Construir webs usando conjuntamente frameworks y técnicas de desarrollo web</p>
         </div>
-        <div class="col-6" id="objetivos-rd">
-          <h3>Objetivos RD 686/2010</h3>
+        <div class="col-6 objetivos-rd">
           <p>i) Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar
             interfaces en aplicaciones web.</p>
           <p>j) Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar
@@ -238,8 +247,12 @@
           <div class="col-9"><p>Maqueta un layout responsive complejo.</p></div>
         </div>
         <div class="row">
+          <div class="col-3"><h4>Actividad 4</h4></div>
+          <div class="col-9"><p>Maqueta un layout responsive complejo para tres resoluciones.</p></div>
+        </div>
+        <div class="row">
           <div class="col-3"><h4>Actividad 5</h4></div>
-          <div class="col-9"><p>Crea una barra de navegación simple utilizando el componente específico navbar de Bootstrap.</p></div>
+          <div class="col-9"><p>Crea una barra de navegación utilizando el componente específico navbar de Bootstrap.</p></div>
         </div>
         <div class="row">
           <div class="col-3"><h4>Actividad 6</h4></div>
@@ -263,7 +276,7 @@
         </div>
         <div class="row">
           <div class="col-3"><h4>Actividad de ampliación 2</h4></div>
-          <div class="col-9"><p>CSS Zen Garden: usando como base el HTML del Zen Garden, maqueta un diseño usando Bootstrap.</p></div>
+          <div class="col-9"><p>CSS Zen Garden: usa como base el HTML Zen Garden, maqueta un diseño con Bootstrap.</p></div>
         </div>
       </div>
     </slide-component>
@@ -271,7 +284,7 @@
     <slide-component id="temporalizacion" title="Temporalización"
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="right" next-slide="evaluacion">
-      <div id="calendar"></div>
+      <div id="temporalizacionCalendar"></div>
     </slide-component>
 
     <slide-component id="evaluacion" title="Evaluación"
@@ -285,11 +298,18 @@
     <slide-component id="instrumentos" title="Instrumentos de Evaluación"
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="right" next-slide="criterios">
-      <h3>Materia por proyectos</h3>
-      <p>4 entregas: Propuesta, <strong>Implementación estática</strong>, Dinámica, Testeo, Despliegue y Posicionamiento
-      </p>
-      <p>2 entregas por fase - Entregar fases previas a posteriori</p>
-      <p>Exámenes Ordinaria y Extraordinaria</p>
+      <div class="row">
+        <div class="col-8">
+          <h3>Materia por proyectos</h3>
+          <p>4 entregas: Propuesta, <strong>Implementación estática</strong>, Dinámica, Testeo, Despliegue y Posicionamiento
+          </p>
+          <p>2 entregas por fase - Entregar fases previas a posteriori</p>
+          <p>Exámenes Ordinaria y Extraordinaria</p>
+        </div>
+        <div class="col-4">
+          <div id="evaluacionCalendar"></div>
+        </div>
+      </div>
     </slide-component>
 
     <slide-component id="criterios" title="Criterios de Evaluación"
@@ -298,30 +318,35 @@
       <div class="row">
         <div class="col-4">
           <h3>1) Entender el concepto de framework CSS 20% </h3>
-          <div class="row">
-            <p>Aplica estilos mediante clases del framework</p>
-          </div>
-          <div class="row">
-            <p>Configura los estilos del framework para que se adapten a los requisitos</p>
-          </div>
         </div>
         <div class="col-4">
           <h3>2) Aplicar técnicas de layout responsive y componentes CSS del framework 25%</h3>
-          <div class="row">
-            <p>Construye diseños responsive adaptados a los requisitos</p>
-          </div>
-          <div class="row">
-            <p>Utiliza y configura componentes adaptados a los requisitos</p>
-          </div>
         </div>
         <div class="col-4">
           <h3>3) Construir webs usando conjuntamente frameworks y técnicas de desarrollo web 35%</h3>
-          <div class="row">
-            <p>Integra el framework y las técnicas previas: CSS3, SASS, HTML5</p>
-          </div>
-          <div class="row">
-            <p>El código es de calidad, eficiente y adecuado a los requisitos</p>
-          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <p>Aplica estilos mediante clases del framework</p>
+        </div>
+        <div class="col-4">
+          <p>Construye diseños responsive adaptados a los requisitos</p>
+        </div>
+        <div class="col-4">
+          <p>Integra el framework y las técnicas previas: CSS3, SASS, HTML5</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <p>Configura los estilos del framework para que se adapten a los requisitos</p>
+        </div>
+        <div class="col-4">
+          <p>Utiliza y configura componentes adaptados a los requisitos</p>
+        </div>
+        <div class="col-4">
+          <p>El código es de calidad, eficiente y adecuado a los requisitos</p>
         </div>
       </div>
     </slide-component>
@@ -355,6 +380,14 @@
     <slide-component id="autoevaluacion" title="Evaluación Docente" image="./images/stable-diffusion-xl orange.jpeg"
       image-position="right" text-h-1="Buzón de quejas/sugerencias anónimo" text-h-2="Comentarios clase, foro..."
       text-h-3="Estadísticas de evaluación" text-h-4="Encuestas: inicial y 2 de valoración">
+    </slide-component>
+
+    <slide-component id="resument" title="Resumen" image="./images/CRNT-1.jpg"
+      image-position="right"
+      text-h-1="Desarrollo Web con Frameworks CSS"
+      text-h-2="Docencia 100% a distancia, Flipped Classroom"
+      text-h-3="Evaluación por Proyectos"
+      text-h-4="¡GRACIAS!">
     </slide-component>
   </div>
   <script src="./slide/slideComponent.js"></script>

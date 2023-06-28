@@ -10,11 +10,19 @@ for(let i = 0; i < 21; i++){
     selectedDates.push(d);
 }
 
-$('#calendar').multiDatesPicker({
+const baseOptions ={
     firstDay: 1,
     defaultDate:"10/09/2023",
-    addDates: selectedDates,
     numberOfMonths: [1,2],
     dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
     monthNames: ['', '', '', '', '', '', '', '', '', 'Octubre', 'Noviembre', '']
-});
+};
+
+const temporalizacionOptions ={
+    ...baseOptions,
+    addDates: selectedDates
+}
+
+$('#temporalizacionCalendar').multiDatesPicker(temporalizacionOptions);
+
+$('#evaluacionCalendar').multiDatesPicker(temporalizacionOptions);
