@@ -108,24 +108,28 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
   color: white;
 }
 
-#resultados h2,
-#competencias h2,
-#presentation h2,
-#criterios h2 {
-  font-size: 8.4vh;
-}
-
 #resultados p {
   text-align: center;
 }
+#resultados h2 {
+  font-size: 8.4vh;
+}
 
+#competencias h2,
+#presentation h2,
+#criterios h2,
+#objetivos-rd h2 {
+  font-size: 8.4vh;
+}
 #competencias h3,
 #presentation h3,
-#criterios h3 {
+#criterios h3,
+#objetivos-rd h3 {
   font-size: 3.36vh;
 }
 #competencias p,
 #presentation p,
-#criterios p {
+#criterios p,
+#objetivos-rd p {
   font-size: 1.92vh;
 }

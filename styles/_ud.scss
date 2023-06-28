@@ -1,9 +1,6 @@
 @use './sizes';
 
-#resultados,
-#competencias,
-#presentation,
-#criterios {
+@mixin smaller-h2(){
     h2{
         font-size: sizes.$title-size * 0.7;
     }
@@ -13,11 +10,16 @@
     p{
         text-align: center;
     }
+
+    @include smaller-h2();
 }
 
 #competencias,
 #presentation,
-#criterios{
+#criterios,
+#objetivos-rd{
+    @include smaller-h2();
+    
     h3{
         font-size: sizes.$secondary-title-size * 0.7;
     }
