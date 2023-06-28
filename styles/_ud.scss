@@ -1,8 +1,10 @@
 @use './sizes';
 
+$multiplier: 0.7;
+
 @mixin smaller-h2(){
     h2{
-        font-size: sizes.$title-size * 0.7;
+        font-size: sizes.$title-size * $multiplier;
     }
 }
 
@@ -17,12 +19,22 @@
 #competencias,
 #presentation,
 #criterios,
-#objetivos-rd{
+#criterios-2,
+#objetivos-rd,
+#criterios-rd,
+#actividades{
     @include smaller-h2();
-    
+
+    $smaller-secondary-title-size: sizes.$secondary-title-size * $multiplier;
+
     h3{
-        font-size: sizes.$secondary-title-size * 0.7;
+        font-size: $smaller-secondary-title-size;
     }
+
+    h4{
+        font-size: $smaller-secondary-title-size * 0.7;
+    }
+    
     p{
         font-size: sizes.$secondary-title-size * 0.4;
     }

@@ -33,6 +33,10 @@ body.container-fluid {
 body p, body li, body a {
   font-size: 2.4vh;
 }
+body .slides-container {
+  margin: 0;
+  padding: 0;
+}
 
 nav.navbar {
   background-color: white;
@@ -118,18 +122,36 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #competencias h2,
 #presentation h2,
 #criterios h2,
-#objetivos-rd h2 {
+#criterios-2 h2,
+#objetivos-rd h2,
+#criterios-rd h2,
+#actividades h2 {
   font-size: 8.4vh;
 }
 #competencias h3,
 #presentation h3,
 #criterios h3,
-#objetivos-rd h3 {
+#criterios-2 h3,
+#objetivos-rd h3,
+#criterios-rd h3,
+#actividades h3 {
   font-size: 3.36vh;
+}
+#competencias h4,
+#presentation h4,
+#criterios h4,
+#criterios-2 h4,
+#objetivos-rd h4,
+#criterios-rd h4,
+#actividades h4 {
+  font-size: 2.352vh;
 }
 #competencias p,
 #presentation p,
 #criterios p,
-#objetivos-rd p {
+#criterios-2 p,
+#objetivos-rd p,
+#criterios-rd p,
+#actividades p {
   font-size: 1.92vh;
 }
