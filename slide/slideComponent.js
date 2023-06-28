@@ -54,7 +54,7 @@ class Slide extends HTMLElement {
             result.previousId = slides[index - 1].id;
         }
 
-        if(index < slides.length){
+        if(index < slides.length - 1){
             result.nextId = slides[index + 1].id;
         }
         
