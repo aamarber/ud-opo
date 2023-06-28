@@ -101,8 +101,8 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(4) {
 
 #resultados h2,
 #competencias h2,
-#criterios h2,
-#presentation h2 {
+#presentation h2,
+#criterios h2 {
   font-size: 8.4vh;
 }
 
@@ -111,10 +111,12 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(4) {
 }
 
 #competencias h3,
-#presentation h3 {
+#presentation h3,
+#criterios h3 {
   font-size: 3.36vh;
 }
 #competencias p,
-#presentation p {
+#presentation p,
+#criterios p {
   font-size: 1.92vh;
 }
