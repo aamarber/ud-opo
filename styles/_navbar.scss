@@ -7,6 +7,8 @@ nav.navbar{
 
     justify-content: center;
 
+    height: sizes.$navbar-size;
+
     .navbar-nav{
         .nav-item{
             display: flex;

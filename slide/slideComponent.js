@@ -13,13 +13,21 @@ class Slide extends HTMLElement {
     connectedCallback(){
         const slideData = this.getSlideDataFromAttributes();
 
+        if(!slideData.nextElementId || !slideData.previousElementId){
+            let siblingIds = this.calculateSiblingIds();
+
+            slideData.nextElementId = slideData.nextElementId || siblingIds.nextId;
+            slideData.previousElementId = slideData.previousElementId || siblingIds.previousId;
+        }
+
         this.innerHTML = this.hydrateTemplate(
             slideData.id,
             slideData.image,
             slideData.imagePosition,
             slideData.title,
             slideData.texts,
-            slideData.nextElementId);
+            slideData.nextElementId,
+            slideData.previousElementId);
     }
 
     getSlideDataFromAttributes(){
@@ -33,6 +41,26 @@ class Slide extends HTMLElement {
         }
     }
 
+    calculateSiblingIds(){
+        const parent = this.parentNode;
+
+        const slides = document.getElementsByTagName('slide-component');
+
+        let index = Array.prototype.indexOf.call(slides, this);
+
+        let result = {};
+
+        if(index > 0){
+            result.previousId = slides[index - 1].id;
+        }
+
+        if(index < slides.length){
+            result.nextId = slides[index + 1].id;
+        }
+        
+        return result;
+    }
+
     getTextsFromAttributes(){
         let paragraphAttributes = this.getAttributeNames().filter(x => x.startsWith(this.textAttributeName));
 
@@ -44,7 +72,7 @@ class Slide extends HTMLElement {
         });
     }
 
-    hydrateTemplate(id, image, imagePosition, title, texts, nextElementId){
+    hydrateTemplate(id, image, imagePosition, title, texts, nextElementId, previousElementId){
         const contentHtml = this.hydrateSlideContentTemplate(title, texts);
 
         const imageHtml = this.hydrateImageTemplate(image);
@@ -57,11 +85,16 @@ class Slide extends HTMLElement {
 
         return `
         <section class="row slide" id="${id}">
-            ${contentImage}
-            <div class="row slider-container">
-            <div class="col-1 offset-11">
-                <a class="slider-button" href="#${nextElementId}"><i class="bi bi-chevron-down"></i></a>
+            <div class="row">
+                ${contentImage}
             </div>
+            <div class="row slider-container">
+                <div class="col-1 offset-10">
+                    <a class="slider-button" href="#${previousElementId}"><i class="bi bi-chevron-up"></i></a>
+                </div>
+                <div class="col-1">
+                    <a class="slider-button" href="#${nextElementId}"><i class="bi bi-chevron-down"></i></a>
+                </div>
             </div>
         </section>`
     }

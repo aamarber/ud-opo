@@ -1,7 +1,8 @@
 @use './sizes';
 
 #resultados,
-#competencias {
+#competencias,
+#presentation {
     h2{
         font-size: sizes.$title-size * 0.7;
     }
@@ -13,7 +14,8 @@
     }
 }
 
-#competencias{
+#competencias,
+#presentation{
     h3{
         font-size: sizes.$secondary-title-size * 0.7;
     }
