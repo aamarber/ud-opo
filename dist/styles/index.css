@@ -82,6 +82,11 @@ nav.navbar .navbar-nav .nav-item:nth-child(4) > svg.nav-icon > circle {
   stroke-width: 3px;
   fill: #ce4167;
 }
+nav.navbar .navbar-nav .nav-item:nth-child(5) > svg.nav-icon > circle {
+  stroke: black;
+  stroke-width: 3px;
+  fill: #BEEE62;
+}
 nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(1) {
   background-color: #563cf6;
   color: white;
@@ -96,6 +101,10 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(3) {
 }
 nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(4) {
   background-color: #ce4167;
+  color: white;
+}
+nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
+  background-color: #BEEE62;
   color: white;
 }
 

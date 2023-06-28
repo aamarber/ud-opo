@@ -83,19 +83,14 @@ class Slide extends HTMLElement {
             `${contentHtml}
             ${imageHtml}`;
 
+        const nextPreviousButtons = this.hydrateNextPreviousButton(nextElementId, previousElementId);
+
         return `
         <section class="row slide" id="${id}">
             <div class="row">
                 ${contentImage}
             </div>
-            <div class="row slider-container">
-                <div class="col-1 offset-10">
-                    <a class="slider-button" href="#${previousElementId}"><i class="bi bi-chevron-up"></i></a>
-                </div>
-                <div class="col-1">
-                    <a class="slider-button" href="#${nextElementId}"><i class="bi bi-chevron-down"></i></a>
-                </div>
-            </div>
+            ${nextPreviousButtons}
         </section>`
     }
 
@@ -147,6 +142,24 @@ class Slide extends HTMLElement {
         });
 
         return subtitlesHtml;
+    }
+
+    hydrateNextPreviousButton(nextElementId, previousElementId){
+        const previousElement = !previousElementId ? '' : `
+        <div class="col-1 offset-10">
+                    <a class="slider-button" href="#${previousElementId}"><i class="bi bi-chevron-up"></i></a>
+        </div>`;
+
+        const nextElement = !nextElementId ? '' : `
+        <div class="col-1 ${!previousElement ? 'offset-11' : ''}">
+            <a class="slider-button" href="#${nextElementId}"><i class="bi bi-chevron-down"></i></a>
+        </div>`;
+
+        return `
+        <div class="row slider-container">
+            ${previousElement}
+            ${nextElement}
+        </div>`;
     }
 }
 

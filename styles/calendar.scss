@@ -11,13 +11,17 @@
         .ui-datepicker-calendar {
             margin-right: 5em;
 
-            .ui-state-highlight {
-                background-color: colors.$main-super-bright-color;
+            td{
                 border: none;
+                text-align: center;
 
-                a{
-                    background: none;
-                    color: colors.$main-contrast-color;
+                &.ui-state-highlight {
+                    background-color: colors.$main-super-bright-color;
+    
+                    a{
+                        background: none;
+                        color: colors.$main-contrast-color;
+                    }
                 }
             }
         }
