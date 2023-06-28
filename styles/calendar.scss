@@ -8,12 +8,20 @@
     .ui-datepicker{
         display: flex !important;
 
-        .ui-datepicker-calendar {
+        .ui-datepicker-group{
             margin-right: 5em;
+        }
+
+        .ui-datepicker-title{
+            text-align: center;
+        }
+
+        .ui-datepicker-calendar {
 
             td{
                 border: none;
                 text-align: center;
+                padding: 0.25em;
 
                 &.ui-state-highlight {
                     background-color: colors.$main-super-bright-color;

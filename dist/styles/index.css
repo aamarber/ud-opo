@@ -159,3 +159,12 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #contextualizacion {
   text-align: center;
 }
+
+#objetivos .row .col-6 {
+  display: flex;
+  align-items: center;
+}
+
+#actividades h3, #actividades h4, #actividades p {
+  margin-bottom: 0.75rem;
+}
