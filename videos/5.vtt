@@ -1,0 +1,1294 @@
+WEBVTT
+
+1
+00:00:12.259 --> 00:00:15.660
+en este vídeo vamos a trabajar un poco
+
+2
+00:00:15.660 --> 00:00:19.440
+con los componentes de bootstrap vale ya
+
+3
+00:00:19.440 --> 00:00:21.359
+hemos visto que en bus trap tenemos
+
+4
+00:00:21.359 --> 00:00:23.880
+distintas herramientas tanto para
+
+5
+00:00:23.880 --> 00:00:26.900
+layouts como para sizing
+
+6
+00:00:26.900 --> 00:00:30.560
+muchos muchos temas
+
+7
+00:00:30.560 --> 00:00:33.780
+que hemos cubierto relativamente pero
+
+8
+00:00:33.780 --> 00:00:35.340
+que lo hayáis practicado los ejercicios
+
+9
+00:00:35.340 --> 00:00:37.020
+porque si no no lo habréis cubierto ya
+
+10
+00:00:37.020 --> 00:00:38.660
+os lo adelantado
+
+11
+00:00:38.660 --> 00:00:40.980
+y vamos a trabajar un poco con los
+
+12
+00:00:40.980 --> 00:00:43.260
+componentes vale dentro de los
+
+13
+00:00:43.260 --> 00:00:45.059
+componentes tenemos por un lado los
+
+14
+00:00:45.059 --> 00:00:48.059
+formularios o las clases que nos ayudan
+
+15
+00:00:48.059 --> 00:00:51.200
+con los formularios vale
+
+16
+00:00:51.200 --> 00:00:53.039
+con formularios no implica
+
+17
+00:00:53.039 --> 00:00:54.840
+necesariamente que sea un formulario de
+
+18
+00:00:54.840 --> 00:00:57.480
+contacto o un formulario de X vale
+
+19
+00:00:57.480 --> 00:01:02.160
+simplemente son el concepto de tengo x
+
+20
+00:01:02.160 --> 00:01:04.260
+controles que están repartidos alrededor
+
+21
+00:01:04.260 --> 00:01:07.320
+de mi interfaz y y necesito que tengan
+
+22
+00:01:07.320 --> 00:01:09.720
+un comportamiento unificado o unos
+
+23
+00:01:09.720 --> 00:01:12.600
+estilos unificados o incluso unas
+
+24
+00:01:12.600 --> 00:01:14.960
+validaciones que vayan todas juntas
+
+25
+00:01:14.960 --> 00:01:18.240
+dentro de esa de esos controles que
+
+26
+00:01:18.240 --> 00:01:20.700
+están relacionados entre sí vale vamos a
+
+27
+00:01:20.700 --> 00:01:23.939
+ir primero a los controles más a los
+
+28
+00:01:23.939 --> 00:01:25.040
+componentes más
+
+29
+00:01:25.040 --> 00:01:28.259
+single para que veáis un poco que son
+
+30
+00:01:28.259 --> 00:01:30.659
+vale Y luego volveremos al tema de los
+
+31
+00:01:30.659 --> 00:01:33.659
+formularios vale en cuanto a componentes
+
+32
+00:01:33.659 --> 00:01:37.860
+de bootstrap nos ofrece un montón de
+
+33
+00:01:37.860 --> 00:01:39.780
+componentes la verdad no no voy a hablar
+
+34
+00:01:39.780 --> 00:01:41.280
+de todos ellos sino que voy a daros
+
+35
+00:01:41.280 --> 00:01:43.920
+ideas genéricas de para qué sirven
+
+36
+00:01:43.920 --> 00:01:46.020
+porque luego cuando los tengáis que usar
+
+37
+00:01:46.020 --> 00:01:48.060
+los miraréis y diréis pues aquí quiero
+
+38
+00:01:48.060 --> 00:01:50.220
+usar un colapse o quiero usar un
+
+39
+00:01:50.220 --> 00:01:52.740
+acordeón o quiero usar un Drop down o lo
+
+40
+00:01:52.740 --> 00:01:54.500
+que sea vale
+
+41
+00:01:54.500 --> 00:01:56.820
+vamos a ir por ejemplo al componente de
+
+42
+00:01:56.820 --> 00:01:59.520
+colapse el componente de colapse en
+
+43
+00:01:59.520 --> 00:02:01.880
+concreto lo que hace es
+
+44
+00:02:01.880 --> 00:02:04.140
+doglar es que no sé cómo se traduce
+
+45
+00:02:04.140 --> 00:02:05.640
+bueno
+
+46
+00:02:05.640 --> 00:02:08.300
+visible o invisible contenido
+
+47
+00:02:08.300 --> 00:02:11.700
+utilizando un poco de css y un poco de
+
+48
+00:02:11.700 --> 00:02:14.099
+javascript importante también todos los
+
+49
+00:02:14.099 --> 00:02:16.620
+componentes y todo todo lo de
+
+50
+00:02:16.620 --> 00:02:17.959
+formularios igual no tanto porque
+
+51
+00:02:17.959 --> 00:02:20.220
+formularios se utilizan más clases css
+
+52
+00:02:20.220 --> 00:02:22.260
+pero en componentes como son componentes
+
+53
+00:02:22.260 --> 00:02:25.400
+con interacción
+
+54
+00:02:25.700 --> 00:02:28.739
+como decirlo reaccionan a eventos como
+
+55
+00:02:28.739 --> 00:02:34.500
+clic o sea teclado pulsar todos llevan
+
+56
+00:02:34.500 --> 00:02:37.800
+código javascript vale por ejemplo en
+
+57
+00:02:37.800 --> 00:02:39.780
+todos ellos os va a dar os va a decir
+
+58
+00:02:39.780 --> 00:02:41.940
+qué es lo que hace cómo funciona vale
+
+59
+00:02:41.940 --> 00:02:44.160
+Explica concretamente cómo funciona y
+
+60
+00:02:44.160 --> 00:02:46.200
+siempre lo recomiendo leeros cómo
+
+61
+00:02:46.200 --> 00:02:47.879
+funciona más que ir al ejemplo Cooper y
+
+62
+00:02:47.879 --> 00:02:50.519
+pegar vale porque por ejemplo en el de
+
+63
+00:02:50.519 --> 00:02:54.180
+colapse el componente de colapse lo que
+
+64
+00:02:54.180 --> 00:02:56.360
+hace Es que le pone
+
+65
+00:02:56.360 --> 00:02:59.220
+el contenido que está oculto le pone su
+
+66
+00:02:59.220 --> 00:03:02.580
+altura a cero Vale y lo hace animado
+
+67
+00:03:02.580 --> 00:03:05.720
+además vale
+
+68
+00:03:05.720 --> 00:03:09.540
+eso que implica uno no está invisible
+
+69
+00:03:09.540 --> 00:03:11.840
+vale
+
+70
+00:03:11.840 --> 00:03:14.099
+si este es el comportamiento que tiene
+
+71
+00:03:14.099 --> 00:03:15.319
+vale
+
+72
+00:03:15.319 --> 00:03:18.800
+si ahora inspeccionamos esto
+
+73
+00:03:18.800 --> 00:03:22.040
+cuando está colapsado
+
+74
+00:03:22.040 --> 00:03:27.060
+este componente no tiene un display Non
+
+75
+00:03:27.060 --> 00:03:29.700
+ni un visibility hidden o cualquier cosa
+
+76
+00:03:29.700 --> 00:03:31.760
+sí simplemente tiene la altura
+
+77
+00:03:31.760 --> 00:03:33.560
+de
+
+78
+00:03:33.560 --> 00:03:36.540
+su contenedor Bueno si tiene el display
+
+79
+00:03:36.540 --> 00:03:38.940
+no pero el de dentro no vale perdón pero
+
+80
+00:03:38.940 --> 00:03:41.239
+el de dentro no vale qué implica esto
+
+81
+00:03:41.239 --> 00:03:44.760
+que cuando un lector por ejemplo esté
+
+82
+00:03:44.760 --> 00:03:46.940
+interpretando esto
+
+83
+00:03:46.940 --> 00:03:49.700
+un lector un lector accesible me refiero
+
+84
+00:03:49.700 --> 00:03:52.799
+para ese lector va a estar abierto vale
+
+85
+00:03:52.799 --> 00:03:55.920
+va a leer el contenido porque porque
+
+86
+00:03:55.920 --> 00:03:57.659
+está ahí dentro vale Y no hay ningún
+
+87
+00:03:57.659 --> 00:04:01.440
+área hidden ni nada de eso vale esto es
+
+88
+00:04:01.440 --> 00:04:05.099
+importante porque cuando lo
+
+89
+00:04:05.099 --> 00:04:08.159
+descolapsamos simplemente le da más
+
+90
+00:04:08.159 --> 00:04:09.780
+altura vale
+
+91
+00:04:09.780 --> 00:04:12.980
+Bueno le da la altura que toca vale
+
+92
+00:04:12.980 --> 00:04:16.939
+esto es importante vale
+
+93
+00:04:17.600 --> 00:04:20.699
+básicamente luego una vez ya entendéis
+
+94
+00:04:20.699 --> 00:04:22.320
+un poco cómo funciona Yo sí que os
+
+95
+00:04:22.320 --> 00:04:24.900
+recomendaría ir al ejemplo ver cómo es
+
+96
+00:04:24.900 --> 00:04:26.479
+el código que necesitáis vale
+
+97
+00:04:26.479 --> 00:04:28.560
+básicamente aquí lo que tienes un
+
+98
+00:04:28.560 --> 00:04:32.220
+párrafo que tiene aquí ya empiezan las
+
+99
+00:04:32.220 --> 00:04:34.560
+curvas esto le gusta mucha bootstrap y
+
+100
+00:04:34.560 --> 00:04:36.300
+no le gusta nada a cualquier persona que
+
+101
+00:04:36.300 --> 00:04:38.460
+quiere hacer las cosas usables y que
+
+102
+00:04:38.460 --> 00:04:40.560
+quiere usar el estándar html Pero esto
+
+103
+00:04:40.560 --> 00:04:42.000
+se hace un montón en bus trap cosa que
+
+104
+00:04:42.000 --> 00:04:45.300
+yo no recomiendo nada vale yo y
+
+105
+00:04:45.300 --> 00:04:48.780
+cualquier persona que se ciña al
+
+106
+00:04:48.780 --> 00:04:51.360
+estándar html porque está usando un
+
+107
+00:04:51.360 --> 00:04:53.220
+enlace como un botón vale porque
+
+108
+00:04:53.220 --> 00:04:54.979
+simplemente con ponerle la clase botón
+
+109
+00:04:54.979 --> 00:04:57.540
+ya se ve como un botón
+
+110
+00:04:57.540 --> 00:04:59.520
+Pero esto no está funcionando como un
+
+111
+00:04:59.520 --> 00:05:01.800
+enlace no te lleva a ningún sitio por c
+
+112
+00:05:01.800 --> 00:05:06.380
+vale te lleva a abrir Esto vale lo cual
+
+113
+00:05:06.380 --> 00:05:09.919
+regular vale
+
+114
+00:05:09.919 --> 00:05:12.600
+Pero por qué lo hacen porque lo porque
+
+115
+00:05:12.600 --> 00:05:14.400
+lo usan con h red que es un poco más
+
+116
+00:05:14.400 --> 00:05:16.740
+fácil vale Yo siempre recomiendo sigue
+
+117
+00:05:16.740 --> 00:05:19.440
+si el componente que estáis usando es un
+
+118
+00:05:19.440 --> 00:05:21.900
+botón porque clicáis y hace algo pues
+
+119
+00:05:21.900 --> 00:05:24.300
+debe ser un botón si clicáis y os lleva
+
+120
+00:05:24.300 --> 00:05:27.900
+a otro sitio es un enlace vale porque es
+
+121
+00:05:27.900 --> 00:05:31.320
+la función que hace cada uno vale Pero
+
+122
+00:05:31.320 --> 00:05:33.180
+bueno si os fijáis simplemente es un
+
+123
+00:05:33.180 --> 00:05:36.300
+botón que dice aquí tiene un atributo
+
+124
+00:05:36.300 --> 00:05:38.699
+Data que también es bastante típico en
+
+125
+00:05:38.699 --> 00:05:40.320
+bootstrap y en muchos otros frameworks
+
+126
+00:05:40.320 --> 00:05:44.280
+que le dice lo que va a torrear que es
+
+127
+00:05:44.280 --> 00:05:47.699
+el colapse vale
+
+128
+00:05:47.699 --> 00:05:52.139
+y cuál es su Target vale colapse example
+
+129
+00:05:52.139 --> 00:05:56.780
+vale que es esta idea vale
+
+130
+00:05:56.780 --> 00:06:00.840
+Y luego le añade aquí esto que esto no
+
+131
+00:06:00.840 --> 00:06:03.479
+es obligatorio Pero los que como ya
+
+132
+00:06:03.479 --> 00:06:04.919
+hemos visto accesibilidad no es
+
+133
+00:06:04.919 --> 00:06:06.060
+obligatorio en cuanto a gustras me
+
+134
+00:06:06.060 --> 00:06:07.220
+refiero
+
+135
+00:06:07.220 --> 00:06:09.419
+pero si es obligatorio si queréis hacer
+
+136
+00:06:09.419 --> 00:06:11.460
+que esto sea accesible porque esto lo
+
+137
+00:06:11.460 --> 00:06:14.120
+que está diciendo es no está expandido
+
+138
+00:06:14.120 --> 00:06:17.100
+el contenido que hay por debajo
+
+139
+00:06:17.100 --> 00:06:20.220
+y está controlando ese no expandido en
+
+140
+00:06:20.220 --> 00:06:24.660
+el en el elemento cuides colapse example
+
+141
+00:06:24.660 --> 00:06:26.280
+entonces lo que hace esto cuando le
+
+142
+00:06:26.280 --> 00:06:28.080
+damos es que lo colapsa o la descolapsa
+
+143
+00:06:28.080 --> 00:06:31.380
+vale Y luego hay en general siempre hay
+
+144
+00:06:31.380 --> 00:06:34.160
+otras opciones pues este por ejemplo
+
+145
+00:06:34.160 --> 00:06:36.720
+colapso de colapsa en horizontal Vale
+
+146
+00:06:36.720 --> 00:06:39.680
+pues tendrá por aquí un
+
+147
+00:06:39.680 --> 00:06:42.180
+Ah no perdón Mira de hecho tiene aquí
+
+148
+00:06:42.180 --> 00:06:44.699
+tiene la clase vale Y el componente que
+
+149
+00:06:44.699 --> 00:06:46.740
+el elemento que se colapsa tiene que
+
+150
+00:06:46.740 --> 00:06:49.979
+tener la clase colaps y un ID que es el
+
+151
+00:06:49.979 --> 00:06:52.199
+que se va a colapsar cuando cliques el
+
+152
+00:06:52.199 --> 00:06:55.259
+botón vale que es este vale si quieres
+
+153
+00:06:55.259 --> 00:06:57.000
+que colapse en horizontal pues le pones
+
+154
+00:06:57.000 --> 00:06:58.860
+la clase colapso horizontal y bootstrap
+
+155
+00:06:58.860 --> 00:07:00.240
+ya dice pues ya hasta ya sé que tiene
+
+156
+00:07:00.240 --> 00:07:02.280
+que hacerlo en horizontal y ya está en
+
+157
+00:07:02.280 --> 00:07:04.500
+vez de arriba abajo vale también se
+
+158
+00:07:04.500 --> 00:07:05.960
+pueden poner múltiples múltiples
+
+159
+00:07:05.960 --> 00:07:08.000
+objetivos
+
+160
+00:07:08.000 --> 00:07:10.319
+te habla un poco de Cómo funciona la
+
+161
+00:07:10.319 --> 00:07:11.639
+accesibilidad porque lo tienes que hacer
+
+162
+00:07:11.639 --> 00:07:14.100
+Así o no vale Y luego las variables de
+
+163
+00:07:14.100 --> 00:07:15.600
+esas que aquí nos vamos a entrar porque
+
+164
+00:07:15.600 --> 00:07:19.139
+no hemos visto esas todavía vale
+
+165
+00:07:19.139 --> 00:07:21.599
+el formato de todos los componentes es
+
+166
+00:07:21.599 --> 00:07:23.819
+prácticamente tres cuartos de lo mismo
+
+167
+00:07:23.819 --> 00:07:25.400
+si vais a cualquier otro por ejemplo
+
+168
+00:07:25.400 --> 00:07:27.919
+vamos a
+
+169
+00:07:27.919 --> 00:07:30.120
+Card por ejemplo cards un poco más
+
+170
+00:07:30.120 --> 00:07:32.520
+sencillo vale carde simplemente un
+
+171
+00:07:32.520 --> 00:07:36.240
+componente que va a tener como una una
+
+172
+00:07:36.240 --> 00:07:39.000
+imagen pues como una carta vamos con una
+
+173
+00:07:39.000 --> 00:07:39.979
+carta de
+
+174
+00:07:39.979 --> 00:07:43.919
+jugar vale tiene una imagen arriba y un
+
+175
+00:07:43.919 --> 00:07:46.680
+título un texto pequeñito y un botón
+
+176
+00:07:46.680 --> 00:07:50.240
+vale es un forma es más formato que
+
+177
+00:07:50.240 --> 00:07:53.180
+funcionamiento pero
+
+178
+00:07:53.180 --> 00:07:56.340
+vamos pues es un componente que te dan
+
+179
+00:07:56.340 --> 00:07:58.740
+que si le pones el estilo Card
+
+180
+00:07:58.740 --> 00:08:00.720
+directamente te hace este recuadro y
+
+181
+00:08:00.720 --> 00:08:03.720
+espera ese tipo de cosas vale con esto
+
+182
+00:08:03.720 --> 00:08:05.099
+también podéis jugar no todos los
+
+183
+00:08:05.099 --> 00:08:06.479
+componentes que nos dan tienen
+
+184
+00:08:06.479 --> 00:08:09.240
+javascript vale lo que os digo no voy a
+
+185
+00:08:09.240 --> 00:08:10.680
+cubrir todos batch por ejemplo también
+
+186
+00:08:10.680 --> 00:08:13.039
+es solo de
+
+187
+00:08:13.039 --> 00:08:16.979
+css vale le da un ejemplo o sea es un es
+
+188
+00:08:16.979 --> 00:08:18.000
+un componente que le da un estilo
+
+189
+00:08:18.000 --> 00:08:20.039
+concreto y un formato completo vale que
+
+190
+00:08:20.039 --> 00:08:21.900
+es un batch que es como una medallita
+
+191
+00:08:21.900 --> 00:08:24.720
+vale le ponéis la clase batch y ya está
+
+192
+00:08:24.720 --> 00:08:27.780
+Vale luego le podéis poner cualquier
+
+193
+00:08:27.780 --> 00:08:30.300
+otro background se puede cambiar se
+
+194
+00:08:30.300 --> 00:08:32.520
+puede modificar un montón se pueden
+
+195
+00:08:32.520 --> 00:08:35.520
+poner numeritos aquí vale que esto sí
+
+196
+00:08:35.520 --> 00:08:38.339
+que es bastante bastante potente y las
+
+197
+00:08:38.339 --> 00:08:40.020
+cosas buenas de estos componentes solo
+
+198
+00:08:40.020 --> 00:08:42.719
+de css de bootstrap Es que sabes que
+
+199
+00:08:42.719 --> 00:08:44.820
+funciona vale Sabes que si estás
+
+200
+00:08:44.820 --> 00:08:46.860
+poniendo aquí esto arriba Cuando vayas a
+
+201
+00:08:46.860 --> 00:08:48.480
+móviles o va a estar arriba y cuando
+
+202
+00:08:48.480 --> 00:08:49.980
+esté esto ahí ahí en la esquinita
+
+203
+00:08:49.980 --> 00:08:52.140
+superior derecha Cuando vayas a móvil o
+
+204
+00:08:52.140 --> 00:08:53.700
+cuando vayas a cualquier resolución va a
+
+205
+00:08:53.700 --> 00:08:55.440
+estar ahí no va a tener fallos si lo
+
+206
+00:08:55.440 --> 00:08:56.640
+haces tú
+
+207
+00:08:56.640 --> 00:08:58.680
+lo más posible es que haya algún fallo
+
+208
+00:08:58.680 --> 00:09:00.959
+porque no has probado todas las
+
+209
+00:09:00.959 --> 00:09:02.519
+resoluciones posibles en 20.000
+
+210
+00:09:02.519 --> 00:09:04.260
+navegadores como si se ha probado
+
+211
+00:09:04.260 --> 00:09:07.019
+bootstrap vale para esto es súper
+
+212
+00:09:07.019 --> 00:09:09.600
+potente súper súper y luego en general
+
+213
+00:09:09.600 --> 00:09:11.660
+es bastante customizable le puedes poner
+
+214
+00:09:11.660 --> 00:09:13.560
+Bueno los colores que quieras siempre
+
+215
+00:09:13.560 --> 00:09:14.760
+puedes poner los colores que quieras
+
+216
+00:09:14.760 --> 00:09:16.620
+porque le puedes cambiar los los colores
+
+217
+00:09:16.620 --> 00:09:19.800
+y ya está Vale pero pero usando
+
+218
+00:09:19.800 --> 00:09:21.720
+directamente clases puedes usar los
+
+219
+00:09:21.720 --> 00:09:24.660
+colores básicos que te dan y ya ya los
+
+220
+00:09:24.660 --> 00:09:27.480
+puedes utilizar vale hay algunos
+
+221
+00:09:27.480 --> 00:09:29.959
+componentes un poco más
+
+222
+00:09:29.959 --> 00:09:32.940
+más que avanzados con un poco más de
+
+223
+00:09:32.940 --> 00:09:35.459
+chicha por ejemplo como el modal vale el
+
+224
+00:09:35.459 --> 00:09:38.519
+componente de modal es un señor
+
+225
+00:09:38.519 --> 00:09:40.940
+componente vale porque
+
+226
+00:09:40.940 --> 00:09:43.500
+aquí ya sí que tiras mucho de javascript
+
+227
+00:09:43.500 --> 00:09:45.779
+pero básicamente lo que tienes que hacer
+
+228
+00:09:45.779 --> 00:09:46.940
+es
+
+229
+00:09:46.940 --> 00:09:50.519
+bueno te da el modal es un popup que
+
+230
+00:09:50.519 --> 00:09:52.980
+sale por encima de todo y todo lo demás
+
+231
+00:09:52.980 --> 00:09:55.380
+lo deja en guisado por detrás para que
+
+232
+00:09:55.380 --> 00:09:57.779
+veas que Simplemente hay un popa por
+
+233
+00:09:57.779 --> 00:09:59.700
+delante pero no te Abre otra ventana del
+
+234
+00:09:59.700 --> 00:10:02.100
+navegador vale a ver si enseño El
+
+235
+00:10:02.100 --> 00:10:04.220
+ejemplo
+
+236
+00:10:04.680 --> 00:10:06.860
+vaya por Dios
+
+237
+00:10:06.860 --> 00:10:10.440
+voy a ir a la Live demo vale esto es
+
+238
+00:10:10.440 --> 00:10:13.680
+vale deja todo así grisáceo y puedes
+
+239
+00:10:13.680 --> 00:10:16.980
+cerrarlo puedes salirte con un Ok puedes
+
+240
+00:10:16.980 --> 00:10:21.000
+salirte con un con un cáncer vale todo
+
+241
+00:10:21.000 --> 00:10:23.240
+esto está
+
+242
+00:10:23.240 --> 00:10:25.399
+Pues eso
+
+243
+00:10:25.399 --> 00:10:28.260
+utilizando este tipo de clases que le
+
+244
+00:10:28.260 --> 00:10:30.839
+pones que es un modal que haga fate o no
+
+245
+00:10:30.839 --> 00:10:33.660
+se puede no ponérselo esto es el diálogo
+
+246
+00:10:33.660 --> 00:10:36.240
+Este es el contenido el header el cuerpo
+
+247
+00:10:36.240 --> 00:10:39.480
+y el footer vale el eje de le vamos a
+
+248
+00:10:39.480 --> 00:10:42.420
+poner un en general siempre se sigue
+
+249
+00:10:42.420 --> 00:10:44.700
+este formato un título y un botón de
+
+250
+00:10:44.700 --> 00:10:47.640
+cerrar Vale pues podéis no ponerlo y ya
+
+251
+00:10:47.640 --> 00:10:49.860
+está podéis tener solo un cuerpo y que
+
+252
+00:10:49.860 --> 00:10:53.700
+haga un aviso y ya está o en el cuerpo
+
+253
+00:10:53.700 --> 00:10:55.260
+pone lo que queráis y luego en el footer
+
+254
+00:10:55.260 --> 00:10:56.420
+se puede poner
+
+255
+00:10:56.420 --> 00:10:58.980
+el dos botones bueno se pueden poner más
+
+256
+00:10:58.980 --> 00:11:01.079
+pero se suelen poner dos botones uno es
+
+257
+00:11:01.079 --> 00:11:03.779
+el que hace el dismis el que va a
+
+258
+00:11:03.779 --> 00:11:06.540
+salirse diciendo se ha cancelado o el
+
+259
+00:11:06.540 --> 00:11:09.600
+que dice que Ok vale Y ese dice que Ok
+
+260
+00:11:09.600 --> 00:11:11.459
+luego en el javascript lo podéis
+
+261
+00:11:11.459 --> 00:11:15.180
+recuperar vale a ver si encuentro Dónde
+
+262
+00:11:15.180 --> 00:11:18.420
+está aquí
+
+263
+00:11:19.200 --> 00:11:21.720
+el
+
+264
+00:11:21.720 --> 00:11:23.959
+dismis
+
+265
+00:11:23.959 --> 00:11:27.060
+Bueno cuando retorna cuando retorna de
+
+266
+00:11:27.060 --> 00:11:29.100
+cerrar es que ahora no lo encuentro pero
+
+267
+00:11:29.100 --> 00:11:32.420
+cuando retorna de cerrar
+
+268
+00:11:35.940 --> 00:11:38.279
+que no lo encuentro como solo pone el
+
+269
+00:11:38.279 --> 00:11:40.940
+código html
+
+270
+00:11:45.240 --> 00:11:48.600
+lo estoy buscando pero bueno a ver si es
+
+271
+00:11:48.600 --> 00:11:51.420
+que no lo encuentro ahora
+
+272
+00:11:51.420 --> 00:11:55.140
+Pero bueno creerme vale se puede se
+
+273
+00:11:55.140 --> 00:11:58.920
+puede recuperar ese ese saxes o dismis
+
+274
+00:11:58.920 --> 00:12:00.500
+vale
+
+275
+00:12:00.500 --> 00:12:02.220
+recorrerlos un poco de los componentes
+
+276
+00:12:02.220 --> 00:12:04.200
+porque ya os digo hay componentes que
+
+277
+00:12:04.200 --> 00:12:05.820
+son un poquito más complejos y
+
+278
+00:12:05.820 --> 00:12:08.959
+componentes que no lo son tanto pero
+
+279
+00:12:08.959 --> 00:12:12.240
+son muy potentes están súper probados
+
+280
+00:12:12.240 --> 00:12:15.180
+funcionan súper bien y en general es muy
+
+281
+00:12:15.180 --> 00:12:17.779
+raro a no ser que tengáis
+
+282
+00:12:17.779 --> 00:12:20.700
+requisitos muy específicos
+
+283
+00:12:20.700 --> 00:12:23.220
+lo Vais a poder usar en 100.000 sitios
+
+284
+00:12:23.220 --> 00:12:25.680
+vale otra cosa es que por los estilos
+
+285
+00:12:25.680 --> 00:12:27.779
+que tienen hay muchos diseñadores que
+
+286
+00:12:27.779 --> 00:12:29.519
+huyen de ellos porque son estilos muy
+
+287
+00:12:29.519 --> 00:12:30.839
+estándar y se vienen en tantos sitios
+
+288
+00:12:30.839 --> 00:12:33.120
+que la gente acaba hasta las narices de
+
+289
+00:12:33.120 --> 00:12:35.399
+verlo tanto y ya casi tiene un estilo
+
+290
+00:12:35.399 --> 00:12:38.100
+más no llega ni a retro porque retro es
+
+291
+00:12:38.100 --> 00:12:40.500
+más antiguo pero pero es como que se
+
+292
+00:12:40.500 --> 00:12:42.300
+repite tanto que ya no es atractivo vale
+
+293
+00:12:42.300 --> 00:12:44.959
+Pero son muy muy potentes y hay
+
+294
+00:12:44.959 --> 00:12:47.940
+bastantes y resuelven unos problemas que
+
+295
+00:12:47.940 --> 00:12:49.440
+de otra forma tener que hacerlo vosotros
+
+296
+00:12:49.440 --> 00:12:52.620
+a mano es una movida importante Por
+
+297
+00:12:52.620 --> 00:12:55.459
+ejemplo Carrusel un Carrusel de imágenes
+
+298
+00:12:55.459 --> 00:12:58.560
+hacerlo bien y que funcione bien es una
+
+299
+00:12:58.560 --> 00:13:00.019
+movida vale
+
+300
+00:13:00.019 --> 00:13:02.880
+el scroll también es bastante útil
+
+301
+00:13:02.880 --> 00:13:05.579
+Porque por ejemplo vas cuando vas
+
+302
+00:13:05.579 --> 00:13:07.740
+haciendo scroll veis va navegando por
+
+303
+00:13:07.740 --> 00:13:10.019
+por la navegación de arriba vale esto
+
+304
+00:13:10.019 --> 00:13:12.060
+por ejemplo mejora Un montón la
+
+305
+00:13:12.060 --> 00:13:14.820
+usabilidad y simplemente es aplicarlo
+
+306
+00:13:14.820 --> 00:13:16.560
+vale
+
+307
+00:13:16.560 --> 00:13:18.899
+los spinners que son el típico cargando
+
+308
+00:13:18.899 --> 00:13:20.120
+vale
+
+309
+00:13:20.120 --> 00:13:24.600
+Touch que son mensajitos de estos de voy
+
+310
+00:13:24.600 --> 00:13:26.279
+ha pasado algo y te sale ahí arriba vale
+
+311
+00:13:26.279 --> 00:13:28.680
+tool tips los últimos también son súper
+
+312
+00:13:28.680 --> 00:13:30.720
+potentes estos los hago yo normalmente
+
+313
+00:13:30.720 --> 00:13:32.820
+mil millones de veces también hay muchas
+
+314
+00:13:32.820 --> 00:13:35.600
+librerías de tultips Pero bueno
+
+315
+00:13:35.600 --> 00:13:40.579
+Ves lo ponéis ahí y ya está Vale
+
+316
+00:13:40.579 --> 00:13:42.899
+haremos ejercicios de componentes para
+
+317
+00:13:42.899 --> 00:13:45.180
+trabajarlos un poco porque que yo os los
+
+318
+00:13:45.180 --> 00:13:47.519
+cuenten nos sirve de nada vale Y ahora
+
+319
+00:13:47.519 --> 00:13:50.100
+voy a hacer otro pequeño vídeo en el que
+
+320
+00:13:50.100 --> 00:13:51.720
+os enseño cómo se utilizan un poco vale
+
+321
+00:13:51.720 --> 00:13:53.940
+Porque hablar de ellos y no enseñarlos
+
+322
+00:13:53.940 --> 00:13:57.150
+no sirve de nada
+
+323
+00:13:57.150 --> 00:14:04.220
+[Música]
+

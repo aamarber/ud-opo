@@ -1,0 +1,1494 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:02.689
+[Música]
+
+2
+00:00:12.080 --> 00:00:16.139
+en este vídeo vamos a ver un poco sobre
+
+3
+00:00:16.139 --> 00:00:19.680
+Cómo instalar bootstrap en nuestros
+
+4
+00:00:19.680 --> 00:00:23.460
+proyectos vale hay múltiples formas vale
+
+5
+00:00:23.460 --> 00:00:28.380
+Ya ya de por sí la más sencilla vale
+
+6
+00:00:28.380 --> 00:00:31.859
+entre comillas más sencillas desde luego
+
+7
+00:00:31.859 --> 00:00:35.180
+vale es directamente
+
+8
+00:00:35.180 --> 00:00:39.120
+referenciar tanto los estilos como el
+
+9
+00:00:39.120 --> 00:00:41.579
+código javascript que necesitemos a
+
+10
+00:00:41.579 --> 00:00:45.079
+través de un cdn un cdn es un
+
+11
+00:00:45.079 --> 00:00:49.379
+content hay siempre se me olvida el
+
+12
+00:00:49.379 --> 00:00:50.360
+acrónimo
+
+13
+00:00:50.360 --> 00:00:54.260
+centro dramático nacional
+
+14
+00:00:56.000 --> 00:00:59.059
+content Distribution Network Ok
+
+15
+00:00:59.059 --> 00:01:01.280
+eso
+
+16
+00:01:01.280 --> 00:01:04.440
+content Distribution Network básicamente
+
+17
+00:01:04.440 --> 00:01:07.680
+lo que son son servidores que te dan
+
+18
+00:01:07.680 --> 00:01:10.020
+recursos te dan archivos estáticos vale
+
+19
+00:01:10.020 --> 00:01:12.780
+muy muy rápido los tienen cacheados van
+
+20
+00:01:12.780 --> 00:01:16.260
+Vegas rápido vale Y es la forma más
+
+21
+00:01:16.260 --> 00:01:17.540
+sencilla
+
+22
+00:01:17.540 --> 00:01:20.580
+claramente vale porque es muy muy
+
+23
+00:01:20.580 --> 00:01:25.320
+sencilla vale eso sí Mira Sí si lo que
+
+24
+00:01:25.320 --> 00:01:27.420
+lo enseño cómo se hace vale directamente
+
+25
+00:01:27.420 --> 00:01:31.439
+en el G copiáis esos dos enlaces y
+
+26
+00:01:31.439 --> 00:01:34.140
+automáticamente ya tenemos acceso a los
+
+27
+00:01:34.140 --> 00:01:37.680
+estilos de css Vale y a todos los
+
+28
+00:01:37.680 --> 00:01:39.659
+controles de hecho si los quito veis
+
+29
+00:01:39.659 --> 00:01:42.240
+cambiar Ya de por sí no he usado ni una
+
+30
+00:01:42.240 --> 00:01:44.640
+sola clase de bootstrap pero ya me ha
+
+31
+00:01:44.640 --> 00:01:46.740
+cambiado las fuentes un poco los
+
+32
+00:01:46.740 --> 00:01:50.540
+márgenes ya ya está haciendo cosas vale
+
+33
+00:01:50.540 --> 00:01:53.880
+Cuál es Cuáles son las desventajas de
+
+34
+00:01:53.880 --> 00:01:57.259
+este uso pues el hay más claro es que
+
+35
+00:01:57.259 --> 00:01:59.460
+siempre tienes que tener conectividad
+
+36
+00:01:59.460 --> 00:02:00.740
+vale
+
+37
+00:02:00.740 --> 00:02:04.680
+si por lo que sea ves esta web y se te
+
+38
+00:02:04.680 --> 00:02:07.200
+va y la recargas hay veces que la puedes
+
+39
+00:02:07.200 --> 00:02:08.520
+recargar de canción Aunque no te vaya
+
+40
+00:02:08.520 --> 00:02:13.200
+bien la red y funciona y si tu red va
+
+41
+00:02:13.200 --> 00:02:15.660
+muy mal cuando cargues tu web después
+
+42
+00:02:15.660 --> 00:02:17.700
+tiene que cargar Todos los estilos de
+
+43
+00:02:17.700 --> 00:02:20.879
+bootstrap Y si eso tarda por lo que sea
+
+44
+00:02:20.879 --> 00:02:23.520
+que suele tardar Porque si tu res va mal
+
+45
+00:02:23.520 --> 00:02:26.099
+pues va a tardar más aún tu web se va a
+
+46
+00:02:26.099 --> 00:02:28.760
+ver toda rota hasta que consiga
+
+47
+00:02:28.760 --> 00:02:32.420
+obtener los archivos de bootstrap ir y
+
+48
+00:02:32.420 --> 00:02:34.739
+descargarlos para poder darle Todos los
+
+49
+00:02:34.739 --> 00:02:36.840
+estilos y el javascript vale incluso
+
+50
+00:02:36.840 --> 00:02:39.840
+yendo más allá si por lo que sea este
+
+51
+00:02:39.840 --> 00:02:42.840
+servidor se cae pues Estás vale
+
+52
+00:02:42.840 --> 00:02:45.840
+porque porque ya no va directamente tu
+
+53
+00:02:45.840 --> 00:02:48.300
+web vale dependes de un tercero ya no
+
+54
+00:02:48.300 --> 00:02:50.040
+solo a nivel de código sino a nivel de
+
+55
+00:02:50.040 --> 00:02:52.019
+infraestructura para que tu web funcione
+
+56
+00:02:52.019 --> 00:02:54.120
+vale Y eso es una dependencia muy grande
+
+57
+00:02:54.120 --> 00:02:57.420
+muy muy grande animales o por lo que se
+
+58
+00:02:57.420 --> 00:03:00.360
+ha cambiado la URL o pierden El dominio
+
+59
+00:03:00.360 --> 00:03:04.980
+o mil cosas vale esta web esta forma se
+
+60
+00:03:04.980 --> 00:03:06.959
+puede romper muy fácil pero es muy
+
+61
+00:03:06.959 --> 00:03:08.700
+sencillo de utilizar de hecho muchas
+
+62
+00:03:08.700 --> 00:03:10.739
+veces cuando estáis desarrollando yo
+
+63
+00:03:10.739 --> 00:03:12.840
+cuando he estado desarrollando he metido
+
+64
+00:03:12.840 --> 00:03:14.280
+gustar así muy rápido para ver un poco
+
+65
+00:03:14.280 --> 00:03:16.019
+Cómo qué es lo que tenía que hacer y
+
+66
+00:03:16.019 --> 00:03:18.720
+luego ya lo montaba bien vale cómo es
+
+67
+00:03:18.720 --> 00:03:21.000
+ese montarlo bien vale también hay
+
+68
+00:03:21.000 --> 00:03:24.060
+varias formas vale la siguiente forma
+
+69
+00:03:24.060 --> 00:03:27.659
+más fácil es el código css
+
+70
+00:03:27.659 --> 00:03:30.860
+compilado el código css y jss
+
+71
+00:03:30.860 --> 00:03:34.620
+javascript compilados y referenciarlos
+
+72
+00:03:34.620 --> 00:03:35.900
+en tu
+
+73
+00:03:35.900 --> 00:03:39.239
+en tu en tu proyecto vale Simplemente te
+
+74
+00:03:39.239 --> 00:03:40.500
+los descargas
+
+75
+00:03:40.500 --> 00:03:44.519
+si abrimos el archivo comprimido y lo
+
+76
+00:03:44.519 --> 00:03:46.500
+enseño vale
+
+77
+00:03:46.500 --> 00:03:50.459
+entramos y va a tener una carpeta de bus
+
+78
+00:03:50.459 --> 00:03:54.299
+trap con un montón de cosas Vale y otra
+
+79
+00:03:54.299 --> 00:03:57.180
+carpeta de javascript con otro montón de
+
+80
+00:03:57.180 --> 00:03:58.760
+cosas vale
+
+81
+00:03:58.760 --> 00:04:03.000
+en principio vale en principio
+
+82
+00:04:03.000 --> 00:04:05.459
+tenéis que referenciar a los archivos
+
+83
+00:04:05.459 --> 00:04:07.400
+punto ming vale
+
+84
+00:04:07.400 --> 00:04:11.700
+Y ya estaría vale a todos los que
+
+85
+00:04:11.700 --> 00:04:14.420
+necesitéis vale
+
+86
+00:04:14.420 --> 00:04:16.798
+lo voy a hacer vale lo voy a
+
+87
+00:04:16.798 --> 00:04:20.519
+descomprimir me he perdido aquí vale le
+
+88
+00:04:20.519 --> 00:04:22.199
+voy a descomprimir en la web esta que
+
+89
+00:04:22.199 --> 00:04:26.400
+tengo de del Señor de los Anillos vale a
+
+90
+00:04:26.400 --> 00:04:28.520
+ver
+
+91
+00:04:29.120 --> 00:04:32.160
+mira lo enseño vale
+
+92
+00:04:32.160 --> 00:04:35.240
+estoy en la unidad 5 código y aquí vale
+
+93
+00:04:35.240 --> 00:04:38.900
+lo voy a descomprimir ahí
+
+94
+00:04:42.780 --> 00:04:46.759
+vale Y ahora me vuelvo a
+
+95
+00:04:47.400 --> 00:04:49.560
+mi no Quiero ver la carpeta me vuelvo a
+
+96
+00:04:49.560 --> 00:04:52.199
+mi código en visual Studio code y veréis
+
+97
+00:04:52.199 --> 00:04:54.419
+que tengo una carpeta aquí bus trap 523
+
+98
+00:04:54.419 --> 00:04:57.540
+no sé qué Pues aquí ya tengo el código
+
+99
+00:04:57.540 --> 00:05:01.560
+compilado de css y de y de javascript
+
+100
+00:05:01.560 --> 00:05:06.060
+Vale cuando veamos pre procesadores y
+
+101
+00:05:06.060 --> 00:05:08.400
+modificadores y todo eso os explicaré
+
+102
+00:05:08.400 --> 00:05:10.620
+qué es esto de los Maps los mins y todo
+
+103
+00:05:10.620 --> 00:05:12.960
+eso pero básicamente este código está
+
+104
+00:05:12.960 --> 00:05:15.240
+minificado Vale está hecho de la forma
+
+105
+00:05:15.240 --> 00:05:18.180
+que ocupe el menor espacio posible le ha
+
+106
+00:05:18.180 --> 00:05:19.380
+quitado todos los filtros todos los
+
+107
+00:05:19.380 --> 00:05:21.419
+espacios es básicamente si elegible vale
+
+108
+00:05:21.419 --> 00:05:23.639
+porque es muy difícil de leer está
+
+109
+00:05:23.639 --> 00:05:24.960
+reducido todo lo que se puede reducir
+
+110
+00:05:24.960 --> 00:05:27.840
+vale Y lo mismo con el con el código
+
+111
+00:05:27.840 --> 00:05:29.539
+javascript vale
+
+112
+00:05:29.539 --> 00:05:31.740
+le cambian todos los nombres a las
+
+113
+00:05:31.740 --> 00:05:34.259
+variables para que sean una sola letra
+
+114
+00:05:34.259 --> 00:05:36.600
+etcétera vale es prácticamente legible
+
+115
+00:05:36.600 --> 00:05:39.419
+pero es mucho más ligero vale una vez
+
+116
+00:05:39.419 --> 00:05:41.460
+hemos hecho eso ahora lo que habría que
+
+117
+00:05:41.460 --> 00:05:43.740
+hacer es referenciarlo en nuestra en
+
+118
+00:05:43.740 --> 00:05:46.520
+nuestra página web vale Cómo haríamos es
+
+119
+00:05:46.520 --> 00:05:49.699
+haríamos link Perdón
+
+120
+00:05:49.699 --> 00:05:53.660
+Bueno sí HD es igual
+
+121
+00:05:53.660 --> 00:05:56.340
+Espera que estoy bien
+
+122
+00:05:56.340 --> 00:05:58.080
+Pues sería básicamente lo mismo que aquí
+
+123
+00:05:58.080 --> 00:06:01.320
+pero le diríamos en vez de hacer desde
+
+124
+00:06:01.320 --> 00:06:06.020
+un cdn diríamos link H red
+
+125
+00:06:06.020 --> 00:06:08.840
+punto
+
+126
+00:06:08.840 --> 00:06:14.160
+pss y el 1000 vale no tiene Cross origin
+
+127
+00:06:14.160 --> 00:06:18.419
+vale y le diríamos red está el shift
+
+128
+00:06:18.419 --> 00:06:20.940
+para que separo que es esto
+
+129
+00:06:20.940 --> 00:06:24.900
+y de ahí tengo un Aquí tengo una cosa
+
+130
+00:06:24.900 --> 00:06:29.660
+extra vale Y aquí pues lo mismo diríamos
+
+131
+00:06:29.660 --> 00:06:32.660
+punto barra bootstrap
+
+132
+00:06:32.660 --> 00:06:36.199
+js y
+
+133
+00:06:36.660 --> 00:06:38.479
+el el
+
+134
+00:06:38.479 --> 00:06:40.100
+vale
+
+135
+00:06:40.100 --> 00:06:43.319
+Y ahora sí que veréis que no está
+
+136
+00:06:43.319 --> 00:06:46.100
+cambiando nada vale
+
+137
+00:06:46.100 --> 00:06:49.440
+No no ha cambiado nada porque he
+
+138
+00:06:49.440 --> 00:06:52.620
+referenciado solo el de grip vale eso es
+
+139
+00:06:52.620 --> 00:06:55.620
+vale hay que referenciar el min que el
+
+140
+00:06:55.620 --> 00:06:57.419
+min es el que contiene todo en principio
+
+141
+00:06:57.419 --> 00:07:00.600
+vale De hecho si vamos a verlo el perdón
+
+142
+00:07:00.600 --> 00:07:05.280
+el bus trap a secas vale Buscar css veis
+
+143
+00:07:05.280 --> 00:07:07.680
+que tiene un montón de código aquí bla
+
+144
+00:07:07.680 --> 00:07:09.800
+bla
+
+145
+00:07:09.800 --> 00:07:12.120
+Este es el que tiene los estilos básicos
+
+146
+00:07:12.120 --> 00:07:14.539
+vale
+
+147
+00:07:14.660 --> 00:07:16.740
+Bueno si tiene muchas muchas muchas
+
+148
+00:07:16.740 --> 00:07:18.500
+cosas vale
+
+149
+00:07:18.500 --> 00:07:20.940
+en principio tendríamos que referenciar
+
+150
+00:07:20.940 --> 00:07:24.380
+todos todos los archivos punto mid vale
+
+151
+00:07:24.380 --> 00:07:26.639
+esto simplemente es para tener los
+
+152
+00:07:26.639 --> 00:07:30.800
+estilos básicos si quisiéramos usar
+
+153
+00:07:30.800 --> 00:07:33.300
+si quisiéramos usar las utilities que
+
+154
+00:07:33.300 --> 00:07:35.160
+son ciertas cosas Bueno un poco más
+
+155
+00:07:35.160 --> 00:07:37.560
+elaboradas pero si quisiéramos usar el
+
+156
+00:07:37.560 --> 00:07:39.000
+modelo de grid habría que referenciar el
+
+157
+00:07:39.000 --> 00:07:42.800
+negrid si quisiéramos referenciar
+
+158
+00:07:42.800 --> 00:07:45.120
+Pues eso las utilities habría que poner
+
+159
+00:07:45.120 --> 00:07:48.120
+las utilities etcétera Vale ahora bien
+
+160
+00:07:48.120 --> 00:07:50.400
+esta forma
+
+161
+00:07:50.400 --> 00:07:52.919
+que es bastante mejor que la otra la
+
+162
+00:07:52.919 --> 00:07:55.560
+ventaja respecto a utilizar un cdn es
+
+163
+00:07:55.560 --> 00:07:57.060
+que nosotros tenemos en nuestra propia
+
+164
+00:07:57.060 --> 00:08:00.660
+web todos los archivos vale esto tiene
+
+165
+00:08:00.660 --> 00:08:02.460
+el pros y contras como siempre si
+
+166
+00:08:02.460 --> 00:08:04.319
+nuestro servidor por lo que sea sirve
+
+167
+00:08:04.319 --> 00:08:06.479
+los archivos de código los archivos
+
+168
+00:08:06.479 --> 00:08:09.000
+estáticos muy lento pues estos archivos
+
+169
+00:08:09.000 --> 00:08:10.979
+van y muy lentos y la web va a cargar y
+
+170
+00:08:10.979 --> 00:08:12.780
+luego a cargar los archivos y no hay
+
+171
+00:08:12.780 --> 00:08:14.400
+lenta y va a estar rota igual que si
+
+172
+00:08:14.400 --> 00:08:16.500
+fuera a través de un cdn la ventaja del
+
+173
+00:08:16.500 --> 00:08:18.599
+cdn es que siempre va muy rápido para
+
+174
+00:08:18.599 --> 00:08:20.280
+está hecho para eso está hecho para
+
+175
+00:08:20.280 --> 00:08:22.099
+servir este tipo de archivos
+
+176
+00:08:22.099 --> 00:08:25.259
+la ventaja respecto al cdn es que es
+
+177
+00:08:25.259 --> 00:08:27.240
+nuestro Entonces tenemos totalmente el
+
+178
+00:08:27.240 --> 00:08:29.460
+control sobre esto vale lo servimos
+
+179
+00:08:29.460 --> 00:08:32.099
+nosotros y todo lo controlamos nosotros
+
+180
+00:08:32.099 --> 00:08:34.919
+no se rompe el archivo no se modifica el
+
+181
+00:08:34.919 --> 00:08:36.958
+archivo porque lo tenemos nosotros y
+
+182
+00:08:36.958 --> 00:08:39.659
+todo es a través de nuestro de nuestra
+
+183
+00:08:39.659 --> 00:08:41.700
+web vale
+
+184
+00:08:41.700 --> 00:08:44.099
+como siempre ventajas y desventajas vale
+
+185
+00:08:44.099 --> 00:08:45.839
+Y tienes que poner todas las referencias
+
+186
+00:08:45.839 --> 00:08:50.279
+y todo eso vale otra ventaja posible es
+
+187
+00:08:50.279 --> 00:08:53.580
+que si por lo que sea encuentras un bug
+
+188
+00:08:53.580 --> 00:08:55.800
+pues puedes irte al código si no quieres
+
+189
+00:08:55.800 --> 00:08:58.320
+actualizar de versión o no lo han
+
+190
+00:08:58.320 --> 00:09:00.060
+arreglado todavía puedes estar conmigo
+
+191
+00:09:00.060 --> 00:09:02.820
+decir pues lo cambian lo arreglo yo y
+
+192
+00:09:02.820 --> 00:09:04.320
+cuando ya actualice la versión ya va
+
+193
+00:09:04.320 --> 00:09:06.180
+actualizaré vale eso me ha pasado
+
+194
+00:09:06.180 --> 00:09:08.880
+bastante veces eso no suele ser buena
+
+195
+00:09:08.880 --> 00:09:10.260
+práctica porque estás modificando una
+
+196
+00:09:10.260 --> 00:09:11.640
+librería que luego a saber cómo la
+
+197
+00:09:11.640 --> 00:09:15.180
+arreglan o como la o como la modifican y
+
+198
+00:09:15.180 --> 00:09:16.800
+cuando te actualices posiblemente te
+
+199
+00:09:16.800 --> 00:09:18.899
+rompa un poco pero bueno pero se puede
+
+200
+00:09:18.899 --> 00:09:21.540
+hacer vale tienes tú el control sobre el
+
+201
+00:09:21.540 --> 00:09:24.180
+código que estás utilizando vale Y eso
+
+202
+00:09:24.180 --> 00:09:26.580
+es bastante positivo ahora bien como
+
+203
+00:09:26.580 --> 00:09:30.240
+veis es muy manual muy muy muy manual si
+
+204
+00:09:30.240 --> 00:09:31.920
+queréis actualizar la versión os la
+
+205
+00:09:31.920 --> 00:09:33.620
+tenéis que bajar otra vez todo el código
+
+206
+00:09:33.620 --> 00:09:35.700
+meterlo en otra carpeta cambiar todas
+
+207
+00:09:35.700 --> 00:09:39.560
+las referencias etcétera etcétera vale
+
+208
+00:09:39.560 --> 00:09:43.500
+hay otra forma más bastante más pero las
+
+209
+00:09:43.500 --> 00:09:46.080
+Tres formas principales son usando su
+
+210
+00:09:46.080 --> 00:09:48.320
+cdn
+
+211
+00:09:48.320 --> 00:09:52.019
+alojando el código ya compilado en
+
+212
+00:09:52.019 --> 00:09:54.779
+nuestro servidor o en nuestro cdn que
+
+213
+00:09:54.779 --> 00:09:56.339
+también hay gente que utiliza su propio
+
+214
+00:09:56.339 --> 00:09:58.320
+cdn pero básicamente es lo mismo te
+
+215
+00:09:58.320 --> 00:10:00.959
+descargas el código ya compilado o sin
+
+216
+00:10:00.959 --> 00:10:02.640
+compilar y lo compilas tú no voy a
+
+217
+00:10:02.640 --> 00:10:03.839
+entrar en compilarlo porque lo veremos
+
+218
+00:10:03.839 --> 00:10:06.240
+luego en preprocesadores pero lo
+
+219
+00:10:06.240 --> 00:10:08.399
+podríamos complicar nosotros y la
+
+220
+00:10:08.399 --> 00:10:11.279
+tercera es usando un gestor de paquetes
+
+221
+00:10:11.279 --> 00:10:14.820
+vale los gestores de paquetes o los
+
+222
+00:10:14.820 --> 00:10:16.680
+gestones de librerías o los placas
+
+223
+00:10:16.680 --> 00:10:19.140
+managers hay mucha gente que nos llama
+
+224
+00:10:19.140 --> 00:10:21.360
+de forma muy distintas básicamente son
+
+225
+00:10:21.360 --> 00:10:24.320
+programas que lo que hacen es
+
+226
+00:10:24.320 --> 00:10:27.000
+instalarse librerías en tus proyectos
+
+227
+00:10:27.000 --> 00:10:30.240
+vale Y te instalar esas librerías se
+
+228
+00:10:30.240 --> 00:10:32.220
+encargan de las dependencias y se
+
+229
+00:10:32.220 --> 00:10:35.700
+encargan de las el versionado vale si tú
+
+230
+00:10:35.700 --> 00:10:36.959
+por ejemplo
+
+231
+00:10:36.959 --> 00:10:39.899
+hay muchos vale en general se usa hoy en
+
+232
+00:10:39.899 --> 00:10:41.760
+día se usa npm pero también se usa Jam
+
+233
+00:10:41.760 --> 00:10:46.019
+se usan Ruby James composer nuggets
+
+234
+00:10:46.019 --> 00:10:48.899
+nugget por ejemplo es del entorno.net y
+
+235
+00:10:48.899 --> 00:10:51.560
+se usa bueno para los paquetes de Front
+
+236
+00:10:51.560 --> 00:10:54.899
+no lo recomiendo mucho vale Y para los
+
+237
+00:10:54.899 --> 00:10:58.380
+paquetes de javascript tampoco vale yo
+
+238
+00:10:58.380 --> 00:11:00.300
+os recomiendo npm npm funciona bastante
+
+239
+00:11:00.300 --> 00:11:03.480
+mejor pero bueno Son son programas que
+
+240
+00:11:03.480 --> 00:11:05.279
+se dedican a eso básicamente a
+
+241
+00:11:05.279 --> 00:11:06.839
+gestionarte librerías o paquetes que
+
+242
+00:11:06.839 --> 00:11:09.000
+necesitas para tus proyectos y gestión
+
+243
+00:11:09.000 --> 00:11:10.700
+en dependencias versionados
+
+244
+00:11:10.700 --> 00:11:12.899
+actualizaciones sensor bastante
+
+245
+00:11:12.899 --> 00:11:15.000
+importante porque puedes decirle mm
+
+246
+00:11:15.000 --> 00:11:18.240
+update bus trap a no sé qué versión y
+
+247
+00:11:18.240 --> 00:11:21.180
+Hace poco te la cambia actualiza todas
+
+248
+00:11:21.180 --> 00:11:23.279
+las dependencias y dice vale Ya está ya
+
+249
+00:11:23.279 --> 00:11:25.680
+te va a funcionar vale al menos el
+
+250
+00:11:25.680 --> 00:11:29.040
+framework vale vamos a ver cómo se hace
+
+251
+00:11:29.040 --> 00:11:31.800
+eso vale que en realidad bastante
+
+252
+00:11:31.800 --> 00:11:33.959
+sencillo pero simplemente Tendrías que
+
+253
+00:11:33.959 --> 00:11:38.339
+abrir una línea de comandos en la
+
+254
+00:11:38.339 --> 00:11:41.339
+carpeta donde estáis y decís en y
+
+255
+00:11:41.339 --> 00:11:42.600
+ejecutáis El Comando que nos da
+
+256
+00:11:42.600 --> 00:11:46.579
+básicamente npm install
+
+257
+00:11:49.519 --> 00:11:52.140
+523 vale
+
+258
+00:11:52.140 --> 00:11:54.660
+para que os funcione npm tenéis que
+
+259
+00:11:54.660 --> 00:11:56.160
+tener no de instalado y tenéis que tener
+
+260
+00:11:56.160 --> 00:11:59.279
+npm instalado vale dejaré el enlace a
+
+261
+00:11:59.279 --> 00:12:00.779
+Cómo se instala npm en vuestros
+
+262
+00:12:00.779 --> 00:12:03.959
+ordenadores pero veis ya está ya veréis
+
+263
+00:12:03.959 --> 00:12:06.920
+instalado vale Y
+
+264
+00:12:06.920 --> 00:12:09.720
+dónde está Pues aquí no de módulos veis
+
+265
+00:12:09.720 --> 00:12:12.420
+me ha bajado vuestra
+
+266
+00:12:12.420 --> 00:12:16.440
+vale me lo ha descargado lo mismo que
+
+267
+00:12:16.440 --> 00:12:18.420
+hemos descargado antes me he descargado
+
+268
+00:12:18.420 --> 00:12:20.160
+en la carpeta test el código ya
+
+269
+00:12:20.160 --> 00:12:23.279
+compilado tengo el código original el
+
+270
+00:12:23.279 --> 00:12:27.360
+source y el y el y el Sas que ya veremos
+
+271
+00:12:27.360 --> 00:12:30.200
+lo que es y me ha descargado todo vale
+
+272
+00:12:30.200 --> 00:12:32.700
+si yo y me ha descargado las
+
+273
+00:12:32.700 --> 00:12:35.459
+dependencias que en el caso de bus trap
+
+274
+00:12:35.459 --> 00:12:38.100
+es popper que ya hablaremos también de
+
+275
+00:12:38.100 --> 00:12:41.100
+popper pero lo que me ha hecho es
+
+276
+00:12:41.100 --> 00:12:43.800
+Descargarme todo esto vale en lugar de
+
+277
+00:12:43.800 --> 00:12:45.540
+yo Descargarme el código y meterlo en
+
+278
+00:12:45.540 --> 00:12:46.980
+una carpeta directamente me lo ha metido
+
+279
+00:12:46.980 --> 00:12:49.860
+como la dependencia si yo de mi proyecto
+
+280
+00:12:49.860 --> 00:12:54.300
+vale si yo ahora hago mm update
+
+281
+00:12:54.300 --> 00:12:55.980
+va a mirar todas las librerías que yo
+
+282
+00:12:55.980 --> 00:12:57.240
+tengo instaladas que en este caso
+
+283
+00:12:57.240 --> 00:13:00.000
+únicamente es bootstrap Y si hubiera
+
+284
+00:13:00.000 --> 00:13:01.980
+nuevas versiones me diría puedo
+
+285
+00:13:01.980 --> 00:13:04.740
+actualizar vuestra vale Y esto donde lo
+
+286
+00:13:04.740 --> 00:13:07.440
+mete lo mete aquí y te dice que este
+
+287
+00:13:07.440 --> 00:13:09.839
+proyecto tiene como dependencia busstrar
+
+288
+00:13:09.839 --> 00:13:12.480
+y tiene que tener una versión igual o
+
+289
+00:13:12.480 --> 00:13:15.540
+mayor a la 523 vale esto parece una
+
+290
+00:13:15.540 --> 00:13:18.060
+tontería pero no lo es porque cuando
+
+291
+00:13:18.060 --> 00:13:22.440
+tienes 45 librerías gestionar las 45 a
+
+292
+00:13:22.440 --> 00:13:24.839
+mano en carpetas sueltas es una locura
+
+293
+00:13:24.839 --> 00:13:27.720
+sobre todo cuando las actualizas vale
+
+294
+00:13:27.720 --> 00:13:30.240
+porque igual actualizas una y otra que
+
+295
+00:13:30.240 --> 00:13:32.700
+tú no sabes que depende de esa depende
+
+296
+00:13:32.700 --> 00:13:36.300
+de eso y se rompe vale si utilizas npm
+
+297
+00:13:36.300 --> 00:13:38.399
+te gestiona todo eso te dice Empire
+
+298
+00:13:38.399 --> 00:13:40.500
+update y actualiza vuestra y te dice
+
+299
+00:13:40.500 --> 00:13:42.600
+pero tengo que actualizar
+
+300
+00:13:42.600 --> 00:13:44.220
+pero es que tienes esta otra librería
+
+301
+00:13:44.220 --> 00:13:48.180
+que para popper necesita la versión 2 y
+
+302
+00:13:48.180 --> 00:13:51.060
+tú estás actualizando a la 25 que no es
+
+303
+00:13:51.060 --> 00:13:53.579
+compatible con eso vale Y empieza a
+
+304
+00:13:53.579 --> 00:13:55.320
+hacer ese árbol de ese árbol de
+
+305
+00:13:55.320 --> 00:13:57.360
+dependencias entre versiones que es
+
+306
+00:13:57.360 --> 00:13:59.040
+bastante infernal como lo tengas que
+
+307
+00:13:59.040 --> 00:14:00.899
+hacer a mano súper potente si lo tienes
+
+308
+00:14:00.899 --> 00:14:03.779
+que hacer con npm vale Yo qué es lo que
+
+309
+00:14:03.779 --> 00:14:06.540
+os recomiendo utilizar npm siempre que
+
+310
+00:14:06.540 --> 00:14:08.639
+podáis vale siempre siempre que podáis
+
+311
+00:14:08.639 --> 00:14:11.940
+lo instaláis con npm trabajáis con eso y
+
+312
+00:14:11.940 --> 00:14:14.519
+luego ya cuando vayáis a subir la web no
+
+313
+00:14:14.519 --> 00:14:16.019
+incluyéis la carpeta no de módulos
+
+314
+00:14:16.019 --> 00:14:19.440
+incluís veremos formas de hacerlo con
+
+315
+00:14:19.440 --> 00:14:21.779
+pre procesadores y compiladores y cosas
+
+316
+00:14:21.779 --> 00:14:24.180
+así pero pero os recomiendo
+
+317
+00:14:24.180 --> 00:14:26.880
+fuertísimamente utilizar npm o otro
+
+318
+00:14:26.880 --> 00:14:29.339
+gestor de paquetes Vale me da igual npm
+
+319
+00:14:29.339 --> 00:14:31.200
+que ya ya han también usado y también
+
+320
+00:14:31.200 --> 00:14:33.740
+funciona bastante Guay y
+
+321
+00:14:33.740 --> 00:14:35.940
+James lo he usado cuando he hecho cosas
+
+322
+00:14:35.940 --> 00:14:38.339
+en rugby pero no la verdad es que no lo
+
+323
+00:14:38.339 --> 00:14:40.920
+he usado para para fronted con poser
+
+324
+00:14:40.920 --> 00:14:43.860
+también va bastante Guay y para fronted
+
+325
+00:14:43.860 --> 00:14:45.860
+nos lo recomiendo Aunque
+
+326
+00:14:45.860 --> 00:14:49.199
+no lo recomiendo de hecho Bueno ya
+
+327
+00:14:49.199 --> 00:14:52.019
+hablaré sobre eso pero yo hacía cosas yo
+
+328
+00:14:52.019 --> 00:14:53.220
+siempre trabaja en punto net y
+
+329
+00:14:53.220 --> 00:14:55.380
+utilizamos nuggets para todo tanto para
+
+330
+00:14:55.380 --> 00:14:57.300
+los paquetes del Back de punto net como
+
+331
+00:14:57.300 --> 00:14:58.980
+para los paquetes del Front y tenemos
+
+332
+00:14:58.980 --> 00:15:00.600
+que hacer una súper migración y
+
+333
+00:15:00.600 --> 00:15:02.880
+olvidarnos para el frontend porque es
+
+334
+00:15:02.880 --> 00:15:05.220
+que iba a fatal vale hacía cosas muy
+
+335
+00:15:05.220 --> 00:15:06.740
+malas y
+
+336
+00:15:06.740 --> 00:15:10.800
+no que no no lo uséis vale para Front
+
+337
+00:15:10.800 --> 00:15:12.720
+para Back si estáis en punto pues
+
+338
+00:15:12.720 --> 00:15:14.480
+adelante vale
+
+339
+00:15:14.480 --> 00:15:18.420
+básicamente lo que hace npm y el resto
+
+340
+00:15:18.420 --> 00:15:21.180
+de gestores de paquetes tiene un
+
+341
+00:15:21.180 --> 00:15:23.399
+repositorio que es npmjs donde están
+
+342
+00:15:23.399 --> 00:15:25.019
+todos los paquetes publicados que los
+
+343
+00:15:25.019 --> 00:15:27.839
+desarrolladores o las empresas publican
+
+344
+00:15:27.839 --> 00:15:29.940
+esos paquetes podéis ir al código
+
+345
+00:15:29.940 --> 00:15:32.339
+normalmente tiene un enlace al código en
+
+346
+00:15:32.339 --> 00:15:36.540
+repositorio ya sea porque sea y os dan
+
+347
+00:15:36.540 --> 00:15:39.420
+el comando para para instalarlo
+
+348
+00:15:39.420 --> 00:15:42.480
+básicamente dar lo presionados hay un
+
+349
+00:15:42.480 --> 00:15:44.760
+que hablan un poco de lo que tiene de lo
+
+350
+00:15:44.760 --> 00:15:46.800
+que como hay que utilizarlo como no En
+
+351
+00:15:46.800 --> 00:15:49.680
+qué estado está etcétera etcétera vale Y
+
+352
+00:15:49.680 --> 00:15:51.360
+el epm básicamente lo que hace Es que
+
+353
+00:15:51.360 --> 00:15:53.459
+viene a esta a este repositorio se
+
+354
+00:15:53.459 --> 00:15:56.820
+descargan los archivos y ya está Vale yo
+
+355
+00:15:56.820 --> 00:15:58.440
+recomiendo instalarlo a través de npm
+
+356
+00:15:58.440 --> 00:16:01.500
+como lo he hecho yo vale hacéis npm
+
+357
+00:16:01.500 --> 00:16:04.079
+install este y ya os lo mete y luego
+
+358
+00:16:04.079 --> 00:16:06.240
+para utilizarlo en el código html Pues
+
+359
+00:16:06.240 --> 00:16:08.339
+al igual que aquí lo he hecho a mano
+
+360
+00:16:08.339 --> 00:16:12.720
+pues simplemente sería hacer un no de
+
+361
+00:16:12.720 --> 00:16:13.880
+modos
+
+362
+00:16:13.880 --> 00:16:20.220
+bootstrap dist css vuestra bien vale que
+
+363
+00:16:20.220 --> 00:16:21.920
+estará al final
+
+364
+00:16:21.920 --> 00:16:23.959
+buscas vale
+
+365
+00:16:23.959 --> 00:16:29.519
+Y aquí Exactamente lo mismo vale
+
+366
+00:16:29.519 --> 00:16:31.260
+lo voy a hacer para que lo veáis vale
+
+367
+00:16:31.260 --> 00:16:32.519
+para que veáis que no me lo estoy
+
+368
+00:16:32.519 --> 00:16:35.519
+inventando vale pero básicamente sería
+
+369
+00:16:35.519 --> 00:16:38.100
+eso vale esto En cuanto a la instalación
+
+370
+00:16:38.100 --> 00:16:40.139
+en los siguientes vídeos veremos un poco
+
+371
+00:16:40.139 --> 00:16:42.540
+Cómo utilizar vuestra y que es lo que
+
+372
+00:16:42.540 --> 00:16:43.770
+nos proporcionan
+
+373
+00:16:43.770 --> 00:16:49.849
+[Música]
+
