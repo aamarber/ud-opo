@@ -1,0 +1,1890 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:02.689
+[Música]
+
+2
+00:00:12.620 --> 00:00:15.660
+pues como comentaban este vídeo vamos a
+
+3
+00:00:15.660 --> 00:00:18.600
+trabajar un componente al menos vale lo
+
+4
+00:00:18.600 --> 00:00:20.279
+que voy a hacer es explicar cómo se
+
+5
+00:00:20.279 --> 00:00:21.539
+utiliza por ejemplo en componentes de
+
+6
+00:00:21.539 --> 00:00:23.760
+nap bar para que veáis un poco qué es lo
+
+7
+00:00:23.760 --> 00:00:25.080
+que tenéis que ir haciendo para utilizar
+
+8
+00:00:25.080 --> 00:00:27.180
+los componentes en vuestra web no puedo
+
+9
+00:00:27.180 --> 00:00:28.920
+entrar en explicar todos los componentes
+
+10
+00:00:28.920 --> 00:00:31.740
+porque es que hay muchos y son muy
+
+11
+00:00:31.740 --> 00:00:33.120
+distintos vale tendréis que ir
+
+12
+00:00:33.120 --> 00:00:34.860
+aprendiendo un poco a utilizarlos según
+
+13
+00:00:34.860 --> 00:00:37.620
+los necesitéis pero voy a explicar un
+
+14
+00:00:37.620 --> 00:00:39.719
+poco Cómo se utiliza el Porque además es
+
+15
+00:00:39.719 --> 00:00:42.660
+bastante común y lo habéis utilizado
+
+16
+00:00:42.660 --> 00:00:44.219
+prácticamente todas las en todas las
+
+17
+00:00:44.219 --> 00:00:45.899
+actividades evaluables
+
+18
+00:00:45.899 --> 00:00:48.600
+y Mostrar nos da un componente para ello
+
+19
+00:00:48.600 --> 00:00:51.000
+específico vale
+
+20
+00:00:51.000 --> 00:00:53.100
+De hecho voy a utilizar ese y el scroll
+
+21
+00:00:53.100 --> 00:00:55.559
+para que veáis un poco porque es útil el
+
+22
+00:00:55.559 --> 00:00:58.739
+scroll Vale pues lo dicho voy a
+
+23
+00:00:58.739 --> 00:01:02.600
+introducir el componente de nap bar vale
+
+24
+00:01:02.600 --> 00:01:05.580
+en principio lo primero que hay que
+
+25
+00:01:05.580 --> 00:01:07.860
+hacer es
+
+26
+00:01:07.860 --> 00:01:10.860
+pues no no hay que Añadir javascript en
+
+27
+00:01:10.860 --> 00:01:13.260
+principio porque parece que en ámbar no
+
+28
+00:01:13.260 --> 00:01:16.560
+lo utiliza vale lo primero lo Primero lo
+
+29
+00:01:16.560 --> 00:01:17.640
+primero que hay que hacer antes tirar
+
+30
+00:01:17.640 --> 00:01:20.640
+código es leerse cómo funciona vale si
+
+31
+00:01:20.640 --> 00:01:22.979
+lo leemos un poco lo que dice es que son
+
+32
+00:01:22.979 --> 00:01:25.619
+una serie de clases que necesitan un
+
+33
+00:01:25.619 --> 00:01:27.840
+contenedor que utilizan el Flex que
+
+34
+00:01:27.840 --> 00:01:29.240
+utilizan
+
+35
+00:01:29.240 --> 00:01:32.460
+el contenedor para los las columnas
+
+36
+00:01:32.460 --> 00:01:35.299
+etcétera vale Entonces qué Vamos a hacer
+
+37
+00:01:35.299 --> 00:01:38.460
+pues vamos a añadirla no vamos a Añadir
+
+38
+00:01:38.460 --> 00:01:43.259
+aquí un header vale en el código para
+
+39
+00:01:43.259 --> 00:01:46.500
+darle semántica Vale y vamos a Añadir
+
+40
+00:01:46.500 --> 00:01:48.320
+nuestra Nava vale
+
+41
+00:01:48.320 --> 00:01:52.380
+nada que según dice bootstrap tiene que
+
+42
+00:01:52.380 --> 00:01:55.200
+tener la clase nap bar y en este caso
+
+43
+00:01:55.200 --> 00:01:57.000
+Vamos a ponerle vamos a seguir El
+
+44
+00:01:57.000 --> 00:01:58.350
+ejemplo vale
+
+45
+00:01:58.350 --> 00:02:00.380
+[Aplausos]
+
+46
+00:02:00.380 --> 00:02:02.060
+expanded
+
+47
+00:02:02.060 --> 00:02:06.420
+Ay perdón la bar expand en LG que la
+
+48
+00:02:06.420 --> 00:02:08.340
+expanda esto lo que quiere decir es que
+
+49
+00:02:08.340 --> 00:02:10.800
+la expanda cuando es más pasa el
+
+50
+00:02:10.800 --> 00:02:13.500
+breakpoint de large vale y le vamos a
+
+51
+00:02:13.500 --> 00:02:16.500
+poner un fondo light vale esto lo mismo
+
+52
+00:02:16.500 --> 00:02:19.040
+siempre es customizable vale
+
+53
+00:02:19.040 --> 00:02:22.640
+vamos a ir poniendo
+
+54
+00:02:22.760 --> 00:02:25.080
+el container fluid también para que
+
+55
+00:02:25.080 --> 00:02:26.940
+ocupe el 100% siempre porque en este
+
+56
+00:02:26.940 --> 00:02:30.500
+caso nos da un poco igual vale
+
+57
+00:02:31.800 --> 00:02:35.720
+y vamos a ponerle el primer enlace que
+
+58
+00:02:35.720 --> 00:02:40.879
+va a ser simplemente a la a la a
+
+59
+00:02:40.879 --> 00:02:43.459
+la página actual vale
+
+60
+00:02:43.459 --> 00:02:46.620
+que es como el logo vale Te ponemos H
+
+61
+00:02:46.620 --> 00:02:52.160
+red a esta y ponemos nada
+
+62
+00:02:52.160 --> 00:02:55.500
+ya veis que aparece ahí vale
+
+63
+00:02:55.500 --> 00:02:58.680
+qué pasa con esto de primeras que como
+
+64
+00:02:58.680 --> 00:03:02.120
+tiene el fondo light s
+
+65
+00:03:02.120 --> 00:03:06.060
+pues no se ve porque yo no lo veo en mi
+
+66
+00:03:06.060 --> 00:03:08.420
+pantalla entre blanco y gris vale
+
+67
+00:03:08.420 --> 00:03:14.099
+lo que vamos a hacer es Buscar la enseña
+
+68
+00:03:14.099 --> 00:03:18.720
+aquí vale Buscar por aquí el color skins
+
+69
+00:03:18.720 --> 00:03:21.959
+vale le vamos a poner una lámpara Dark
+
+70
+00:03:21.959 --> 00:03:23.519
+Porque además ya que estamos con el
+
+71
+00:03:23.519 --> 00:03:25.680
+señor de los anillos pues
+
+72
+00:03:25.680 --> 00:03:30.659
+bastante tal la verdad Vale y
+
+73
+00:03:31.860 --> 00:03:34.040
+y por ejemplo para
+
+74
+00:03:34.040 --> 00:03:37.319
+claro para ahora habría que ponerle que
+
+75
+00:03:37.319 --> 00:03:39.500
+los textos Son
+
+76
+00:03:39.500 --> 00:03:42.180
+son en blanco también Como hay muchas
+
+77
+00:03:42.180 --> 00:03:44.340
+veces que no sé cómo lo hacen Vale pues
+
+78
+00:03:44.340 --> 00:03:46.860
+la forma más fácil Cuál es buscar el
+
+79
+00:03:46.860 --> 00:03:49.519
+código vale
+
+80
+00:03:51.780 --> 00:03:54.599
+en principio poner a porque le tengo que
+
+81
+00:03:54.599 --> 00:03:58.940
+poner también la clase navard Dark
+
+82
+00:04:00.080 --> 00:04:03.720
+eso es Vale pues ya la hemos estilizado
+
+83
+00:04:03.720 --> 00:04:05.000
+para que tenga
+
+84
+00:04:05.000 --> 00:04:08.159
+para que sea en fondo Dark vale por
+
+85
+00:04:08.159 --> 00:04:10.080
+ejemplo esto es bastante común en
+
+86
+00:04:10.080 --> 00:04:12.780
+general todas estas clases son bastante
+
+87
+00:04:12.780 --> 00:04:14.280
+parecidas Pero bueno tenéis que ir
+
+88
+00:04:14.280 --> 00:04:15.659
+buscándolas para ver cuál tenéis que
+
+89
+00:04:15.659 --> 00:04:18.260
+usar en cada componente vale
+
+90
+00:04:18.260 --> 00:04:21.380
+Bueno vamos a ir añadiendo más
+
+91
+00:04:21.380 --> 00:04:24.680
+básicamente más enlaces Vale
+
+92
+00:04:24.680 --> 00:04:27.720
+y vamos a hacer la lista la típica lista
+
+93
+00:04:27.720 --> 00:04:31.860
+de páginas vale Aunque en este caso como
+
+94
+00:04:31.860 --> 00:04:34.259
+no van a ser páginas en concreto van a
+
+95
+00:04:34.259 --> 00:04:35.360
+ser
+
+96
+00:04:35.360 --> 00:04:39.360
+ya me saldrá anchors a puntos del texto
+
+97
+00:04:39.360 --> 00:04:43.160
+va a ser un poquito distinto pero bueno
+
+98
+00:04:43.320 --> 00:04:46.280
+al final es bastante parecido vale
+
+99
+00:04:46.280 --> 00:04:50.540
+colaps vale y
+
+100
+00:04:50.540 --> 00:04:55.040
+le vamos a poner que es el
+
+101
+00:04:55.759 --> 00:05:00.479
+listo vale por ejemplo vale dentro de
+
+102
+00:05:00.479 --> 00:05:04.740
+esa vale De hecho bar list container en
+
+103
+00:05:04.740 --> 00:05:06.180
+realidad
+
+104
+00:05:06.180 --> 00:05:09.240
+vale Y ahora ya empezamos la lista que a
+
+105
+00:05:09.240 --> 00:05:13.280
+la lista hay que ponerle la clase nada
+
+106
+00:05:13.280 --> 00:05:16.820
+ítem vale
+
+107
+00:05:17.280 --> 00:05:22.500
+no perdón navar navar
+
+108
+00:05:22.979 --> 00:05:24.740
+nada
+
+109
+00:05:24.740 --> 00:05:27.740
+es
+
+110
+00:05:28.220 --> 00:05:32.100
+un poco de helio las clases en item es
+
+111
+00:05:32.100 --> 00:05:35.400
+el vale porque en realidad bastante auto
+
+112
+00:05:35.400 --> 00:05:38.759
+explicativo pero a veces el Dios vale y
+
+113
+00:05:38.759 --> 00:05:42.000
+le vamos a poner un enlace que va a
+
+114
+00:05:42.000 --> 00:05:43.699
+hacer
+
+115
+00:05:43.699 --> 00:05:46.699
+las
+
+116
+00:05:46.699 --> 00:05:50.039
+link vamos a poner que es el active Y
+
+117
+00:05:50.039 --> 00:05:51.800
+ahora veréis por qué vale
+
+118
+00:05:51.800 --> 00:05:56.039
+le vamos a poner hr
+
+119
+00:05:56.340 --> 00:05:58.800
+y ahora arreglar esto vale Y voy a
+
+120
+00:05:58.800 --> 00:06:02.479
+ponerle intro vale
+
+121
+00:06:02.639 --> 00:06:05.220
+y no me estaba mostrando nada de nada
+
+122
+00:06:05.220 --> 00:06:07.500
+vale vamos a ver
+
+123
+00:06:07.500 --> 00:06:10.199
+no sé si es porque tengo que refrescar o
+
+124
+00:06:10.199 --> 00:06:13.020
+porque algo estoy haciendo mal vale lo
+
+125
+00:06:13.020 --> 00:06:15.479
+voy a abrir en el navegador que es en el
+
+126
+00:06:15.479 --> 00:06:18.660
+que de verdad confío Ahí está Vale pues
+
+127
+00:06:18.660 --> 00:06:21.319
+ya ves para que veáis que
+
+128
+00:06:21.319 --> 00:06:25.680
+no es fiable el este el previo esto lo
+
+129
+00:06:25.680 --> 00:06:27.300
+voy a cerrar lo voy a volver a abrir
+
+130
+00:06:27.300 --> 00:06:29.600
+vale
+
+131
+00:06:29.840 --> 00:06:33.180
+Mira el este no en el previo no me lo
+
+132
+00:06:33.180 --> 00:06:35.400
+muestra no sé por qué
+
+133
+00:06:35.400 --> 00:06:38.400
+Bueno vamos a ir añadiendo y lo que voy
+
+134
+00:06:38.400 --> 00:06:40.520
+a hacer ahora Esto sí que es importante
+
+135
+00:06:40.520 --> 00:06:43.620
+es añadirle los anchos
+
+136
+00:06:43.620 --> 00:06:46.800
+vale para añadirlos en realidad no tiene
+
+137
+00:06:46.800 --> 00:06:48.479
+mucho misterio Pero simplemente le
+
+138
+00:06:48.479 --> 00:06:52.139
+tienes que poner aquí y dentro y aquí en
+
+139
+00:06:52.139 --> 00:06:55.800
+el H red le ponemos intro vale Y si
+
+140
+00:06:55.800 --> 00:06:57.539
+ahora me voy al navegador cuando clic
+
+141
+00:06:57.539 --> 00:07:02.300
+aquí me va claro no se ve pero
+
+142
+00:07:02.819 --> 00:07:05.220
+lo voy a hacer para que sea de móvil
+
+143
+00:07:05.220 --> 00:07:06.620
+vale
+
+144
+00:07:06.620 --> 00:07:11.240
+Y al 100% y le tengo que poner el meta
+
+145
+00:07:11.240 --> 00:07:13.220
+Ay cuántas cosas
+
+146
+00:07:13.220 --> 00:07:16.340
+a ver
+
+147
+00:07:27.199 --> 00:07:30.380
+creo que
+
+148
+00:07:42.380 --> 00:07:47.819
+Ahora tiene mejor pinta eso es vale Y Uy
+
+149
+00:07:47.819 --> 00:07:52.139
+ya ahora se me ha ido el enlace del otro
+
+150
+00:07:52.139 --> 00:07:55.139
+porque
+
+151
+00:07:55.340 --> 00:07:58.440
+A ver pues voy a inspeccionar Ah porque
+
+152
+00:07:58.440 --> 00:07:59.720
+está colapsado
+
+153
+00:07:59.720 --> 00:08:02.699
+claro claro claro vale vale Ya ya sé
+
+154
+00:08:02.699 --> 00:08:04.740
+porque se me ha ido vale le voy a poner
+
+155
+00:08:04.740 --> 00:08:07.919
+Le voy a poner que esto le voy a poner
+
+156
+00:08:07.919 --> 00:08:11.039
+que sea en small vale que está está
+
+157
+00:08:11.039 --> 00:08:12.300
+colapsado porque le he puesto que se
+
+158
+00:08:12.300 --> 00:08:15.120
+expanda a partir del arts vale luego
+
+159
+00:08:15.120 --> 00:08:18.800
+veremos en un poco sobre eso vale
+
+160
+00:08:19.919 --> 00:08:24.020
+claro Es que esto es extras Mall
+
+161
+00:08:30.960 --> 00:08:33.839
+Pues le voy a quitar el expand vale de
+
+162
+00:08:33.839 --> 00:08:35.279
+momento
+
+163
+00:08:35.279 --> 00:08:38.899
+para poder ir funcionando
+
+164
+00:08:39.360 --> 00:08:44.000
+o a ver ahora no sé por qué
+
+165
+00:08:44.880 --> 00:08:47.760
+ahora Vale y lo voy a poner el iPhone
+
+166
+00:08:47.760 --> 00:08:50.580
+que suele gustar más veis el ciclico me
+
+167
+00:08:50.580 --> 00:08:53.279
+bajo un poquito vale esto luego lo usaré
+
+168
+00:08:53.279 --> 00:08:55.860
+para el scroll pero nada ahora
+
+169
+00:08:55.860 --> 00:08:59.040
+simplemente voy a ponerle en ámbar pues
+
+170
+00:08:59.040 --> 00:09:02.060
+este es
+
+171
+00:09:02.060 --> 00:09:04.500
+el chapter one por ejemplo le podemos
+
+172
+00:09:04.500 --> 00:09:08.060
+decir o bueno
+
+173
+00:09:08.640 --> 00:09:11.339
+nos vamos a decir que este y es el
+
+174
+00:09:11.339 --> 00:09:13.380
+chapter
+
+175
+00:09:13.380 --> 00:09:16.019
+One
+
+176
+00:09:16.019 --> 00:09:20.779
+este sería el chat del por ejemplo
+
+177
+00:09:22.560 --> 00:09:28.399
+vale aquí hay otro capítulo chapter free
+
+178
+00:09:29.180 --> 00:09:34.080
+topter for y ya está Vale pues vamos a
+
+179
+00:09:34.080 --> 00:09:37.519
+poner los capítulos en la nap bar
+
+180
+00:09:37.519 --> 00:09:39.920
+esto sería
+
+181
+00:09:39.920 --> 00:09:43.100
+capter One
+
+182
+00:09:50.160 --> 00:09:55.040
+vale 2 2 3
+
+183
+00:09:55.040 --> 00:09:56.720
+3
+
+184
+00:09:56.720 --> 00:10:03.180
+4 y 4 vale básicamente ahora la ha hecho
+
+185
+00:10:03.180 --> 00:10:05.760
+mucho más que ponerle estilos vale Yo he
+
+186
+00:10:05.760 --> 00:10:08.700
+ido poniendo los enlaces y poco más no
+
+187
+00:10:08.700 --> 00:10:11.580
+pero sí que me baja a lo que toca vale
+
+188
+00:10:11.580 --> 00:10:13.980
+ya tendríamos una lámpara que funciona
+
+189
+00:10:13.980 --> 00:10:16.019
+bastante Guay que ya le ha dado unos
+
+190
+00:10:16.019 --> 00:10:19.940
+estilos y que hace ciertas cosas Vale
+
+191
+00:10:19.940 --> 00:10:23.660
+ahora qué es lo que nos interesa
+
+192
+00:10:23.660 --> 00:10:27.720
+pues que colapse cuando cuando sea
+
+193
+00:10:27.720 --> 00:10:30.600
+pequeñita no que sea más pequeña y que
+
+194
+00:10:30.600 --> 00:10:33.899
+dentro de ese colapsado se puedan ver de
+
+195
+00:10:33.899 --> 00:10:37.680
+alguna forma no sería bastante Guay para
+
+196
+00:10:37.680 --> 00:10:41.880
+eso es este colapse vale
+
+197
+00:10:44.640 --> 00:10:47.779
+vale para para que cuando esté colapsada
+
+198
+00:10:47.779 --> 00:10:50.339
+siga funcionando lo que tenemos que
+
+199
+00:10:50.339 --> 00:10:54.720
+Añadir es un botoncito después del Esto
+
+200
+00:10:54.720 --> 00:10:56.820
+no es más que un logo vale aquí
+
+201
+00:10:56.820 --> 00:10:58.320
+podríamos poner un logo le he puesto el
+
+202
+00:10:58.320 --> 00:11:00.060
+enlace Pero bueno podría ser cualquier
+
+203
+00:11:00.060 --> 00:11:01.920
+cosa pero bueno le tenemos que poner un
+
+204
+00:11:01.920 --> 00:11:05.839
+botón que tiene la clase
+
+205
+00:11:05.839 --> 00:11:07.700
+una bar
+
+206
+00:11:07.700 --> 00:11:11.300
+doble vale
+
+207
+00:11:11.300 --> 00:11:14.600
+estáis Button
+
+208
+00:11:16.279 --> 00:11:19.920
+vale para que sea semántico
+
+209
+00:11:19.920 --> 00:11:23.360
+y va a hacer
+
+210
+00:11:23.360 --> 00:11:28.100
+este es el componente de token vale
+
+211
+00:11:28.260 --> 00:11:30.240
+sin más ni más no tiene mucho más
+
+212
+00:11:30.240 --> 00:11:32.459
+simplemente que lo estoy lo estoy
+
+213
+00:11:32.459 --> 00:11:35.220
+metiendo en la Napa vale Data y esto que
+
+214
+00:11:35.220 --> 00:11:37.279
+y
+
+215
+00:11:37.279 --> 00:11:40.500
+le vamos a decir que el Data De hecho
+
+216
+00:11:40.500 --> 00:11:42.120
+voy a empezar como hay tantos atributos
+
+217
+00:11:42.120 --> 00:11:44.760
+a mí me suele gustar pero estoy así que
+
+218
+00:11:44.760 --> 00:11:47.100
+es un tema un poco más personal de
+
+219
+00:11:47.100 --> 00:11:49.620
+formato del código poner cada tributo en
+
+220
+00:11:49.620 --> 00:11:51.000
+una línea para leerlo como en una línea
+
+221
+00:11:51.000 --> 00:11:53.940
+como hacemos con el código normal que no
+
+222
+00:11:53.940 --> 00:11:56.640
+sé por qué el código html y el css la
+
+223
+00:11:56.640 --> 00:11:58.620
+gente decide que no hay que formatearlo
+
+224
+00:11:58.620 --> 00:12:00.779
+se puede poner cualquier forma vale
+
+225
+00:12:00.779 --> 00:12:03.060
+Nappa
+
+226
+00:12:03.060 --> 00:12:07.260
+listo container como Target vale que es
+
+227
+00:12:07.260 --> 00:12:11.360
+el que tenemos ahí debajo Vale y
+
+228
+00:12:11.360 --> 00:12:14.240
+vamos a ponerle
+
+229
+00:12:14.240 --> 00:12:17.940
+los controles de área también vale para
+
+230
+00:12:17.940 --> 00:12:22.920
+ser accesible área Controls lo mismo en
+
+231
+00:12:22.920 --> 00:12:26.220
+la Perdón he puesto lo he puesto con la
+
+232
+00:12:26.220 --> 00:12:28.980
+Sí sí sí hay que ponerlo así pero es que
+
+233
+00:12:28.980 --> 00:12:30.000
+a veces me lío entre lo que quiere
+
+234
+00:12:30.000 --> 00:12:32.820
+Mostrar y lo que quiere aria vale área
+
+235
+00:12:32.820 --> 00:12:36.800
+control el contenido que estamos tocando
+
+236
+00:12:36.800 --> 00:12:41.040
+área expanded false lo ponemos siempre a
+
+237
+00:12:41.040 --> 00:12:42.360
+false porque luego ya bootstrap se
+
+238
+00:12:42.360 --> 00:12:46.260
+encarga de cambiar eso vale y área Label
+
+239
+00:12:46.260 --> 00:12:48.779
+como este botón no va a tener Label para
+
+240
+00:12:48.779 --> 00:12:51.240
+que sea accesible le tenemos que decir
+
+241
+00:12:51.240 --> 00:12:54.899
+para los para los
+
+242
+00:12:54.899 --> 00:12:57.540
+para los intérpretes qué es lo que va a
+
+243
+00:12:57.540 --> 00:12:59.459
+hacer vale
+
+244
+00:12:59.459 --> 00:13:02.519
+Vale ahora mismo no se ve vale pero le
+
+245
+00:13:02.519 --> 00:13:04.320
+voy a decir que en ámbar spam solo con
+
+246
+00:13:04.320 --> 00:13:08.700
+large vale Y en algún momento debería
+
+247
+00:13:08.700 --> 00:13:10.380
+Mostrar este botoncito Ah mira está aquí
+
+248
+00:13:10.380 --> 00:13:12.540
+está aquí aunque no se vea vale Y ahora
+
+249
+00:13:12.540 --> 00:13:15.660
+mismo no hace nada vale porque no hace
+
+250
+00:13:15.660 --> 00:13:18.540
+nada porque todavía no he añadido el
+
+251
+00:13:18.540 --> 00:13:20.760
+código javascript para ello vale Pero
+
+252
+00:13:20.760 --> 00:13:23.820
+ahora ahora iremos a eso vale Vamos a
+
+253
+00:13:23.820 --> 00:13:24.860
+ponerle
+
+254
+00:13:24.860 --> 00:13:29.220
+el icono de el menú hamburguesa típico
+
+255
+00:13:29.220 --> 00:13:31.459
+vale que también nos lo da
+
+256
+00:13:31.459 --> 00:13:33.740
+bootstrap que es
+
+257
+00:13:33.740 --> 00:13:39.260
+navardler icon vale sin más
+
+258
+00:13:39.260 --> 00:13:41.880
+lo suyo es ponerle un aire a Label
+
+259
+00:13:41.880 --> 00:13:45.420
+también porque aunque lo tenga este o un
+
+260
+00:13:45.420 --> 00:13:49.100
+alto algo área Label
+
+261
+00:13:51.500 --> 00:13:54.720
+icon vale para que sepan para que sepan
+
+262
+00:13:54.720 --> 00:13:56.880
+que hay un icono ahí vale Pero esto ya
+
+263
+00:13:56.880 --> 00:13:58.920
+sí que es un poco es un poco y un
+
+264
+00:13:58.920 --> 00:14:01.079
+poquito más lejos Vale pero veis que no
+
+265
+00:14:01.079 --> 00:14:04.139
+despliega nada a que no vale esto porque
+
+266
+00:14:04.139 --> 00:14:06.120
+es porque necesitamos el código lo que
+
+267
+00:14:06.120 --> 00:14:08.220
+dice necesitamos el código javascript
+
+268
+00:14:08.220 --> 00:14:10.920
+que esté escuchando a ese toqueador vale
+
+269
+00:14:10.920 --> 00:14:14.279
+para para Añadir ese código javascript
+
+270
+00:14:14.279 --> 00:14:17.700
+lo tenemos que hacer ya sea como con el
+
+271
+00:14:17.700 --> 00:14:21.800
+css vale Ya sea a través del cdn de
+
+272
+00:14:21.800 --> 00:14:25.880
+bustra o añadirlo directamente aquí vale
+
+273
+00:14:25.880 --> 00:14:28.380
+como yo lo tengo instalado como un
+
+274
+00:14:28.380 --> 00:14:31.680
+paquete de npm lo voy a Añadir
+
+275
+00:14:31.680 --> 00:14:34.459
+directamente a través de aquí vale
+
+276
+00:14:34.459 --> 00:14:36.980
+vale luego hay otra cosa también
+
+277
+00:14:36.980 --> 00:14:38.660
+importante
+
+278
+00:14:38.660 --> 00:14:43.860
+Normalmente se pone el css arriba y los
+
+279
+00:14:43.860 --> 00:14:45.720
+scripts abajo
+
+280
+00:14:45.720 --> 00:14:50.100
+Por qué Porque así aseguras que lo
+
+281
+00:14:50.100 --> 00:14:51.480
+primero que va a intentar hacer el
+
+282
+00:14:51.480 --> 00:14:54.420
+navegador es leer todo el html leer
+
+283
+00:14:54.420 --> 00:14:56.220
+todos css y que se vea lo más rápido
+
+284
+00:14:56.220 --> 00:14:58.440
+posible la primera pantalla aunque sea
+
+285
+00:14:58.440 --> 00:15:00.120
+sin ningún tipo de interacción y ya
+
+286
+00:15:00.120 --> 00:15:01.860
+luego cargarás todos los scripts que
+
+287
+00:15:01.860 --> 00:15:03.720
+necesites que le darán la interacción
+
+288
+00:15:03.720 --> 00:15:06.000
+Pero así la primera carga es mucho más
+
+289
+00:15:06.000 --> 00:15:10.199
+rápido vale Pero bueno también es un
+
+290
+00:15:10.199 --> 00:15:12.660
+poquito más opcional pero yo os lo
+
+291
+00:15:12.660 --> 00:15:14.279
+recomiendo porque mejora muchísimo las
+
+292
+00:15:14.279 --> 00:15:18.959
+cosas vale vamos a ir a thist y le vamos
+
+293
+00:15:18.959 --> 00:15:19.940
+a poner
+
+294
+00:15:19.940 --> 00:15:23.160
+bootstraps vale Y ahora habría que
+
+295
+00:15:23.160 --> 00:15:25.380
+recargar la página
+
+296
+00:15:25.380 --> 00:15:27.360
+y ya lo tenemos
+
+297
+00:15:27.360 --> 00:15:29.760
+veis ya tenemos una navard que se
+
+298
+00:15:29.760 --> 00:15:32.279
+colapsa y se descolapsa cuando está en
+
+299
+00:15:32.279 --> 00:15:33.660
+resoluciones pequeñas la vamos a ver
+
+300
+00:15:33.660 --> 00:15:35.540
+aquí vale para que me creáis vale
+
+301
+00:15:35.540 --> 00:15:38.279
+bueno y lo voy a recargar también ya que
+
+302
+00:15:38.279 --> 00:15:40.620
+estoy para que funcione vale se colapsa
+
+303
+00:15:40.620 --> 00:15:42.060
+y se descolapsa y cuando lleve al
+
+304
+00:15:42.060 --> 00:15:45.740
+capítulo 3 y me Valle vale
+
+305
+00:15:45.740 --> 00:15:49.199
+Y el código si ahora inspeccionamos esto
+
+306
+00:15:49.199 --> 00:15:51.480
+y vemos a ver las clases área del área
+
+307
+00:15:51.480 --> 00:15:55.680
+expanded veis área expanded true y lo ha
+
+308
+00:15:55.680 --> 00:15:58.019
+descolapsado haré exponder false y lo ha
+
+309
+00:15:58.019 --> 00:16:00.000
+colapsado Y si yo ahora me voy a una
+
+310
+00:16:00.000 --> 00:16:02.399
+resolución grande pero muestra todo vale
+
+311
+00:16:02.399 --> 00:16:05.339
+Y si lo voy haciendo más pequeño lo
+
+312
+00:16:05.339 --> 00:16:07.560
+colapsa cuando cuando se queda a más
+
+313
+00:16:07.560 --> 00:16:10.160
+pequeño que el Art vale
+
+314
+00:16:10.160 --> 00:16:12.779
+voy a introducir como os Lo prometido
+
+315
+00:16:12.779 --> 00:16:14.579
+Aunque el vídeo igual se queda un poco
+
+316
+00:16:14.579 --> 00:16:16.199
+más largo pero voy a introducir el
+
+317
+00:16:16.199 --> 00:16:18.300
+componente scroll Spy que en principio
+
+318
+00:16:18.300 --> 00:16:21.139
+no es muy complicado de introducir vale
+
+319
+00:16:21.139 --> 00:16:23.279
+más Especialmente cuando hayamos
+
+320
+00:16:23.279 --> 00:16:25.199
+introducido el código javascript de
+
+321
+00:16:25.199 --> 00:16:27.899
+bootstrap vale Por cierto otra cosa
+
+322
+00:16:27.899 --> 00:16:29.940
+también yo he introducido todo el código
+
+323
+00:16:29.940 --> 00:16:31.980
+javascript de bootstrap en la versión
+
+324
+00:16:31.980 --> 00:16:35.760
+minificada vale hay gente que como
+
+325
+00:16:35.760 --> 00:16:38.699
+decide solo utilizar ciertas cosas hay
+
+326
+00:16:38.699 --> 00:16:40.759
+veces que introducen solo
+
+327
+00:16:40.759 --> 00:16:43.920
+ciertas partes de bustra yo no lo
+
+328
+00:16:43.920 --> 00:16:45.660
+recomiendo mucho porque ya que o sea te
+
+329
+00:16:45.660 --> 00:16:48.300
+lo dan compilado y minificado todo junto
+
+330
+00:16:48.300 --> 00:16:50.040
+porque tiene fuertes dependencias entre
+
+331
+00:16:50.040 --> 00:16:52.740
+su código Pero hay gente que pues si
+
+332
+00:16:52.740 --> 00:16:54.480
+solo utiliza ciertas partes pues sólo
+
+333
+00:16:54.480 --> 00:16:57.360
+instalar ciertas partes igual que el css
+
+334
+00:16:57.360 --> 00:17:00.839
+podéis solo instalar ciertas partes como
+
+335
+00:17:00.839 --> 00:17:03.899
+el grid o todo vale
+
+336
+00:17:03.899 --> 00:17:08.119
+eso ya va un poco a gustos vale pero
+
+337
+00:17:08.119 --> 00:17:11.099
+si no si no tenéis un requisito muy
+
+338
+00:17:11.099 --> 00:17:13.500
+fuerte de no meter mucho mucho código de
+
+339
+00:17:13.500 --> 00:17:16.319
+mucha carga de archivos externos yo lo
+
+340
+00:17:16.319 --> 00:17:18.780
+pondría todo y santas pascuas para no
+
+341
+00:17:18.780 --> 00:17:21.020
+tener problemas de
+
+342
+00:17:21.020 --> 00:17:24.319
+comportamientos inesperados vale
+
+343
+00:17:24.319 --> 00:17:27.900
+y lo que os decía voy a Traducir el
+
+344
+00:17:27.900 --> 00:17:31.140
+componente de scroll vale que
+
+345
+00:17:31.140 --> 00:17:31.940
+básicamente
+
+346
+00:17:31.940 --> 00:17:34.980
+lo que voy a hacer lo que hay que hacer
+
+347
+00:17:34.980 --> 00:17:39.480
+Mejor dicho es que hay que ponerle
+
+348
+00:17:39.480 --> 00:17:42.559
+[Música]
+
+349
+00:17:42.559 --> 00:17:45.799
+o sea un scroll aquí arriba vale
+
+350
+00:17:45.799 --> 00:17:48.480
+Voy a reducir eje de porque el header
+
+351
+00:17:48.480 --> 00:17:51.299
+ahora no me importa nada vale hay que
+
+352
+00:17:51.299 --> 00:17:53.700
+ponerle un scroll Spy a partir de dónde
+
+353
+00:17:53.700 --> 00:17:55.740
+quieres que haga el scroll que en
+
+354
+00:17:55.740 --> 00:17:58.320
+nuestro caso es a partir de habría que
+
+355
+00:17:58.320 --> 00:18:01.559
+ponerle un dip contenedor para que
+
+356
+00:18:01.559 --> 00:18:03.120
+hagales color Spike de todo el contenido
+
+357
+00:18:03.120 --> 00:18:06.179
+vale porque no es a todo el body porque
+
+358
+00:18:06.179 --> 00:18:09.480
+el body contiene header vale y le
+
+359
+00:18:09.480 --> 00:18:13.220
+tenemos que poner Data pies Spy
+
+360
+00:18:13.220 --> 00:18:16.860
+bies de bootstrap scroll vale porque
+
+361
+00:18:16.860 --> 00:18:21.620
+vamos a estar espiando el scroll vale
+
+362
+00:18:21.620 --> 00:18:25.820
+el target hay que ponerle
+
+363
+00:18:25.820 --> 00:18:28.260
+es la que queremos que a la que queremos
+
+364
+00:18:28.260 --> 00:18:30.960
+que vaya resaltando los enlaces vale que
+
+365
+00:18:30.960 --> 00:18:33.780
+como no le hemos puesto ID hay que
+
+366
+00:18:33.780 --> 00:18:38.960
+ponérselo vale le voy a poner y de
+
+367
+00:18:38.960 --> 00:18:40.640
+por ejemplo
+
+368
+00:18:40.640 --> 00:18:43.200
+porque es la main podríamos tener otra
+
+369
+00:18:43.200 --> 00:18:45.540
+pero no es el caso vale
+
+370
+00:18:45.540 --> 00:18:48.640
+[Música]
+
+371
+00:18:49.919 --> 00:18:53.660
+y luego hay que hacer aquí una
+
+372
+00:18:53.660 --> 00:18:57.059
+cosilla Así un poco más oscura o menos
+
+373
+00:18:57.059 --> 00:18:59.940
+clara que le vamos a poner Cuál es el
+
+374
+00:18:59.940 --> 00:19:01.980
+margen para que empiece a escuchar y le
+
+375
+00:19:01.980 --> 00:19:03.679
+vamos a decir cero píxeles te lo pixeles
+
+376
+00:19:03.679 --> 00:19:06.840
+Pues el 40% ahora luego explicaré qué es
+
+377
+00:19:06.840 --> 00:19:09.679
+esto vale Y este dip tiene que contener
+
+378
+00:19:09.679 --> 00:19:13.500
+todos los todos vale para que haga el
+
+379
+00:19:13.500 --> 00:19:16.760
+spray de todo vale
+
+380
+00:19:16.760 --> 00:19:18.679
+Y
+
+381
+00:19:18.679 --> 00:19:22.380
+ahora en principio como he puesto todos
+
+382
+00:19:22.380 --> 00:19:26.160
+los enlaces y tal debería ya funcionar
+
+383
+00:19:26.160 --> 00:19:27.260
+automáticamente
+
+384
+00:19:27.260 --> 00:19:30.840
+Ah pero claro si no ha puesto
+
+385
+00:19:30.840 --> 00:19:34.100
+A ver vamos a
+
+386
+00:19:35.400 --> 00:19:37.380
+ver vamos a hacer que no esté colapsado
+
+387
+00:19:37.380 --> 00:19:39.360
+para que lo veamos es que como no tengo
+
+388
+00:19:39.360 --> 00:19:41.940
+tanto contenido pues no no lo vamos a
+
+389
+00:19:41.940 --> 00:19:44.600
+ver muy bien vale
+
+390
+00:19:48.179 --> 00:19:49.160
+y
+
+391
+00:19:49.160 --> 00:19:51.380
+voy a quitarle
+
+392
+00:19:51.380 --> 00:19:55.440
+primero quitado ya al colapsar
+
+393
+00:19:55.440 --> 00:19:57.480
+le voy a quitar las clases de colapsar
+
+394
+00:19:57.480 --> 00:20:02.760
+eso y el botón de colapsar vale se va a
+
+395
+00:20:02.760 --> 00:20:04.520
+ver feo con un demonio pero
+
+396
+00:20:04.520 --> 00:20:06.419
+ay yo quiero que esté todo el rato
+
+397
+00:20:06.419 --> 00:20:09.740
+visible la lámpara
+
+398
+00:20:11.660 --> 00:20:15.320
+cómo se hacía esto
+
+399
+00:20:16.260 --> 00:20:19.559
+creo que ya va a haber si es así es que
+
+400
+00:20:19.559 --> 00:20:22.580
+no no me acuerdo en realidad
+
+401
+00:20:22.820 --> 00:20:26.900
+creo que era así a ver
+
+402
+00:20:27.539 --> 00:20:29.840
+pues no
+
+403
+00:20:29.840 --> 00:20:31.860
+vale vamos a ir hablando documentación
+
+404
+00:20:31.860 --> 00:20:36.240
+porque al final es lo más lo mejor y si
+
+405
+00:20:36.240 --> 00:20:38.820
+vamos a placement a ver qué nos dice el
+
+406
+00:20:38.820 --> 00:20:42.179
+de Ford Ah mira fixtup Ah pues fix top
+
+407
+00:20:42.179 --> 00:20:44.900
+sin más vale
+
+408
+00:20:44.900 --> 00:20:47.780
+Y si ahora yo recargo aquí
+
+409
+00:20:47.780 --> 00:20:52.039
+y hago scroll Vale y ahí lo tenemos veis
+
+410
+00:20:52.039 --> 00:20:54.600
+los enlaces como van pasando de uno a
+
+411
+00:20:54.600 --> 00:20:57.539
+otro chapter 2 y como estos ya no ocupan
+
+412
+00:20:57.539 --> 00:21:01.520
+más pues no llega al scroll
+
+413
+00:21:02.900 --> 00:21:05.580
+si voy a intentar a ver si puedo darle
+
+414
+00:21:05.580 --> 00:21:09.200
+para que veáis para que me creáis vale
+
+415
+00:21:09.960 --> 00:21:12.240
+no creo que me los coja porque los
+
+416
+00:21:12.240 --> 00:21:14.220
+intros a veces en los párrafos se los
+
+417
+00:21:14.220 --> 00:21:17.280
+come no efectivamente Bueno pues voy a
+
+418
+00:21:17.280 --> 00:21:20.600
+repetir el texto
+
+419
+00:21:27.600 --> 00:21:31.980
+veis va pasando del 1 al bueno es que
+
+420
+00:21:31.980 --> 00:21:34.980
+como el 3 y el 4 están muy pegados pero
+
+421
+00:21:34.980 --> 00:21:36.840
+va pasando de uno a otro y va resaltando
+
+422
+00:21:36.840 --> 00:21:39.600
+en qué enlace estamos vale esto es
+
+423
+00:21:39.600 --> 00:21:41.760
+bastante Útil para contenidos muy largos
+
+424
+00:21:41.760 --> 00:21:45.799
+de hecho Mira si lo voy a poner así
+
+425
+00:21:47.299 --> 00:21:49.860
+Es que como verticalmente me cabe mucho
+
+426
+00:21:49.860 --> 00:21:52.260
+pero para contenidos muy largos lo
+
+427
+00:21:52.260 --> 00:21:54.720
+podéis ir haciendo así vale Incluso si
+
+428
+00:21:54.720 --> 00:21:57.260
+recuperamos
+
+429
+00:21:57.780 --> 00:22:01.020
+voy a recuperar el troleo vale el
+
+430
+00:22:01.020 --> 00:22:03.919
+colapsado vale
+
+431
+00:22:07.320 --> 00:22:11.539
+y ahora le pondré el fix top vale
+
+432
+00:22:13.580 --> 00:22:16.140
+lo recupero
+
+433
+00:22:16.140 --> 00:22:19.020
+si ya ahora estoy aquí abajo me pone que
+
+434
+00:22:19.020 --> 00:22:21.179
+el link activo es el chapter 2 si yo me
+
+435
+00:22:21.179 --> 00:22:24.240
+voy Ahí me pone la intro esto es súper
+
+436
+00:22:24.240 --> 00:22:25.919
+súper útil y también mejora Un montón la
+
+437
+00:22:25.919 --> 00:22:29.100
+usabilidad y ya veis que no tiene mucho
+
+438
+00:22:29.100 --> 00:22:30.600
+misterio porque me he parado mucho
+
+439
+00:22:30.600 --> 00:22:33.120
+hablan de lo que hace pero es bastante
+
+440
+00:22:33.120 --> 00:22:36.059
+fácil de aplicar vale el resto de
+
+441
+00:22:36.059 --> 00:22:37.380
+componentes cada uno tiene su
+
+442
+00:22:37.380 --> 00:22:39.299
+comportamiento cada uno hace sus cosas y
+
+443
+00:22:39.299 --> 00:22:41.039
+tendréis que ir mirando Cómo se aplican
+
+444
+00:22:41.039 --> 00:22:43.260
+cada uno cosas importantes primero
+
+445
+00:22:43.260 --> 00:22:46.380
+leerte que es como lo hace segundo ver
+
+446
+00:22:46.380 --> 00:22:49.200
+los ejemplos y entender qué clases hay
+
+447
+00:22:49.200 --> 00:22:51.179
+que poner Y qué clases no vale porque
+
+448
+00:22:51.179 --> 00:22:53.520
+hay veces que te pone un ejemplo y a mí
+
+449
+00:22:53.520 --> 00:22:55.559
+por ejemplo en el ejemplo de ponía
+
+450
+00:22:55.559 --> 00:22:58.919
+background y el online me rompía la
+
+451
+00:22:58.919 --> 00:23:01.679
+usabilidad mogollón Vale pues no me
+
+452
+00:23:01.679 --> 00:23:03.299
+interesa pues le pongo otro o no se lo
+
+453
+00:23:03.299 --> 00:23:05.820
+pongo o ya le daré yo estilos vale pero
+
+454
+00:23:05.820 --> 00:23:07.500
+en general siempre tienen una solución
+
+455
+00:23:07.500 --> 00:23:09.419
+ya para los problemas comunes como ese
+
+456
+00:23:09.419 --> 00:23:11.520
+de no me gusta ese fondo Pues tengo otro
+
+457
+00:23:11.520 --> 00:23:14.280
+tema vale tengo otro color necesito que
+
+458
+00:23:14.280 --> 00:23:16.080
+esté pegado arriba
+
+459
+00:23:16.080 --> 00:23:17.940
+por Buscar la información de a ver si lo
+
+460
+00:23:17.940 --> 00:23:19.440
+tienen ya resuelto porque lo van a tener
+
+461
+00:23:19.440 --> 00:23:21.240
+resuelto porque un comportamiento tan
+
+462
+00:23:21.240 --> 00:23:23.280
+común como el lap pegado arriba pues te
+
+463
+00:23:23.280 --> 00:23:24.539
+lo van a dar te van a dar ya una clase
+
+464
+00:23:24.539 --> 00:23:27.539
+para eso y como eso otros mil problemas
+
+465
+00:23:27.539 --> 00:23:29.700
+que general ya tiene el resueltos Vale
+
+466
+00:23:29.700 --> 00:23:31.679
+entonces cuando tengáis que usar un
+
+467
+00:23:31.679 --> 00:23:33.260
+componente Mirad qué es lo que hace
+
+468
+00:23:33.260 --> 00:23:35.520
+Mirad las opciones que os da de
+
+469
+00:23:35.520 --> 00:23:39.120
+customización y aplicando después vale Y
+
+470
+00:23:39.120 --> 00:23:40.740
+aplicando pensando qué es lo que estáis
+
+471
+00:23:40.740 --> 00:23:42.919
+haciendo
+
+472
+00:23:43.210 --> 00:23:51.789
+[Música]
+

@@ -1,0 +1,1294 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:02.689
+[Música]
+
+2
+00:00:13.259 --> 00:00:15.199
+en este vídeo vamos a hablar sobre
+
+3
+00:00:15.199 --> 00:00:18.180
+formularios y las utilidades que nos
+
+4
+00:00:18.180 --> 00:00:20.600
+aporta bootstrap en cuanto a ellos
+
+5
+00:00:20.600 --> 00:00:24.480
+formularios son un componente súper
+
+6
+00:00:24.480 --> 00:00:25.980
+típico especialmente en el software
+
+7
+00:00:25.980 --> 00:00:27.359
+empresarial las aplicaciones web
+
+8
+00:00:27.359 --> 00:00:29.420
+empresariales y de gestión especialmente
+
+9
+00:00:29.420 --> 00:00:32.820
+y básicamente son conjunto de Campos que
+
+10
+00:00:32.820 --> 00:00:35.340
+tienen un sentido juntos vale cada
+
+11
+00:00:35.340 --> 00:00:37.200
+formulario Pues formulario de contacto
+
+12
+00:00:37.200 --> 00:00:39.239
+pues tiene nombre apellidos dirección
+
+13
+00:00:39.239 --> 00:00:43.340
+correo motivo del contacto por ejemplo
+
+14
+00:00:43.340 --> 00:00:47.520
+un formulario de settings de alguna
+
+15
+00:00:47.520 --> 00:00:49.379
+aplicación pues tiene los distintos
+
+16
+00:00:49.379 --> 00:00:51.260
+settings y las dependencias entre ellos
+
+17
+00:00:51.260 --> 00:00:53.820
+tienen características comunes siempre
+
+18
+00:00:53.820 --> 00:00:55.559
+hay que validarlos de alguna forma Bueno
+
+19
+00:00:55.559 --> 00:00:57.899
+siempre si quieres tener una usabilidad
+
+20
+00:00:57.899 --> 00:01:01.100
+en la parte de cliente aceptable
+
+21
+00:01:01.100 --> 00:01:03.300
+necesitas validarlos en la parte de
+
+22
+00:01:03.300 --> 00:01:05.400
+cliente para que si el campo email es
+
+23
+00:01:05.400 --> 00:01:07.320
+obligatorio para guardar ese formulario
+
+24
+00:01:07.320 --> 00:01:10.380
+o esos datos Pues que el cliente antes
+
+25
+00:01:10.380 --> 00:01:12.420
+de enviar el formulario te diga Oye no
+
+26
+00:01:12.420 --> 00:01:14.820
+lo has rellenado vale Y que te avise de
+
+27
+00:01:14.820 --> 00:01:16.740
+todas ese tipo de cosas variaciones de
+
+28
+00:01:16.740 --> 00:01:19.880
+formatos Campos requeridos
+
+29
+00:01:19.880 --> 00:01:22.799
+sugerencias con el Place holder en el
+
+30
+00:01:22.799 --> 00:01:25.680
+caso de los inputs para mejorar la
+
+31
+00:01:25.680 --> 00:01:26.759
+usabilidad para saber qué tipo de
+
+32
+00:01:26.759 --> 00:01:29.580
+información tenemos que rellenar por
+
+33
+00:01:29.580 --> 00:01:32.580
+ejemplo en los inputs de tipo fecha eso
+
+34
+00:01:32.580 --> 00:01:34.560
+es súper importante porque el formato de
+
+35
+00:01:34.560 --> 00:01:36.960
+la fecha puede variar muchísimo yo que
+
+36
+00:01:36.960 --> 00:01:39.020
+por ejemplo tengo el ordenador en inglés
+
+37
+00:01:39.020 --> 00:01:41.400
+me ponen siempre la fecha en formato
+
+38
+00:01:41.400 --> 00:01:46.200
+americano y hay páginas que pues que no
+
+39
+00:01:46.200 --> 00:01:49.320
+me lo dicen y cuando intenta poner el 22
+
+40
+00:01:49.320 --> 00:01:52.979
+de noviembre como 22 del 11 del 22 y me
+
+41
+00:01:52.979 --> 00:01:55.020
+dice inválido Y esto y hay un ratillo
+
+42
+00:01:55.020 --> 00:01:56.579
+hasta que me acuerdo que en este
+
+43
+00:01:56.579 --> 00:01:58.520
+ordenador lo tengo así
+
+44
+00:01:58.520 --> 00:02:01.079
+pues si te lo sugieren si te ponen el
+
+45
+00:02:01.079 --> 00:02:04.759
+Place holder y te ponen mmdd
+
+46
+00:02:04.759 --> 00:02:09.720
+de mes año año o sea Perdón mes días día
+
+47
+00:02:09.720 --> 00:02:11.879
+a día año año que es el formato
+
+48
+00:02:11.879 --> 00:02:13.560
+americano de las fechas
+
+49
+00:02:13.560 --> 00:02:15.840
+inmediatamente Te das cuenta vale o al
+
+50
+00:02:15.840 --> 00:02:18.319
+menos te cuesta un poco menos
+
+51
+00:02:18.319 --> 00:02:21.720
+todo ese tipo de cosas Buscar te da un
+
+52
+00:02:21.720 --> 00:02:22.700
+montón de utilidades
+
+53
+00:02:22.700 --> 00:02:25.020
+tanto en cuanto estilos como en
+
+54
+00:02:25.020 --> 00:02:26.940
+validaciones estilos mucho más potentes
+
+55
+00:02:26.940 --> 00:02:28.920
+claro evidentemente pero también te da
+
+56
+00:02:28.920 --> 00:02:31.080
+validaciones para que las puedas hacer
+
+57
+00:02:31.080 --> 00:02:32.760
+en cliente y sean de una forma sencilla
+
+58
+00:02:32.760 --> 00:02:34.040
+pues Mostrar
+
+59
+00:02:34.040 --> 00:02:36.120
+mensajes de error de forma bastante
+
+60
+00:02:36.120 --> 00:02:38.120
+fácil etcétera vale
+
+61
+00:02:38.120 --> 00:02:42.019
+los formularios no son más que
+
+62
+00:02:42.019 --> 00:02:45.239
+se pueden usar por un lado todas las
+
+63
+00:02:45.239 --> 00:02:48.540
+clases helper que suelen llamarlas o
+
+64
+00:02:48.540 --> 00:02:50.340
+utilities o como las quieran llamar pero
+
+65
+00:02:50.340 --> 00:02:52.680
+básicamente es que a cada campo de los
+
+66
+00:02:52.680 --> 00:02:54.239
+formularios o incluso los campos aunque
+
+67
+00:02:54.239 --> 00:02:55.560
+no estén dentro en formulario cualquier
+
+68
+00:02:55.560 --> 00:02:57.440
+campo botón etcétera
+
+69
+00:02:57.440 --> 00:03:00.540
+les pones unas clases que son form Label
+
+70
+00:03:00.540 --> 00:03:03.420
+por ejemplo para las etiquetas y form
+
+71
+00:03:03.420 --> 00:03:05.220
+control para los controles de formulario
+
+72
+00:03:05.220 --> 00:03:07.800
+y ya eso le da unos estilos que por
+
+73
+00:03:07.800 --> 00:03:09.599
+ejemplo enlaza las etiquetas con el
+
+74
+00:03:09.599 --> 00:03:11.459
+campo si las posiciones distintas
+
+75
+00:03:11.459 --> 00:03:13.500
+intenta siempre posicionarlas de una
+
+76
+00:03:13.500 --> 00:03:15.659
+plataforma para que vean juntas los
+
+77
+00:03:15.659 --> 00:03:18.120
+campos le da unos estilos Pues los
+
+78
+00:03:18.120 --> 00:03:19.739
+bordes redondeados eso se puede
+
+79
+00:03:19.739 --> 00:03:21.659
+modificar pero le da unos estilos por
+
+80
+00:03:21.659 --> 00:03:23.300
+defecto que ya estilizan bastante mejor
+
+81
+00:03:23.300 --> 00:03:28.379
+el control le da una fuente común a
+
+82
+00:03:28.379 --> 00:03:30.840
+todos los Place holders le da un estilo
+
+83
+00:03:30.840 --> 00:03:34.980
+de Focus común hay todos los navegadores
+
+84
+00:03:34.980 --> 00:03:36.959
+que eso también es súper importante
+
+85
+00:03:36.959 --> 00:03:39.180
+porque luego en cada navegador hace lo
+
+86
+00:03:39.180 --> 00:03:42.000
+que quiere y es súper inconsistente el
+
+87
+00:03:42.000 --> 00:03:43.440
+Safari es súper distinto por ejemplo
+
+88
+00:03:43.440 --> 00:03:47.280
+estos estos estilos y muchas veces que
+
+89
+00:03:47.280 --> 00:03:48.840
+los queremos unificar para que el estilo
+
+90
+00:03:48.840 --> 00:03:51.000
+no sea distinto en cada navegador Vale
+
+91
+00:03:51.000 --> 00:03:54.140
+pues eso te lo da bootstrap
+
+92
+00:03:54.140 --> 00:03:56.159
+eso simplemente es para Ford control
+
+93
+00:03:56.159 --> 00:03:58.019
+luego puedes poner controles más grandes
+
+94
+00:03:58.019 --> 00:03:59.900
+controles más pequeños
+
+95
+00:03:59.900 --> 00:04:02.879
+estilos para deshabilitado para redon y
+
+96
+00:04:02.879 --> 00:04:05.060
+para que se note que está redondi
+
+97
+00:04:05.060 --> 00:04:09.060
+texto que es un campo pero que está como
+
+98
+00:04:09.060 --> 00:04:11.280
+redondi esto es un input que está como
+
+99
+00:04:11.280 --> 00:04:13.140
+redondee y pero que tiene el texto
+
+100
+00:04:13.140 --> 00:04:14.819
+Entonces no tiene la cajita alrededor
+
+101
+00:04:14.819 --> 00:04:17.040
+Pero sigue siendo un input con lo cual
+
+102
+00:04:17.040 --> 00:04:18.858
+tiene semántica
+
+103
+00:04:18.858 --> 00:04:21.180
+tiene muchas muchas clases de ese estilo
+
+104
+00:04:21.180 --> 00:04:22.860
+vale
+
+105
+00:04:22.860 --> 00:04:24.900
+para los botones creo que ya lo he
+
+106
+00:04:24.900 --> 00:04:26.100
+comentado alguna vez pero también tiene
+
+107
+00:04:26.100 --> 00:04:27.780
+estilos comunes que le pones la clase
+
+108
+00:04:27.780 --> 00:04:30.540
+btn a un botón y ya hace un estilo en
+
+109
+00:04:30.540 --> 00:04:32.520
+concreto que es el espacio redondeado el
+
+110
+00:04:32.520 --> 00:04:34.919
+padding entre el texto del botón para
+
+111
+00:04:34.919 --> 00:04:37.979
+que sea fácilmente explicable si le
+
+112
+00:04:37.979 --> 00:04:39.840
+pones el primary le pone un color
+
+113
+00:04:39.840 --> 00:04:41.699
+determinado que es el color primario en
+
+114
+00:04:41.699 --> 00:04:43.259
+tu paleta de colores cosa que se puede
+
+115
+00:04:43.259 --> 00:04:45.300
+modificar por defecto es el azul este
+
+116
+00:04:45.300 --> 00:04:47.280
+que es súper típico de bootstrap que es
+
+117
+00:04:47.280 --> 00:04:48.479
+súper identificable también entonces
+
+118
+00:04:48.479 --> 00:04:50.040
+Muchas veces lo recomiendo cambiar
+
+119
+00:04:50.040 --> 00:04:51.259
+porque si no
+
+120
+00:04:51.259 --> 00:04:53.940
+se genera ahí como una sensación de esta
+
+121
+00:04:53.940 --> 00:04:56.040
+web es una copia de otro vale Pero bueno
+
+122
+00:04:56.040 --> 00:04:59.900
+eso ya es algo que se va un poco
+
+123
+00:04:59.960 --> 00:05:02.840
+en fin muchas muchas cosas vale
+
+124
+00:05:02.840 --> 00:05:06.860
+estilos para de archivo
+
+125
+00:05:06.860 --> 00:05:10.740
+y cuando lo ves así no le dais tanta
+
+126
+00:05:10.740 --> 00:05:12.419
+importancia Pero si por ejemplo yo ahora
+
+127
+00:05:12.419 --> 00:05:14.460
+me voy a
+
+128
+00:05:14.460 --> 00:05:17.759
+este campo que es el más sencillo vale y
+
+129
+00:05:17.759 --> 00:05:22.020
+le quito esa clase control se la voy a
+
+130
+00:05:22.020 --> 00:05:23.539
+quitar
+
+131
+00:05:23.539 --> 00:05:26.720
+le voy a quitar
+
+132
+00:05:30.139 --> 00:05:32.940
+veis que los estilos ya es un cuadrado
+
+133
+00:05:32.940 --> 00:05:35.400
+súper distinto que los bordes son
+
+134
+00:05:35.400 --> 00:05:37.699
+totalmente negros sin borde
+
+135
+00:05:37.699 --> 00:05:41.820
+si no estuviera dentro de esto la Fuente
+
+136
+00:05:41.820 --> 00:05:44.340
+del pez también sería distinta cambia
+
+137
+00:05:44.340 --> 00:05:47.580
+mucho vale No tiene estilo de Focus como
+
+138
+00:05:47.580 --> 00:05:49.860
+si tiene este veis porque en Chrome por
+
+139
+00:05:49.860 --> 00:05:52.320
+defecto no lo tienen todas esas cosas te
+
+140
+00:05:52.320 --> 00:05:54.720
+las da por defecto y no solo para Campos
+
+141
+00:05:54.720 --> 00:05:56.940
+normales sino para controles como
+
+142
+00:05:56.940 --> 00:05:58.919
+selects que los selects se van bastante
+
+143
+00:05:58.919 --> 00:06:01.560
+feos los Drop Downs selects como los
+
+144
+00:06:01.560 --> 00:06:03.440
+quieras llamar
+
+145
+00:06:03.440 --> 00:06:06.060
+se ven bastante feos si los estilos de
+
+146
+00:06:06.060 --> 00:06:09.440
+bootstrap o bastante antiguos los checks
+
+147
+00:06:09.440 --> 00:06:14.419
+componentes de Rango que esto es html5
+
+148
+00:06:14.419 --> 00:06:17.100
+estos html5 vale Lo que pasa que le da
+
+149
+00:06:17.100 --> 00:06:18.960
+unos estilos que si por ejemplo ahora lo
+
+150
+00:06:18.960 --> 00:06:20.520
+ponemos y los estilos de bootstrap lo
+
+151
+00:06:20.520 --> 00:06:21.539
+mismo
+
+152
+00:06:21.539 --> 00:06:25.699
+le quitamos la clase forn Range
+
+153
+00:06:27.660 --> 00:06:30.960
+Vale veis pues cambia bastante no es tan
+
+154
+00:06:30.960 --> 00:06:32.280
+clicable no se pone el botón por encima
+
+155
+00:06:32.280 --> 00:06:33.900
+cuando pones el botón por encima no se
+
+156
+00:06:33.900 --> 00:06:35.160
+pone la manita de que explicable
+
+157
+00:06:35.160 --> 00:06:37.919
+etcétera etcétera vale podéis hacer
+
+158
+00:06:37.919 --> 00:06:40.440
+grupos de inputs que va enlazada la
+
+159
+00:06:40.440 --> 00:06:42.199
+etiqueta con el campo
+
+160
+00:06:42.199 --> 00:06:45.060
+que también suele ser bastante útil vale
+
+161
+00:06:45.060 --> 00:06:48.780
+se pueden hacer sings muchos Campos
+
+162
+00:06:48.780 --> 00:06:50.000
+seguidos
+
+163
+00:06:50.000 --> 00:06:53.120
+para que vaya uno detrás de otro
+
+164
+00:06:53.120 --> 00:06:55.560
+muchas cosas vale muchas muchas cosas
+
+165
+00:06:55.560 --> 00:06:58.440
+miradlas porque son muy útiles labels
+
+166
+00:06:58.440 --> 00:07:00.600
+flotantes que esto también es bastante
+
+167
+00:07:00.600 --> 00:07:03.600
+potente que hacerlo por vuestras cuenta
+
+168
+00:07:03.600 --> 00:07:05.819
+es bastante que vaya bien pero
+
+169
+00:07:05.819 --> 00:07:07.800
+clic así se sube un poquito el Label que
+
+170
+00:07:07.800 --> 00:07:09.000
+en lugar de utilizar el press holder
+
+171
+00:07:09.000 --> 00:07:11.720
+tienes el Label dentro del input
+
+172
+00:07:11.720 --> 00:07:14.419
+algunos temas de layout también
+
+173
+00:07:14.419 --> 00:07:16.979
+para hacer un poco de layout dentro de
+
+174
+00:07:16.979 --> 00:07:18.419
+los formularios
+
+175
+00:07:18.419 --> 00:07:21.419
+lo de siempre poco vale No no cambia
+
+176
+00:07:21.419 --> 00:07:23.880
+mucho simplemente son Rose golds y todo
+
+177
+00:07:23.880 --> 00:07:26.759
+eso vale Y la validación la validación
+
+178
+00:07:26.759 --> 00:07:29.340
+sí que es bastante potente porque puedes
+
+179
+00:07:29.340 --> 00:07:32.340
+ponerle tanto mensajes customizados y
+
+180
+00:07:32.340 --> 00:07:35.300
+ahora por ejemplo envío este formulario
+
+181
+00:07:35.300 --> 00:07:37.199
+me va a decir aquí un montón de mensajes
+
+182
+00:07:37.199 --> 00:07:38.699
+customizados que le han puesto en el
+
+183
+00:07:38.699 --> 00:07:40.880
+código como
+
+184
+00:07:40.880 --> 00:07:43.380
+mensajes por defecto del browser pero
+
+185
+00:07:43.380 --> 00:07:46.020
+que los estilizan un poquito vale Y que
+
+186
+00:07:46.020 --> 00:07:48.539
+funcionan bastante mejor vale veis que
+
+187
+00:07:48.539 --> 00:07:50.280
+sale aquí este mensaje de este de este
+
+188
+00:07:50.280 --> 00:07:53.039
+campo no está bien vale
+
+189
+00:07:53.039 --> 00:07:54.720
+Pues voy a hacer un ejemplo de
+
+190
+00:07:54.720 --> 00:07:57.780
+formulario un poco completo Vale tengo
+
+191
+00:07:57.780 --> 00:08:00.060
+aquí un html preparado voy a quitarme la
+
+192
+00:08:00.060 --> 00:08:01.680
+documentación para tener la equipo de
+
+193
+00:08:01.680 --> 00:08:03.360
+referencia porque como siempre no me lo
+
+194
+00:08:03.360 --> 00:08:06.060
+sé todo de memoria vale pero voy a tengo
+
+195
+00:08:06.060 --> 00:08:08.520
+aquí ya creado un html de ejemplo que
+
+196
+00:08:08.520 --> 00:08:12.060
+tiene el css este lo voy a quitar porque
+
+197
+00:08:12.060 --> 00:08:13.860
+calidad con el 1000 ya es suficiente y
+
+198
+00:08:13.860 --> 00:08:15.599
+tengo los scripts de bootstrap y tengo
+
+199
+00:08:15.599 --> 00:08:17.759
+un código javascript que lo explicaré
+
+200
+00:08:17.759 --> 00:08:19.860
+porque lo tengo vale pero básicamente me
+
+201
+00:08:19.860 --> 00:08:22.440
+voy a crear un Ford lo que he dicho no
+
+202
+00:08:22.440 --> 00:08:24.479
+tenéis Por qué poner un Ford podéis
+
+203
+00:08:24.479 --> 00:08:26.160
+utilizar los campos sueltos dentro de
+
+204
+00:08:26.160 --> 00:08:28.259
+dips si lo queréis que sean formularios
+
+205
+00:08:28.259 --> 00:08:31.560
+de html también se puede hacer vale Pero
+
+206
+00:08:31.560 --> 00:08:33.059
+yo lo voy a hacer así para mostrar la
+
+207
+00:08:33.059 --> 00:08:34.700
+validación vale
+
+208
+00:08:34.700 --> 00:08:38.458
+le voy a poner que tiene que esto es una
+
+209
+00:08:38.458 --> 00:08:41.640
+Row y que tiene un cater de 5 para que
+
+210
+00:08:41.640 --> 00:08:43.500
+tenga bastante espacio entre los campos
+
+211
+00:08:43.500 --> 00:08:47.040
+vale Y voy a decir
+
+212
+00:08:47.040 --> 00:08:50.300
+que esto es una columna md6
+
+213
+00:08:50.300 --> 00:08:54.420
+si la pongo bien mejor con md6 vale Y
+
+214
+00:08:54.420 --> 00:08:58.100
+aquí dentro voy a poner un Label que sea
+
+215
+00:08:58.100 --> 00:09:01.260
+name lo voy a hacer bastante típico vale
+
+216
+00:09:01.260 --> 00:09:04.440
+le voy a poner las clases Bueno por
+
+217
+00:09:04.440 --> 00:09:09.180
+ahora pondré el input por ley Class for
+
+218
+00:09:09.180 --> 00:09:11.640
+Label
+
+219
+00:09:11.640 --> 00:09:14.279
+vale perdonar Por los mocos porque estoy
+
+220
+00:09:14.279 --> 00:09:17.600
+hoy fatal vale
+
+221
+00:09:18.860 --> 00:09:22.040
+para que enlace con la etiqueta
+
+222
+00:09:22.040 --> 00:09:25.399
+clashford control
+
+223
+00:09:25.680 --> 00:09:28.100
+vale veis que ya le ha dado los
+
+224
+00:09:28.100 --> 00:09:31.019
+estilos lo ha bajado a la siguiente fila
+
+225
+00:09:31.019 --> 00:09:36.380
+vale Y le voy a poner Place holder
+
+226
+00:09:38.640 --> 00:09:41.420
+bueno
+
+227
+00:09:43.560 --> 00:09:44.480
+vale
+
+228
+00:09:44.480 --> 00:09:48.420
+Y ahora voy a ponerle otro para el vale
+
+229
+00:09:48.420 --> 00:09:50.480
+vale
+
+230
+00:09:57.140 --> 00:10:00.380
+por ejemplo típico
+
+231
+00:10:00.380 --> 00:10:03.000
+que es el nombre que le pone la luz a la
+
+232
+00:10:03.000 --> 00:10:04.740
+gente que lo sabe cómo se llama en
+
+233
+00:10:04.740 --> 00:10:05.480
+Estados Unidos
+
+234
+00:10:05.480 --> 00:10:08.940
+si ahora lo hacemos aquí hasta videl ahí
+
+235
+00:10:08.940 --> 00:10:10.680
+está eso es lo que quieren ser veis lo
+
+236
+00:10:10.680 --> 00:10:13.260
+pone lo pone en las seis columnas que le
+
+237
+00:10:13.260 --> 00:10:14.519
+estoy diciendo y en móvil me lo está
+
+238
+00:10:14.519 --> 00:10:16.800
+poniendo separadito vale Igual me pasa
+
+239
+00:10:16.800 --> 00:10:20.060
+con el gatter 5 voy a poner 4
+
+240
+00:10:20.060 --> 00:10:24.800
+pero voy a hacer tres eso es vale
+
+241
+00:10:24.800 --> 00:10:31.500
+voy a poner yo que sé email y motivo de
+
+242
+00:10:31.500 --> 00:10:32.660
+la consulta vale
+
+243
+00:10:32.660 --> 00:10:35.160
+vea para el email le voy a dar 12
+
+244
+00:10:35.160 --> 00:10:38.880
+columnas vale email
+
+245
+00:10:39.779 --> 00:10:42.000
+email
+
+246
+00:10:42.000 --> 00:10:45.480
+tipo email vale porque hace una
+
+247
+00:10:45.480 --> 00:10:48.720
+validación concreta el html5 vale Y aquí
+
+248
+00:10:48.720 --> 00:10:51.140
+le voy a poner
+
+249
+00:10:51.560 --> 00:10:55.519
+email arroba
+
+250
+00:10:59.279 --> 00:11:00.320
+taco
+
+251
+00:11:00.320 --> 00:11:02.240
+de aquí
+
+252
+00:11:02.240 --> 00:11:05.120
+vale
+
+253
+00:11:05.120 --> 00:11:08.459
+Vale y ahora vamos a ponerle el botón
+
+254
+00:11:08.459 --> 00:11:11.839
+del submit que lo mismo le vamos a dar
+
+255
+00:11:11.839 --> 00:11:13.640
+las
+
+256
+00:11:13.640 --> 00:11:17.220
+12 Bueno de hecho no sé por qué puesto
+
+257
+00:11:17.220 --> 00:11:20.040
+esto porque esto es que quiero que sean
+
+258
+00:11:20.040 --> 00:11:22.820
+12 siempre con 12
+
+259
+00:11:22.820 --> 00:11:29.240
+Cold 12 vale Y le voy a poner botón
+
+260
+00:11:30.500 --> 00:11:34.860
+Class ptl btl primary
+
+261
+00:11:34.860 --> 00:11:38.300
+ya veis que le sale el azulito
+
+262
+00:11:38.300 --> 00:11:41.160
+me he olvidado
+
+263
+00:11:41.160 --> 00:11:44.000
+del motivo de la consulta vale
+
+264
+00:11:44.000 --> 00:11:47.300
+Te voy a poner con 12 tipo
+
+265
+00:11:47.300 --> 00:11:49.380
+siempre se me olvida como es el
+
+266
+00:11:49.380 --> 00:11:52.380
+multiline
+
+267
+00:11:53.040 --> 00:11:57.200
+text creo que es texto
+
+268
+00:12:04.700 --> 00:12:08.360
+hay Label Ford
+
+269
+00:12:08.360 --> 00:12:11.779
+anda que yo también
+
+270
+00:12:13.339 --> 00:12:16.519
+aquí sí
+
+271
+00:12:16.680 --> 00:12:19.680
+y
+
+272
+00:12:22.040 --> 00:12:23.600
+Reason
+
+273
+00:12:23.600 --> 00:12:27.660
+Bueno de hecho esto suele ser mejor hay
+
+274
+00:12:27.660 --> 00:12:31.140
+contacto chicas
+
+275
+00:12:31.260 --> 00:12:34.320
+y no me está haciendo un texto porque es
+
+276
+00:12:34.320 --> 00:12:38.459
+que es Así estaría sin type
+
+277
+00:12:38.459 --> 00:12:42.800
+eso es vale Y lo tengo que cerrar
+
+278
+00:12:42.800 --> 00:12:47.839
+eso es y ahora el vestido
+
+279
+00:12:48.980 --> 00:12:52.800
+se está liando ahora ahora
+
+280
+00:12:52.800 --> 00:12:54.079
+Vale
+
+281
+00:12:54.079 --> 00:12:56.940
+y Excel vale Ya veis que ya me ha hecho
+
+282
+00:12:56.940 --> 00:13:00.839
+el formulario este y simplemente si yo
+
+283
+00:13:00.839 --> 00:13:02.880
+ahora le digo por ejemplo que el email
+
+284
+00:13:02.880 --> 00:13:06.000
+es required voy a poner los atributos
+
+285
+00:13:06.000 --> 00:13:08.180
+cada uno en una línea vale porque
+
+286
+00:13:08.180 --> 00:13:10.920
+porque cuando tiene muchos yo lo
+
+287
+00:13:10.920 --> 00:13:12.560
+prefiero así vale
+
+288
+00:13:12.560 --> 00:13:15.420
+una cuestión de formateo que no es para
+
+289
+00:13:15.420 --> 00:13:18.180
+nada obligatoria pero siempre
+
+290
+00:13:18.180 --> 00:13:20.339
+si el código lo ponemos cada uno en una
+
+291
+00:13:20.339 --> 00:13:21.680
+línea Pues
+
+292
+00:13:21.680 --> 00:13:24.360
+el html no estaría de más que lo podamos
+
+293
+00:13:24.360 --> 00:13:27.779
+leer de arriba abajo vale veis si le doy
+
+294
+00:13:27.779 --> 00:13:30.480
+al set me dice please Field porque lo he
+
+295
+00:13:30.480 --> 00:13:32.700
+puesto como required si ahora no si
+
+296
+00:13:32.700 --> 00:13:35.060
+ahora lo quito
+
+297
+00:13:35.160 --> 00:13:37.320
+vale Y le doy pues no me voy a decir
+
+298
+00:13:37.320 --> 00:13:38.760
+nada voy a intentar enviar el formulario
+
+299
+00:13:38.760 --> 00:13:40.639
+y ya está Vale
+
+300
+00:13:40.639 --> 00:13:43.320
+pues esto es un poco las clases que nos
+
+301
+00:13:43.320 --> 00:13:47.420
+da luego ya veis que hay un Select
+
+302
+00:13:47.420 --> 00:13:50.160
+hay bastante más clases hay Range y
+
+303
+00:13:50.160 --> 00:13:52.019
+cosas así pero yo recomiendo siempre
+
+304
+00:13:52.019 --> 00:13:55.019
+usarlas porque está da unos estilos muy
+
+305
+00:13:55.019 --> 00:13:57.800
+estándar que luego
+
+306
+00:13:57.800 --> 00:13:59.820
+proporcionan muchas cosas muchas más de
+
+307
+00:13:59.820 --> 00:14:01.980
+las que parece por ejemplo los paddings
+
+308
+00:14:01.980 --> 00:14:03.839
+dentro de los inputs también los da para
+
+309
+00:14:03.839 --> 00:14:06.000
+que el texto respire un poco dentro las
+
+310
+00:14:06.000 --> 00:14:08.760
+fuentes las adapta móvil y escritorio
+
+311
+00:14:08.760 --> 00:14:11.399
+también para que se vean bien en un caso
+
+312
+00:14:11.399 --> 00:14:14.279
+y el otro y los las zonas de clic podéis
+
+313
+00:14:14.279 --> 00:14:16.380
+poner Campos más grandes podéis
+
+314
+00:14:16.380 --> 00:14:18.959
+organizarlos en columnas todo lo de
+
+315
+00:14:18.959 --> 00:14:21.060
+siempre vale esto por ejemplo también es
+
+316
+00:14:21.060 --> 00:14:23.579
+bastante Útil para popups para el
+
+317
+00:14:23.579 --> 00:14:25.680
+componente de modal que lo utilizáis así
+
+318
+00:14:25.680 --> 00:14:28.440
+aunque no sea un formulario en sí Pero
+
+319
+00:14:28.440 --> 00:14:30.420
+utilizaréis todas las clases de ese tipo
+
+320
+00:14:30.420 --> 00:14:33.500
+vale eso es otro ejemplo de uso Vale
+
+321
+00:14:33.500 --> 00:14:36.360
+pues nada es un poco los formularios de
+
+322
+00:14:36.360 --> 00:14:39.120
+bootstrap y aquí lo dejemos
+
+323
+00:14:39.120 --> 00:14:48.019
+[Música]
+

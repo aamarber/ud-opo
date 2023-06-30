@@ -1,0 +1,998 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:02.689
+[Música]
+
+2
+00:00:12.980 --> 00:00:16.560
+en esta unidad Y en este vídeo
+
+3
+00:00:16.560 --> 00:00:18.600
+concretamente vamos a estar trabajando
+
+4
+00:00:18.600 --> 00:00:21.080
+con bootstrap vale
+
+5
+00:00:21.080 --> 00:00:24.720
+bootstrap lo primero es saber que es
+
+6
+00:00:24.720 --> 00:00:25.880
+vale
+
+7
+00:00:25.880 --> 00:00:29.039
+En cuanto a la definición hay un poco de
+
+8
+00:00:29.039 --> 00:00:32.119
+controversia al respecto pero
+
+9
+00:00:32.119 --> 00:00:34.920
+bus trap se autodefine como un tool kit
+
+10
+00:00:34.920 --> 00:00:37.440
+vale un tool kit básicamente es un
+
+11
+00:00:37.440 --> 00:00:38.640
+conjunto de herramientas para hacer
+
+12
+00:00:38.640 --> 00:00:40.320
+determinadas cosas vale como una caja de
+
+13
+00:00:40.320 --> 00:00:41.239
+herramientas
+
+14
+00:00:41.239 --> 00:00:43.920
+hay gente que lo llama librería hay
+
+15
+00:00:43.920 --> 00:00:46.620
+gente que lo llama framework
+
+16
+00:00:46.620 --> 00:00:49.980
+al final da lo mismo vale porque lo que
+
+17
+00:00:49.980 --> 00:00:52.260
+lo importante es entender Para qué sirve
+
+18
+00:00:52.260 --> 00:00:55.320
+y para qué lo podemos utilizar vale Y
+
+19
+00:00:55.320 --> 00:00:58.260
+ese Para qué lo podemos utilizar encaja
+
+20
+00:00:58.260 --> 00:01:00.960
+más con el concepto de tool kit porque
+
+21
+00:01:00.960 --> 00:01:02.120
+porque
+
+22
+00:01:02.120 --> 00:01:04.680
+ni es una librería concreta para hacer
+
+23
+00:01:04.680 --> 00:01:08.040
+algo concreto ni es un framework que te
+
+24
+00:01:08.040 --> 00:01:10.200
+obliga a si te obligan cierta manera
+
+25
+00:01:10.200 --> 00:01:12.780
+pero no no es un framework per se vale
+
+26
+00:01:12.780 --> 00:01:15.740
+pero en todas esas definiciones cabe
+
+27
+00:01:15.740 --> 00:01:19.020
+ultrap Qué es vuestra vuestra es un
+
+28
+00:01:19.020 --> 00:01:20.939
+conjunto de herramientas que os va a
+
+29
+00:01:20.939 --> 00:01:23.000
+permitir por un lado hacer
+
+30
+00:01:23.000 --> 00:01:25.740
+responsive en principio de una forma más
+
+31
+00:01:25.740 --> 00:01:28.640
+sencilla y más rápida vale Y aparte
+
+32
+00:01:28.640 --> 00:01:31.560
+aparte de eso tiene un montón de
+
+33
+00:01:31.560 --> 00:01:34.880
+componentes web
+
+34
+00:01:35.840 --> 00:01:39.720
+un montón de componentes web que os va a
+
+35
+00:01:39.720 --> 00:01:42.960
+permitir utilizar controles avanzados
+
+36
+00:01:42.960 --> 00:01:46.140
+que están ya construidos de una forma
+
+37
+00:01:46.140 --> 00:01:48.540
+que funcionan y que cumplen muchas
+
+38
+00:01:48.540 --> 00:01:50.880
+características que si las hicieron si
+
+39
+00:01:50.880 --> 00:01:54.060
+los construyáis a mano sería muy difícil
+
+40
+00:01:54.060 --> 00:01:56.340
+que cubrirá por ejemplo accesibilidad
+
+41
+00:01:56.340 --> 00:01:58.560
+está muy trabajados en cuanto a la
+
+42
+00:01:58.560 --> 00:02:00.840
+accesibilidad usabilidad también están
+
+43
+00:02:00.840 --> 00:02:04.020
+muy trabajados no tienen errores la
+
+44
+00:02:04.020 --> 00:02:06.240
+usabilidad y la interacción con esos
+
+45
+00:02:06.240 --> 00:02:09.840
+controles es muy muy muy fácil porque
+
+46
+00:02:09.840 --> 00:02:12.720
+están muy trabajados y en cuanto las
+
+47
+00:02:12.720 --> 00:02:15.180
+liados pasa Exactamente lo mismo bus
+
+48
+00:02:15.180 --> 00:02:17.420
+trap fácilmente tiene 10 años
+
+49
+00:02:17.420 --> 00:02:20.360
+y vamos por la versión 5 actualmente
+
+50
+00:02:20.360 --> 00:02:25.080
+está muy muy muy probado muy probado
+
+51
+00:02:25.080 --> 00:02:27.660
+extremadamente probado y Funciona muy
+
+52
+00:02:27.660 --> 00:02:30.599
+bien prácticamente ya no tiene ningún
+
+53
+00:02:30.599 --> 00:02:32.120
+tipo de error
+
+54
+00:02:32.120 --> 00:02:34.500
+no hace cosas raras
+
+55
+00:02:34.500 --> 00:02:38.780
+con las las distintas ventanas
+
+56
+00:02:38.780 --> 00:02:40.860
+o las distintas resoluciones Perdón
+
+57
+00:02:40.860 --> 00:02:43.440
+entonces es un conjunto de herramientas
+
+58
+00:02:43.440 --> 00:02:45.360
+para el responsive que es muy potente y
+
+59
+00:02:45.360 --> 00:02:48.000
+que permite hacer cosas muy rápido
+
+60
+00:02:48.000 --> 00:02:51.300
+es bastante como me gusta llamarlo un
+
+61
+00:02:51.300 --> 00:02:53.780
+poco automático vale que significa eso
+
+62
+00:02:53.780 --> 00:02:56.840
+luego cuando veamos cómo se utiliza pero
+
+63
+00:02:56.840 --> 00:02:59.220
+lo veréis Pero simplemente es que pones
+
+64
+00:02:59.220 --> 00:03:02.360
+una serie de clases y automáticamente
+
+65
+00:03:02.360 --> 00:03:05.099
+funciona de forma responsive y funciona
+
+66
+00:03:05.099 --> 00:03:08.099
+perfecto vale eso siempre tiene una
+
+67
+00:03:08.099 --> 00:03:11.040
+parte cuando cuando utilicéis cosas que
+
+68
+00:03:11.040 --> 00:03:14.580
+os dan resultados mágicos vale que
+
+69
+00:03:14.580 --> 00:03:16.739
+funcionan perfectos siempre siempre
+
+70
+00:03:16.739 --> 00:03:19.440
+siempre van a tener dos vertientes una
+
+71
+00:03:19.440 --> 00:03:20.360
+es
+
+72
+00:03:20.360 --> 00:03:23.280
+o resuelve un problema de una forma que
+
+73
+00:03:23.280 --> 00:03:26.280
+está probada y que funciona
+
+74
+00:03:26.280 --> 00:03:27.959
+perfectamente y no lo tenéis que
+
+75
+00:03:27.959 --> 00:03:30.360
+resolver vosotros con lo cual te ahorras
+
+76
+00:03:30.360 --> 00:03:32.099
+tiempo y dinero porque el tiempo es
+
+77
+00:03:32.099 --> 00:03:33.239
+dinero en el desarrollo de software
+
+78
+00:03:33.239 --> 00:03:35.360
+especialmente pero
+
+79
+00:03:35.360 --> 00:03:38.099
+esa solución siempre es una solución
+
+80
+00:03:38.099 --> 00:03:41.819
+concreta con lo cual posiblemente te
+
+81
+00:03:41.819 --> 00:03:44.700
+esté atando a esa solución y no vas a
+
+82
+00:03:44.700 --> 00:03:47.340
+poder hacer ciertas cosas que es posible
+
+83
+00:03:47.340 --> 00:03:50.580
+que que te surja vale veremos ejemplos
+
+84
+00:03:50.580 --> 00:03:53.640
+de ello pero en software siempre siempre
+
+85
+00:03:53.640 --> 00:03:55.860
+siempre pasa esto cuando utilizas una
+
+86
+00:03:55.860 --> 00:03:58.200
+herramienta concreta esa herramienta te
+
+87
+00:03:58.200 --> 00:04:00.000
+obliga a trabajar de una forma concreta
+
+88
+00:04:00.000 --> 00:04:02.659
+vale
+
+89
+00:04:02.659 --> 00:04:05.640
+Ya lo veremos por eso hemos visto
+
+90
+00:04:05.640 --> 00:04:09.260
+primero los las herramientas
+
+91
+00:04:09.260 --> 00:04:13.560
+estándar de html5 y cs3 como flexbox y
+
+92
+00:04:13.560 --> 00:04:17.100
+css grid para que luego entendáis o
+
+93
+00:04:17.100 --> 00:04:19.019
+tengáis más posibilidades de entender
+
+94
+00:04:19.019 --> 00:04:22.199
+que implica el usar bootstrap y cómo se
+
+95
+00:04:22.199 --> 00:04:25.820
+está atando porque porque os ata y
+
+96
+00:04:25.820 --> 00:04:28.919
+necesitáis entender cómo funciona para
+
+97
+00:04:28.919 --> 00:04:32.280
+entender dónde os está limitando Y cómo
+
+98
+00:04:32.280 --> 00:04:33.840
+poder evitar esas limitaciones en el
+
+99
+00:04:33.840 --> 00:04:37.460
+caso de que surjan vale
+
+100
+00:04:37.580 --> 00:04:39.780
+Voy a enseñaros un poco qué es lo que
+
+101
+00:04:39.780 --> 00:04:42.360
+tiene bootstrap vale si vais a la
+
+102
+00:04:42.360 --> 00:04:43.440
+documentación veréis que hay un montón
+
+103
+00:04:43.440 --> 00:04:46.040
+de documentación pero básicamente
+
+104
+00:04:46.040 --> 00:04:50.840
+las cosas más antes son los layouts vale
+
+105
+00:04:50.840 --> 00:04:53.400
+que tienen los mismos conceptos
+
+106
+00:04:53.400 --> 00:04:57.479
+básicamente que hemos visto en grid y en
+
+107
+00:04:57.479 --> 00:05:00.199
+Flex Vale y de hecho
+
+108
+00:05:00.199 --> 00:05:04.020
+bootstrap en la versión 5 por defecto
+
+109
+00:05:04.020 --> 00:05:06.360
+usa Flex pero podéis utilizar también
+
+110
+00:05:06.360 --> 00:05:09.419
+css grid vale
+
+111
+00:05:09.419 --> 00:05:12.419
+Y qué hace pulpos trap en el layouts
+
+112
+00:05:12.419 --> 00:05:16.020
+veis básicamente organiza tenéis el
+
+113
+00:05:16.020 --> 00:05:18.000
+concepto de contenedores que son los
+
+114
+00:05:18.000 --> 00:05:20.580
+containers vale que están aquí vale
+
+115
+00:05:20.580 --> 00:05:23.479
+cuando defines un contenedor
+
+116
+00:05:23.479 --> 00:05:26.759
+un elemento como contenedor lo que va a
+
+117
+00:05:26.759 --> 00:05:29.039
+hacer bootstrap es que ese contenedor su
+
+118
+00:05:29.039 --> 00:05:31.080
+layout lo va a organizar en 12 columnas
+
+119
+00:05:31.080 --> 00:05:33.840
+vale si hicisteis el ejercicio de las
+
+120
+00:05:33.840 --> 00:05:35.960
+nueve columnas o prevista y resolverlo
+
+121
+00:05:35.960 --> 00:05:38.520
+veréis que lo hice aposta para que
+
+122
+00:05:38.520 --> 00:05:41.479
+cuando llegamos aquí dijerais a Vaya
+
+123
+00:05:41.479 --> 00:05:43.740
+pues lo que hace es organizar esos
+
+124
+00:05:43.740 --> 00:05:45.840
+contenedores en 12 columnas y los
+
+125
+00:05:45.840 --> 00:05:47.400
+elementos que hay dentro del contenedor
+
+126
+00:05:47.400 --> 00:05:50.520
+van a caber en esas 12 columnas puede
+
+127
+00:05:50.520 --> 00:05:56.580
+ocupar 5 6 12 2 etcétera vale Y lo que y
+
+128
+00:05:56.580 --> 00:05:59.039
+la forma de conseguir que sea responsive
+
+129
+00:05:59.039 --> 00:06:02.880
+es mediante clases que dicen para un
+
+130
+00:06:02.880 --> 00:06:06.539
+tamaño extra grande de pantalla el
+
+131
+00:06:06.539 --> 00:06:08.580
+elemento va a ocupar una columna porque
+
+132
+00:06:08.580 --> 00:06:11.280
+como gigante la pantalla no me hace
+
+133
+00:06:11.280 --> 00:06:13.500
+falta que sea más grande vale para un
+
+134
+00:06:13.500 --> 00:06:16.560
+tamaño mediano me va a ocupar 6 este
+
+135
+00:06:16.560 --> 00:06:18.840
+elemento y para un tamaño súper pequeño
+
+136
+00:06:18.840 --> 00:06:21.600
+me va a ocupar las 12 Vale y vais
+
+137
+00:06:21.600 --> 00:06:24.060
+organizando todos los elementos en
+
+138
+00:06:24.060 --> 00:06:25.860
+función de esas columnas y en función de
+
+139
+00:06:25.860 --> 00:06:28.380
+esos tamaños de pantalla vale esto es
+
+140
+00:06:28.380 --> 00:06:30.360
+mucho mucho mucho más rápido
+
+141
+00:06:30.360 --> 00:06:33.060
+evidentemente que tener que hacerlo a
+
+142
+00:06:33.060 --> 00:06:35.039
+mano mediante media quares y organizar
+
+143
+00:06:35.039 --> 00:06:37.139
+todos los elementos y todos los tamaños
+
+144
+00:06:37.139 --> 00:06:41.039
+a mano respecto a cada resolución que
+
+145
+00:06:41.039 --> 00:06:44.039
+tengáis que definir porque ya os da una
+
+146
+00:06:44.039 --> 00:06:47.220
+serie de clases que ya os da eso os da
+
+147
+00:06:47.220 --> 00:06:49.199
+los break points que es lo que vimos en
+
+148
+00:06:49.199 --> 00:06:50.819
+media quarys que son los puntos de
+
+149
+00:06:50.819 --> 00:06:52.139
+ruptura entre entre distintas
+
+150
+00:06:52.139 --> 00:06:54.600
+resoluciones y os organiza todo de forma
+
+151
+00:06:54.600 --> 00:06:57.539
+que se va se va a reorganizar el layout
+
+152
+00:06:57.539 --> 00:06:59.400
+en función de la resolución únicamente
+
+153
+00:06:59.400 --> 00:07:01.160
+utilizando clases sin tener que tirar
+
+154
+00:07:01.160 --> 00:07:04.580
+nada de css en principio vale
+
+155
+00:07:04.580 --> 00:07:06.780
+esto es muy muy rápido muy muy muy
+
+156
+00:07:06.780 --> 00:07:09.900
+rápido vale pero por ejemplo en este
+
+157
+00:07:09.900 --> 00:07:11.819
+caso ya os obliga a trabajar en 12
+
+158
+00:07:11.819 --> 00:07:15.380
+columnas vale si por lo que sea os dicen
+
+159
+00:07:15.380 --> 00:07:18.900
+tiene que haber cinco porque tiene que
+
+160
+00:07:18.900 --> 00:07:22.620
+haber 11 elementos y cada uno tiene unos
+
+161
+00:07:22.620 --> 00:07:25.740
+tamaños pues burst ya tenéis que hacer
+
+162
+00:07:25.740 --> 00:07:29.099
+ciertas cosas o un poco más convolute o
+
+163
+00:07:29.099 --> 00:07:33.000
+más liosas para para conseguir ese esos
+
+164
+00:07:33.000 --> 00:07:34.800
+efectos
+
+165
+00:07:34.800 --> 00:07:37.440
+Pues mira es lo que hay vale para unas
+
+166
+00:07:37.440 --> 00:07:38.940
+cosas muy bien en general es muy rápido
+
+167
+00:07:38.940 --> 00:07:41.220
+para otras cosas peor vale eso en cuenta
+
+168
+00:07:41.220 --> 00:07:43.620
+el layout luego trabajaremos con los
+
+169
+00:07:43.620 --> 00:07:45.960
+layouts más concretamente vale son lo
+
+170
+00:07:45.960 --> 00:07:47.840
+estoy dando una pequeña introducción
+
+171
+00:07:47.840 --> 00:07:50.280
+esto En cuanto lo has leí outs también
+
+172
+00:07:50.280 --> 00:07:53.520
+tiene otra cosa que es súper súper
+
+173
+00:07:53.520 --> 00:07:56.280
+potente y funcionan súper bien Son dos
+
+174
+00:07:56.280 --> 00:08:00.120
+cosas más los los formularios que tienen
+
+175
+00:08:00.120 --> 00:08:02.880
+un montón de conceptos de controles de
+
+176
+00:08:02.880 --> 00:08:06.660
+formularios checks grupos de inputs que
+
+177
+00:08:06.660 --> 00:08:09.539
+enlaza los labels funcionan de una forma
+
+178
+00:08:09.539 --> 00:08:12.300
+determinada esto también es muy potente
+
+179
+00:08:12.300 --> 00:08:13.800
+parece que no es tan potente pero lo
+
+180
+00:08:13.800 --> 00:08:15.180
+trabajaremos porque es bastante potente
+
+181
+00:08:15.180 --> 00:08:17.280
+porque de Cara a los formularios es muy
+
+182
+00:08:17.280 --> 00:08:19.379
+muy útil y mejora increíblemente la
+
+183
+00:08:19.379 --> 00:08:21.000
+usabilidad y accesibilidad pero sobre
+
+184
+00:08:21.000 --> 00:08:22.699
+todo lo que es más
+
+185
+00:08:22.699 --> 00:08:25.319
+casi más potente incluso que los leíamos
+
+186
+00:08:25.319 --> 00:08:27.539
+son todos los componentes que te ofrece
+
+187
+00:08:27.539 --> 00:08:29.780
+bootstrap vale de base por ejemplo
+
+188
+00:08:29.780 --> 00:08:33.419
+acordeones vale acordeons que son
+
+189
+00:08:33.419 --> 00:08:36.679
+básicamente clicas en en una Barrita y
+
+190
+00:08:36.679 --> 00:08:38.940
+despliega o colapsa contenido que hay
+
+191
+00:08:38.940 --> 00:08:41.659
+debajo alertas
+
+192
+00:08:41.659 --> 00:08:45.120
+Pues también súper potentes batch batch
+
+193
+00:08:45.120 --> 00:08:47.120
+son simplemente como
+
+194
+00:08:47.120 --> 00:08:50.820
+medallitas vale botones estilizar todos
+
+195
+00:08:50.820 --> 00:08:52.800
+los botones de unas formas concretas con
+
+196
+00:08:52.800 --> 00:08:54.899
+los estilos por defecto que son
+
+197
+00:08:54.899 --> 00:08:58.680
+primarios Danger esto también lo lo
+
+198
+00:08:58.680 --> 00:09:01.500
+lleva al terreno de la accesibilidad y
+
+199
+00:09:01.500 --> 00:09:06.620
+les da área labels y Rolls y todo eso
+
+200
+00:09:06.620 --> 00:09:09.560
+tarjetas
+
+201
+00:09:09.560 --> 00:09:12.120
+colapsables o sea un botón que se enlaza
+
+202
+00:09:12.120 --> 00:09:14.820
+con otra sección que la Abre dropdowns
+
+203
+00:09:14.820 --> 00:09:16.500
+que los estiliza para que sea mucho más
+
+204
+00:09:16.500 --> 00:09:18.839
+potentes veis es un botón que tiene un
+
+205
+00:09:18.839 --> 00:09:20.519
+Drop down y se abre aquí abajo esto
+
+206
+00:09:20.519 --> 00:09:22.800
+hacerlo a mano es bastante que se ve
+
+207
+00:09:22.800 --> 00:09:24.420
+aquí y que sea responsable y que sea
+
+208
+00:09:24.420 --> 00:09:26.420
+accesible es bastante
+
+209
+00:09:26.420 --> 00:09:30.360
+da bastante guerra modales los bodales
+
+210
+00:09:30.360 --> 00:09:32.399
+de vuestra también son muy potentes por
+
+211
+00:09:32.399 --> 00:09:33.380
+ejemplo
+
+212
+00:09:33.380 --> 00:09:36.620
+lo cierras
+
+213
+00:09:37.100 --> 00:09:40.080
+aquí hay aquí hay una demo veis me abre
+
+214
+00:09:40.080 --> 00:09:42.080
+un modal y todo lo demás
+
+215
+00:09:42.080 --> 00:09:45.180
+es cuando clicas fuera del modal se va
+
+216
+00:09:45.180 --> 00:09:48.180
+vale o lo puedes cerrar tiene botones
+
+217
+00:09:48.180 --> 00:09:49.680
+para cerrar tiene botones para aceptar
+
+218
+00:09:49.680 --> 00:09:54.200
+tiene botones para para para rechazar
+
+219
+00:09:54.200 --> 00:09:56.519
+y bueno muchos más nos veremos un poco
+
+220
+00:09:56.519 --> 00:09:58.230
+más en en
+
+221
+00:09:58.230 --> 00:09:59.600
+[Música]
+
+222
+00:09:59.600 --> 00:10:01.680
+profundidad cuando cuando hagamos
+
+223
+00:10:01.680 --> 00:10:03.720
+ejercicios y en otros vídeos Pero son
+
+224
+00:10:03.720 --> 00:10:06.120
+muy potentes todo esto te lo da
+
+225
+00:10:06.120 --> 00:10:07.279
+directamente
+
+226
+00:10:07.279 --> 00:10:10.920
+vuestra como framework vale como perdón
+
+227
+00:10:10.920 --> 00:10:14.880
+O como Facebook como lo que sea vale por
+
+228
+00:10:14.880 --> 00:10:17.820
+eso se utiliza tanto y de hecho durante
+
+229
+00:10:17.820 --> 00:10:21.500
+muchos muchos años veréis webs como esta
+
+230
+00:10:21.500 --> 00:10:24.899
+con el los coloritos azules organizadas
+
+231
+00:10:24.899 --> 00:10:27.120
+Así que eran responsables ya de base
+
+232
+00:10:27.120 --> 00:10:29.459
+pero que eran casi clónicas vale porque
+
+233
+00:10:29.459 --> 00:10:31.920
+la gente utilizaba pulsar no le cambiaba
+
+234
+00:10:31.920 --> 00:10:36.500
+los estilos en cuanto a sobre
+
+235
+00:10:37.580 --> 00:10:40.620
+vale pero veréis un montón de webs de
+
+236
+00:10:40.620 --> 00:10:42.600
+este estilo vale Y es porque simplemente
+
+237
+00:10:42.600 --> 00:10:44.579
+instalabas vuestra daba un montón de
+
+238
+00:10:44.579 --> 00:10:46.800
+estilos por defecto funcionaban todos y
+
+239
+00:10:46.800 --> 00:10:50.339
+a volar Vale y los dejaban así te
+
+240
+00:10:50.339 --> 00:10:52.380
+permitiría hacer cosas muy rápidas pero
+
+241
+00:10:52.380 --> 00:10:54.500
+era muy crónicas vale
+
+242
+00:10:54.500 --> 00:10:57.000
+en los siguientes vídeos vamos a vamos a
+
+243
+00:10:57.000 --> 00:10:59.339
+ver un poco sobre vamos a trabajar sobre
+
+244
+00:10:59.339 --> 00:11:01.500
+los layouts vamos a ver los componentes
+
+245
+00:11:01.500 --> 00:11:05.700
+vamos a ver conceptos sobre formularios
+
+246
+00:11:05.700 --> 00:11:07.800
+sobre los layouts sobre los componentes
+
+247
+00:11:07.800 --> 00:11:09.899
+y vamos a estar trabajando estas tres
+
+248
+00:11:09.899 --> 00:11:14.360
+semanas con con bus trap vale
+
+249
+00:11:14.550 --> 00:11:19.579
+[Música]
+

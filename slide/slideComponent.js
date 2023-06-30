@@ -103,7 +103,7 @@ class Slide extends HTMLElement {
 
     hydrateSlideContentTemplate(title, texts){
         return `
-        <article class="col-lg-10 col-md-8 col-xxl-9 offset-xxl-1">
+        <article class="col-lg-10 col-md-8 col-xxl-10">
             <h2>${title}</h2>
             ${this.hydrateTexts(texts)}
             ${this.innerHTML}

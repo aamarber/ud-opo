@@ -1,0 +1,1162 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:02.689
+[Música]
+
+2
+00:00:13.099 --> 00:00:15.660
+en este vídeo ya vamos a entrar un poco
+
+3
+00:00:15.660 --> 00:00:19.500
+más en faena y vamos a ver vamos a
+
+4
+00:00:19.500 --> 00:00:21.840
+hablar principalmente sobre sobre
+
+5
+00:00:21.840 --> 00:00:24.960
+layouts y cómo se utilizan en bus trap
+
+6
+00:00:24.960 --> 00:00:28.260
+Antes de antes de hablar más más en
+
+7
+00:00:28.260 --> 00:00:31.199
+profundidad os recomiendo mucho mucho la
+
+8
+00:00:31.199 --> 00:00:33.480
+documentación de pulsa porque está muy
+
+9
+00:00:33.480 --> 00:00:36.180
+bien construida es muy clara y yo la voy
+
+10
+00:00:36.180 --> 00:00:37.320
+a ir siguiendo porque es que explican
+
+11
+00:00:37.320 --> 00:00:39.860
+todo muy bien vale pero voy a ir
+
+12
+00:00:39.860 --> 00:00:42.420
+explicando un poco los conceptos de los
+
+13
+00:00:42.420 --> 00:00:45.239
+que se habla en la documentación y voy a
+
+14
+00:00:45.239 --> 00:00:47.960
+ir haciendo ejemplos vale
+
+15
+00:01:48.360 --> 00:01:52.619
+píxeles esos 960 píxeles es un break
+
+16
+00:01:52.619 --> 00:01:54.420
+Point porque a partir de ahí se comporta
+
+17
+00:01:54.420 --> 00:01:56.939
+de una forma y antes de eso se comporta
+
+18
+00:01:56.939 --> 00:01:59.280
+de otra vale A eso se le llama break
+
+19
+00:01:59.280 --> 00:02:01.520
+Point vale
+
+20
+00:02:01.520 --> 00:02:06.840
+aquí hablas en bus se utilizan esos
+
+21
+00:02:06.840 --> 00:02:08.580
+conceptos clarísimamente pero es que
+
+22
+00:02:08.580 --> 00:02:12.379
+además se definen de una forma mucho más
+
+23
+00:02:12.379 --> 00:02:16.440
+formal o mucho más rígida porque vamos a
+
+24
+00:02:16.440 --> 00:02:21.020
+tener seis break points definidos vale
+
+25
+00:02:21.020 --> 00:02:23.640
+esto influye mucho mucho en Cómo
+
+26
+00:02:23.640 --> 00:02:25.379
+utilizáis vuestra vale porque luego
+
+27
+00:02:25.379 --> 00:02:27.300
+cuando ahora luego lo vamos a ver pero
+
+28
+00:02:27.300 --> 00:02:29.099
+lo veremos sobre todo con las columnas
+
+29
+00:02:29.099 --> 00:02:32.220
+pero cuando utilizáis las clases
+
+30
+00:02:32.220 --> 00:02:35.280
+tendréis que especificar para que break
+
+31
+00:02:35.280 --> 00:02:38.280
+Point estáis utilizando esa clase vale
+
+32
+00:02:38.280 --> 00:02:41.340
+en vuestra tenemos como decía 6 break
+
+33
+00:02:41.340 --> 00:02:42.200
+points
+
+34
+00:02:42.200 --> 00:02:45.060
+el extra small que no hay que ponerle
+
+35
+00:02:45.060 --> 00:02:47.220
+nada en las clases que es de menos de
+
+36
+00:02:47.220 --> 00:02:51.000
+576 el small que es de más de 576
+
+37
+00:02:51.000 --> 00:02:55.920
+píxeles medio que 768 992 1200 y 1400
+
+38
+00:02:55.920 --> 00:02:59.760
+vale el extra large perdón Creo que no
+
+39
+00:02:59.760 --> 00:03:03.720
+estoy seguro pero estoy 99%. el Extra
+
+40
+00:03:03.720 --> 00:03:08.340
+extra large aparece en bus 5 vale en bus
+
+41
+00:03:08.340 --> 00:03:10.980
+Track 4 teníamos hasta hasta el extra
+
+42
+00:03:10.980 --> 00:03:12.780
+large y el extra small había que
+
+43
+00:03:12.780 --> 00:03:15.599
+especificarlo vale pero ya veis que son
+
+44
+00:03:15.599 --> 00:03:18.420
+unos break points muy muy bastante
+
+45
+00:03:18.420 --> 00:03:20.760
+razonables vale Pero además se pueden
+
+46
+00:03:20.760 --> 00:03:23.220
+customizar si los queréis modificar se
+
+47
+00:03:23.220 --> 00:03:25.580
+pueden modificar vale
+
+48
+00:03:25.580 --> 00:03:28.860
+no lo recomiendo porque están como dicen
+
+49
+00:03:28.860 --> 00:03:30.420
+la propia documentación estos break
+
+50
+00:03:30.420 --> 00:03:32.640
+points están hechos aposta y están
+
+51
+00:03:32.640 --> 00:03:35.940
+megaprobados y son un estándar de factor
+
+52
+00:03:35.940 --> 00:03:38.700
+en la industria vale porque porque sí
+
+53
+00:03:38.700 --> 00:03:40.319
+porque te he hecho muchas veces cuando
+
+54
+00:03:40.319 --> 00:03:43.200
+he tenido que definir break points yo y
+
+55
+00:03:43.200 --> 00:03:45.299
+muchos frontenders que conozco y muchos
+
+56
+00:03:45.299 --> 00:03:48.840
+frontes que sigo de podcast y
+
+57
+00:03:48.840 --> 00:03:50.760
+cuando tienes que definir break points
+
+58
+00:03:50.760 --> 00:03:52.319
+porque no usas vuestra pero estás
+
+59
+00:03:52.319 --> 00:03:54.739
+utilizando Flex o grid a mano
+
+60
+00:03:54.739 --> 00:03:57.360
+pues miras los break points me gusta la
+
+61
+00:03:57.360 --> 00:04:00.180
+piso los que usas vale porque está muy
+
+62
+00:04:00.180 --> 00:04:02.959
+probados porque es un framework que usan
+
+63
+00:04:02.959 --> 00:04:06.720
+cientos de miles de proyectos y si está
+
+64
+00:04:06.720 --> 00:04:08.760
+definida Así es por muchísimos motivos
+
+65
+00:04:08.760 --> 00:04:11.099
+vale muchos muchos pero básicamente
+
+66
+00:04:11.099 --> 00:04:12.720
+porque está tan probado que saben que
+
+67
+00:04:12.720 --> 00:04:14.939
+esos funcionan bien vale y otro de los
+
+68
+00:04:14.939 --> 00:04:17.100
+motivos en concreto de vuestra para que
+
+69
+00:04:17.100 --> 00:04:20.459
+utilicen estas cifras es porque son
+
+70
+00:04:20.459 --> 00:04:22.979
+múltiplos de 12 vale Y como bus trap se
+
+71
+00:04:22.979 --> 00:04:25.020
+organiza en 12 columnas puede dividir
+
+72
+00:04:25.020 --> 00:04:27.840
+esos tamaños en píxeles en 12 Vale
+
+73
+00:04:27.840 --> 00:04:29.580
+entonces columnas para que esas 12
+
+74
+00:04:29.580 --> 00:04:31.860
+columnas sean exactamente iguales Vale
+
+75
+00:04:31.860 --> 00:04:34.500
+entonces por esos dos motivos No
+
+76
+00:04:34.500 --> 00:04:36.240
+recomiendo modificarlos Pero se pueden
+
+77
+00:04:36.240 --> 00:04:39.180
+modificar vale están en un archivo de
+
+78
+00:04:39.180 --> 00:04:42.000
+variables Sas que insisto cuando veamos
+
+79
+00:04:42.000 --> 00:04:43.860
+Ya lo veremos pero se puede modificar
+
+80
+00:04:43.860 --> 00:04:46.380
+vale Pero insisto no os lo recomiendo
+
+81
+00:04:46.380 --> 00:04:48.440
+vale
+
+82
+00:04:48.440 --> 00:04:51.300
+y vamos a ver el otro concepto más
+
+83
+00:04:51.300 --> 00:04:54.600
+básico que es el container vale un
+
+84
+00:04:54.600 --> 00:04:58.979
+container en en frontend en general es
+
+85
+00:04:58.979 --> 00:05:00.360
+simplemente un elemento que va a
+
+86
+00:05:00.360 --> 00:05:02.280
+contener a otros que no tiene semántica
+
+87
+00:05:02.280 --> 00:05:04.020
+en general consiste en eso
+
+88
+00:05:04.020 --> 00:05:06.360
+conceptualmente es un elemento que
+
+89
+00:05:06.360 --> 00:05:08.520
+contiene a otros pero que no dice nada
+
+90
+00:05:08.520 --> 00:05:13.020
+sobre el html o o los elementos de abajo
+
+91
+00:05:13.020 --> 00:05:14.300
+vale
+
+92
+00:05:14.300 --> 00:05:16.860
+suele ser así sin embargo hay mucha
+
+93
+00:05:16.860 --> 00:05:19.199
+gente que por ejemplo utiliza las
+
+94
+00:05:19.199 --> 00:05:23.160
+secciones como contenedores vale
+
+95
+00:05:23.160 --> 00:05:25.440
+también se puede se puede hacer pero en
+
+96
+00:05:25.440 --> 00:05:26.520
+general Son elementos que simplemente
+
+97
+00:05:26.520 --> 00:05:30.120
+son contenedores e industria que son los
+
+98
+00:05:30.120 --> 00:05:33.060
+contenedores son los bloques que se
+
+99
+00:05:33.060 --> 00:05:35.340
+utilizan fundamentalmente para organizar
+
+100
+00:05:35.340 --> 00:05:36.960
+en esas dos de columnas cuando tú
+
+101
+00:05:36.960 --> 00:05:38.580
+defines que un elemento es un contenedor
+
+102
+00:05:38.580 --> 00:05:41.639
+en utilizando Booster utilizando la
+
+103
+00:05:41.639 --> 00:05:43.740
+clase container lo que le dices es que
+
+104
+00:05:43.740 --> 00:05:46.500
+ese elemento se va a organizar en 12
+
+105
+00:05:46.500 --> 00:05:48.120
+columnas y todos los elementos que
+
+106
+00:05:48.120 --> 00:05:50.580
+contiene tienen que organizarse en ese
+
+107
+00:05:50.580 --> 00:05:53.280
+layout de 12 columnas vale
+
+108
+00:05:53.280 --> 00:05:56.460
+hay tres tipos de containers en bus trap
+
+109
+00:05:56.460 --> 00:05:59.280
+el container que es el básico el
+
+110
+00:05:59.280 --> 00:06:01.860
+container y seguido del prefijo de break
+
+111
+00:06:01.860 --> 00:06:03.360
+Point ahora voy a cada uno de ellos vale
+
+112
+00:06:03.360 --> 00:06:06.300
+Y el container fluid vale el container
+
+113
+00:06:06.300 --> 00:06:09.000
+es el contenedor más bajo más más por
+
+114
+00:06:09.000 --> 00:06:11.220
+defecto el contenido más básico y lo que
+
+115
+00:06:11.220 --> 00:06:15.259
+lo que hace es que setea un Max with
+
+116
+00:06:15.259 --> 00:06:18.840
+para el break Point en el que estamos
+
+117
+00:06:18.840 --> 00:06:23.600
+vale si tú defines que un container
+
+118
+00:06:23.600 --> 00:06:27.780
+va tú defines un elemento como container
+
+119
+00:06:27.780 --> 00:06:30.780
+a secas lo que va a hacer es si estamos
+
+120
+00:06:30.780 --> 00:06:33.180
+en una resolución extra small va a
+
+121
+00:06:33.180 --> 00:06:35.039
+ocupar el 100% del ancho si estamos en
+
+122
+00:06:35.039 --> 00:06:38.880
+small vamos a utilizar 540 píxeles
+
+123
+00:06:38.880 --> 00:06:40.380
+porque dejan un poquito de margen para
+
+124
+00:06:40.380 --> 00:06:43.919
+para temas de paddings que ya lo veremos
+
+125
+00:06:43.919 --> 00:06:46.520
+también pero va a intentar utilizar
+
+126
+00:06:46.520 --> 00:06:51.720
+bueno perdón intenta utilizar vale setea
+
+127
+00:06:51.720 --> 00:06:54.060
+un maxweet para el contenedor en cada
+
+128
+00:06:54.060 --> 00:06:56.520
+break Point vale en cada break Point es
+
+129
+00:06:56.520 --> 00:06:59.699
+Uno Vale Si definimos container a secas
+
+130
+00:06:59.699 --> 00:07:02.100
+Pues en small va a ser 540 píxeles el
+
+131
+00:07:02.100 --> 00:07:05.400
+ancho máximo de ese container si si es
+
+132
+00:07:05.400 --> 00:07:11.400
+para medium 720 960 1.140 1.320 vale y
+
+133
+00:07:11.400 --> 00:07:13.620
+le va a definir ese maxwitz y punto y no
+
+134
+00:07:13.620 --> 00:07:16.340
+va a crecer de ahí vale
+
+135
+00:07:16.340 --> 00:07:19.440
+pero sí que va a crecer en el sentido de
+
+136
+00:07:19.440 --> 00:07:21.120
+que cuando pasemos de un break Point a
+
+137
+00:07:21.120 --> 00:07:23.940
+otro va a tener ese ancho máximo Pero si
+
+138
+00:07:23.940 --> 00:07:25.639
+por ejemplo tuviéramos una resolución de
+
+139
+00:07:25.639 --> 00:07:28.800
+4000 píxeles el match with para el
+
+140
+00:07:28.800 --> 00:07:30.479
+container va a ser siempre de 1320
+
+141
+00:07:30.479 --> 00:07:33.360
+píxeles y ya está vale
+
+142
+00:07:33.360 --> 00:07:36.120
+en el caso de los de que definamos un
+
+143
+00:07:36.120 --> 00:07:38.940
+container basado en break points lo que
+
+144
+00:07:38.940 --> 00:07:42.840
+hace es setear su ancho al 100% del
+
+145
+00:07:42.840 --> 00:07:45.360
+brake Point en el que estamos Vale qué
+
+146
+00:07:45.360 --> 00:07:47.840
+significa eso porque básicamente
+
+147
+00:07:47.840 --> 00:07:54.020
+estos son los break points basados en en
+
+148
+00:07:54.080 --> 00:07:56.580
+los Perdón los containers basados en
+
+149
+00:07:56.580 --> 00:07:58.740
+break points si tú defines un contenedor
+
+150
+00:07:58.740 --> 00:08:02.660
+como container ssm small va a utilizar
+
+151
+00:08:02.660 --> 00:08:06.479
+540 píxeles 720 960 blabla vale igual
+
+152
+00:08:06.479 --> 00:08:08.340
+que el contenido básico pero si es
+
+153
+00:08:08.340 --> 00:08:11.520
+medium para todos los tamaños por debajo
+
+154
+00:08:11.520 --> 00:08:14.099
+de medium va a utilizar el 100% del
+
+155
+00:08:14.099 --> 00:08:17.580
+ancho vale Y a partir del medio va a
+
+156
+00:08:17.580 --> 00:08:19.740
+utilizar los anchos máximos que se
+
+157
+00:08:19.740 --> 00:08:22.680
+definen en container si es large hasta
+
+158
+00:08:22.680 --> 00:08:25.620
+large va a usar el 100% Y a partir del
+
+159
+00:08:25.620 --> 00:08:29.819
+arts los tamaños los tamaños máximos que
+
+160
+00:08:29.819 --> 00:08:31.560
+se deciden en container por cada break
+
+161
+00:08:31.560 --> 00:08:33.299
+Point y así en
+
+162
+00:08:33.299 --> 00:08:36.779
+extra large y en extra large vale Y el
+
+163
+00:08:36.779 --> 00:08:40.320
+container fluid va a utilizar el 100% de
+
+164
+00:08:40.320 --> 00:08:43.620
+todos los Blade points vale eso de forma
+
+165
+00:08:43.620 --> 00:08:46.700
+teórica vamos a ir al código vale
+
+166
+00:08:46.700 --> 00:08:49.320
+yendo al código como ya tengo aquí
+
+167
+00:08:49.320 --> 00:08:51.600
+referenciados voy a quitar el javascript
+
+168
+00:08:51.600 --> 00:08:52.920
+porque ahora me da igual un poco el
+
+169
+00:08:52.920 --> 00:08:55.200
+javascript vale como ya tengo y voy a
+
+170
+00:08:55.200 --> 00:08:57.000
+quitar el terminal y voy a hacer esto
+
+171
+00:08:57.000 --> 00:08:59.760
+pequeñito porque el perdón porque si no
+
+172
+00:08:59.760 --> 00:09:02.600
+no se ve nada vale
+
+173
+00:09:02.600 --> 00:09:07.019
+voy a decir que el body
+
+174
+00:09:07.019 --> 00:09:10.860
+va a ser un container vale que acaba de
+
+175
+00:09:10.860 --> 00:09:15.260
+pasar porque le acaba de setear si si
+
+176
+00:09:15.260 --> 00:09:17.820
+mira lo voy a enseñar en el navegador
+
+177
+00:09:17.820 --> 00:09:20.660
+porque es que si no se ve muy mal vale
+
+178
+00:09:20.660 --> 00:09:23.459
+si habrá aquí las deftools la acaba de
+
+179
+00:09:23.459 --> 00:09:25.740
+resetear un ancho máximo para cada break
+
+180
+00:09:25.740 --> 00:09:27.839
+Point ves que ves que cambia de pronto
+
+181
+00:09:27.839 --> 00:09:30.180
+cuando cambia el break Point cambia su
+
+182
+00:09:30.180 --> 00:09:32.519
+ancho máximo vale porque lo he definido
+
+183
+00:09:32.519 --> 00:09:36.300
+como un container vale Y cuando ya tiene
+
+184
+00:09:36.300 --> 00:09:39.660
+menos Pues es lo que hay vale pero le va
+
+185
+00:09:39.660 --> 00:09:41.040
+definiendo un ancho máximo si lo
+
+186
+00:09:41.040 --> 00:09:44.220
+inspeccionamos el container maxweet
+
+187
+00:09:44.220 --> 00:09:47.339
+Ahora tiene 720 píxeles
+
+188
+00:09:47.339 --> 00:09:49.920
+Ahora tiene 540 porque hemos cambiado de
+
+189
+00:09:49.920 --> 00:09:51.360
+break Point si lo hago un poco más
+
+190
+00:09:51.360 --> 00:09:52.459
+grande
+
+191
+00:09:52.459 --> 00:09:54.500
+1.140 Vale
+
+192
+00:09:54.500 --> 00:09:58.200
+ahora bien si yo defino este container
+
+193
+00:09:58.200 --> 00:10:01.920
+como vamos a decir que el container es
+
+194
+00:10:01.920 --> 00:10:04.800
+medium vale
+
+195
+00:10:04.800 --> 00:10:08.300
+hasta el tamaño medio
+
+196
+00:10:08.300 --> 00:10:11.279
+las que lo definido mal no es que no me
+
+197
+00:10:11.279 --> 00:10:13.940
+ha recargado Vale
+
+198
+00:10:13.940 --> 00:10:16.740
+hasta el tamaño medium va a el
+
+199
+00:10:16.740 --> 00:10:19.800
+maxweet de medición vale Pero cuando
+
+200
+00:10:19.800 --> 00:10:23.100
+lleguemos a más pequeño que midium vale
+
+201
+00:10:23.100 --> 00:10:25.980
+ahora Estamos en medium que el match
+
+202
+00:10:25.980 --> 00:10:28.740
+with es 960 píxeles cuando pasemos ese
+
+203
+00:10:28.740 --> 00:10:31.399
+break Point
+
+204
+00:10:33.000 --> 00:10:35.519
+me está haciendo ah no vale
+
+205
+00:10:35.519 --> 00:10:38.839
+a ver un segundo
+
+206
+00:10:39.660 --> 00:10:43.260
+eso es vale Este quería ver veis le pone
+
+207
+00:10:43.260 --> 00:10:46.459
+el with 100% vale ocupa el 100%
+
+208
+00:10:46.459 --> 00:10:49.079
+independientemente de lo que haya vale
+
+209
+00:10:49.079 --> 00:10:51.060
+Hasta que llegamos al break Point de
+
+210
+00:10:51.060 --> 00:10:52.980
+medición que entonces sí que le setea un
+
+211
+00:10:52.980 --> 00:10:55.200
+hecho máximo y veis que se nota ese
+
+212
+00:10:55.200 --> 00:10:56.760
+margen porque tiene un ancho máximo
+
+213
+00:10:56.760 --> 00:10:58.440
+Aunque la resolución es ligeramente
+
+214
+00:10:58.440 --> 00:11:01.019
+mayor que el break Point en vídeo vale
+
+215
+00:11:01.019 --> 00:11:04.220
+ese es el funcionamiento de los de los
+
+216
+00:11:04.220 --> 00:11:08.399
+containers con Break points vale Y el
+
+217
+00:11:08.399 --> 00:11:10.680
+container fluid básicamente ocupa todo
+
+218
+00:11:10.680 --> 00:11:13.680
+el ancho posible todo el rato vale
+
+219
+00:11:13.680 --> 00:11:18.420
+sin más vale lo he puesto ahora y si
+
+220
+00:11:18.420 --> 00:11:20.820
+inspeccionamos va a tener 100% no
+
+221
+00:11:20.820 --> 00:11:22.620
+importa el break Point y lo que hace es
+
+222
+00:11:22.620 --> 00:11:26.339
+ir creciendo vale crece más o menos
+
+223
+00:11:26.339 --> 00:11:29.160
+y ya está vale Porque es importante
+
+224
+00:11:29.160 --> 00:11:32.100
+utilizar unos u otros Pues porque te va
+
+225
+00:11:32.100 --> 00:11:35.459
+a interesar utilizar vale el container
+
+226
+00:11:35.459 --> 00:11:36.500
+fluid
+
+227
+00:11:36.500 --> 00:11:39.420
+crece siempre entonces no le importan
+
+228
+00:11:39.420 --> 00:11:41.040
+los break points va a ocupar todo el
+
+229
+00:11:41.040 --> 00:11:44.180
+ancho posible y ya está y los sobre todo
+
+230
+00:11:44.180 --> 00:11:48.540
+los los importantes son los que tienen
+
+231
+00:11:48.540 --> 00:11:51.000
+Break points y el container a secas vale
+
+232
+00:11:51.000 --> 00:11:52.680
+porque el container hace casi que se
+
+233
+00:11:52.680 --> 00:11:53.959
+tenga un maxweet
+
+234
+00:11:53.959 --> 00:11:56.600
+determinado pero
+
+235
+00:11:56.600 --> 00:12:01.260
+los con Break points son un poco más más
+
+236
+00:12:01.260 --> 00:12:03.480
+específicos vale Para qué se usa esto en
+
+237
+00:12:03.480 --> 00:12:05.820
+realidad sobre todo porque si quieres
+
+238
+00:12:05.820 --> 00:12:08.399
+que para una determinada resolución no
+
+239
+00:12:08.399 --> 00:12:11.459
+crezca Más allá del tamaño que es lst
+
+240
+00:12:11.459 --> 00:12:12.959
+para el break Point tienes que utilizar
+
+241
+00:12:12.959 --> 00:12:16.200
+esos tamaños máximos vale
+
+242
+00:12:16.200 --> 00:12:18.060
+y si quieres que ocupe todo el ancho
+
+243
+00:12:18.060 --> 00:12:19.740
+todo el rato porque quieres que sea mega
+
+244
+00:12:19.740 --> 00:12:21.899
+responsive o Mega adaptable pues tienes
+
+245
+00:12:21.899 --> 00:12:23.839
+que usar el contener fluide vale
+
+246
+00:12:23.839 --> 00:12:26.220
+depende del caso de uso puedes utilizar
+
+247
+00:12:26.220 --> 00:12:29.600
+unos u otros vale
+
+248
+00:12:29.660 --> 00:12:32.220
+quería decir otra cosa sobre esto Ah
+
+249
+00:12:32.220 --> 00:12:34.980
+vale los containers se pueden anidar
+
+250
+00:12:34.980 --> 00:12:39.380
+vale se pueden anidar ahora bien
+
+251
+00:12:39.380 --> 00:12:43.980
+anidar containers no suele ser una buena
+
+252
+00:12:43.980 --> 00:12:48.000
+práctica y suelen hacer cosas extrañas a
+
+253
+00:12:48.000 --> 00:12:50.700
+qué me refiero si veis los tamaños que
+
+254
+00:12:50.700 --> 00:12:52.139
+está definiendo vuestra para los
+
+255
+00:12:52.139 --> 00:12:53.660
+containers
+
+256
+00:12:53.660 --> 00:12:57.300
+sitúan idas Por ejemplo tú anidas un
+
+257
+00:12:57.300 --> 00:13:00.720
+container dentro de otro el tamaño que
+
+258
+00:13:00.720 --> 00:13:03.360
+va a tener va a ser 720 píxeles dentro
+
+259
+00:13:03.360 --> 00:13:05.820
+de otro container vale entonces va a
+
+260
+00:13:05.820 --> 00:13:07.019
+empezar a hacer cosas raras porque no
+
+261
+00:13:07.019 --> 00:13:09.300
+puede crecer tanto porque los containers
+
+262
+00:13:09.300 --> 00:13:10.680
+están pensados
+
+263
+00:13:10.680 --> 00:13:12.660
+para que sea toda la página un container
+
+264
+00:13:12.660 --> 00:13:15.620
+básicamente vale
+
+265
+00:13:17.160 --> 00:13:19.560
+pero se pueden anidar vale normalmente
+
+266
+00:13:19.560 --> 00:13:22.260
+cuando anidas utilizas los containers
+
+267
+00:13:22.260 --> 00:13:25.680
+porque si no va a intentar utilizar los
+
+268
+00:13:25.680 --> 00:13:28.380
+Max wifts que como no van a ser todo el
+
+269
+00:13:28.380 --> 00:13:30.180
+Max with porque no vas a tener todo todo
+
+270
+00:13:30.180 --> 00:13:32.399
+el tamaño pues ya tienes que empezar a
+
+271
+00:13:32.399 --> 00:13:34.860
+jugar con cosas vale en principio
+
+272
+00:13:34.860 --> 00:13:37.139
+Incluso en la propia documentación te lo
+
+273
+00:13:37.139 --> 00:13:39.019
+dice te dice
+
+274
+00:13:39.019 --> 00:13:43.940
+dónde está can con cursiva
+
+275
+00:13:47.600 --> 00:13:50.760
+la mayoría de ellas no lo requieren Vale
+
+276
+00:13:50.760 --> 00:13:52.740
+cuando tienes que hacerle ya un poquito
+
+277
+00:13:52.740 --> 00:13:55.320
+más elaborados pues te va a tocar
+
+278
+00:13:55.320 --> 00:13:57.899
+ayudarlos y te va a tocar pelearte un
+
+279
+00:13:57.899 --> 00:14:00.000
+poco con ellos vale por ejemplo todos
+
+280
+00:14:00.000 --> 00:14:00.959
+los leales que hemos hecho con
+
+281
+00:14:00.959 --> 00:14:03.320
+ejercicios no hay ni uno que necesite
+
+282
+00:14:03.320 --> 00:14:05.880
+creo que no hay ninguno que se me ocurra
+
+283
+00:14:05.880 --> 00:14:08.880
+ahora mismo que necesite de contener
+
+284
+00:14:08.880 --> 00:14:10.620
+sanidados vale en general son bastante
+
+285
+00:14:10.620 --> 00:14:13.260
+sencillos vale esto en cuanto a
+
+286
+00:14:13.260 --> 00:14:15.300
+containers en el siguiente vídeo ya
+
+287
+00:14:15.300 --> 00:14:18.300
+hablaremos sobre columnas sobre el grid
+
+288
+00:14:18.300 --> 00:14:20.100
+y sobrecates sobre espacios entre
+
+289
+00:14:20.100 --> 00:14:22.260
+columnas vale
+
+290
+00:14:22.260 --> 00:14:28.909
+[Música]
+
