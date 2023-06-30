@@ -168,3 +168,7 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #actividades h3, #actividades h4, #actividades p {
   margin-bottom: 0.75rem;
 }
+
+#competencias h2 {
+  text-align: left;
+}
