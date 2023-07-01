@@ -21,7 +21,7 @@
 
         let visibleSlide, nextSlide;
 
-        const prevNext = (i) =>{
+        const prevNext = (i) => {
             const increment = event.key === 'x';
             if(increment)
             {
