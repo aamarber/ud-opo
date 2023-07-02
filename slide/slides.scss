@@ -33,9 +33,15 @@ slide-component{
     .row{
         &.slide{
             min-height: 100vh;
+
+            @include sizes.media-query(md) { 
+                min-height: calc(100vh - (sizes.$navbar-size * 4));
+            }
+
             max-width: 100vw;
 
             padding-top: sizes.$navbar-size * 1.5;
+            
             padding-left: sizes.$navbar-size;
 
             h2{
@@ -71,6 +77,12 @@ slide-component{
 
             img{
                 width: 100%;
+
+                @include sizes.media-query(md) { 
+                    $max-size: 20em;
+                    
+                    max-width: $max-size;
+                }
             }
 
             h2, h3, h4, p{
