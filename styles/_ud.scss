@@ -79,6 +79,10 @@
 
     .col-12 > .col-md-6:first-child{
         border-right: 2px solid colors.$main-contrast-color;
+
+        @include sizes.media-query(md) { 
+            border-right: none;
+        }
     }
 }
 

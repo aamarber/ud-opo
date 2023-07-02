@@ -1,4 +1,5 @@
 @use './colors';
+@use './sizes';
 
 .hasDatepicker{
     a{
@@ -10,6 +11,10 @@
 
         .ui-datepicker-group{
             margin-right: 5em;
+
+            @include sizes.media-query(md) { 
+                margin-right: 2.5em;
+            }
         }
 
         .ui-datepicker-title{
@@ -22,6 +27,10 @@
                 border: none;
                 text-align: center;
                 padding: 0.25em;
+
+                @include sizes.media-query(md) { 
+                    padding: 0.15em;
+                }
 
                 &.ui-state-highlight {
                     background-color: colors.$main-super-bright-color;
