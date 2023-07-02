@@ -33,7 +33,7 @@ slide-component{
     .row{
         &.slide{
             min-height: 100vh;
-            max-height: 100vh;
+            max-width: 100vw;
 
             padding-top: sizes.$navbar-size * 1.5;
             padding-left: sizes.$navbar-size;
@@ -41,15 +41,26 @@ slide-component{
             h2{
                 color: colors.$main-contrast-color;
                 font-size: sizes.$title-size;
+                @include sizes.media-query(md) { 
+                    font-size: sizes.$title-size * 0.25;
+                }
                 text-align: center;
             }
 
             h3{
                 font-size: sizes.$secondary-title-size;
+
+                @include sizes.media-query(md) { 
+                    font-size: sizes.$secondary-title-size * 0.25;
+                }
             }
 
             h4{
                 font-size: sizes.$secondary-title-size * 0.75;
+
+                @include sizes.media-query(md) { 
+                    font-size: sizes.$secondary-title-size * 0.3;
+                }
             }
 
             article{

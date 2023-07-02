@@ -27,11 +27,21 @@ body {
   font-family: Poppins;
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+}
 body.container-fluid {
   padding: 0;
 }
 body p, body li, body a {
   font-size: 2.4vh;
+}
+@media (max-width: 768px) {
+  body p, body li, body a {
+    font-size: 1.44vh;
+  }
 }
 body .slides-container {
   margin: 0;
@@ -42,6 +52,9 @@ nav.navbar {
   background-color: white;
   justify-content: center;
   height: 6.5em;
+}
+nav.navbar .navbar-collapse {
+  flex-grow: initial;
 }
 nav.navbar .navbar-nav .nav-item {
   display: flex;
@@ -118,6 +131,11 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #resultados h2 {
   font-size: 8.4vh;
 }
+@media (max-width: 768px) {
+  #resultados h2 {
+    font-size: 4.2vh;
+  }
+}
 
 #competencias h2,
 #presentation h2,
@@ -128,6 +146,17 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #actividades h2 {
   font-size: 8.4vh;
 }
+@media (max-width: 768px) {
+  #competencias h2,
+  #presentation h2,
+  #criterios h2,
+  #criterios-2 h2,
+  #objetivos .objetivos-rd h2,
+  #criterios-rd h2,
+  #actividades h2 {
+    font-size: 4.2vh;
+  }
+}
 #competencias h3,
 #presentation h3,
 #criterios h3,
@@ -136,6 +165,17 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #criterios-rd h3,
 #actividades h3 {
   font-size: 3.36vh;
+}
+@media (max-width: 768px) {
+  #competencias h3,
+  #presentation h3,
+  #criterios h3,
+  #criterios-2 h3,
+  #objetivos .objetivos-rd h3,
+  #criterios-rd h3,
+  #actividades h3 {
+    font-size: 1.68vh;
+  }
 }
 #competencias h4,
 #presentation h4,
@@ -146,6 +186,17 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #actividades h4 {
   font-size: 2.352vh;
 }
+@media (max-width: 768px) {
+  #competencias h4,
+  #presentation h4,
+  #criterios h4,
+  #criterios-2 h4,
+  #objetivos .objetivos-rd h4,
+  #criterios-rd h4,
+  #actividades h4 {
+    font-size: 1.176vh;
+  }
+}
 #competencias p,
 #presentation p,
 #criterios p,
@@ -154,6 +205,17 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #criterios-rd p,
 #actividades p {
   font-size: 1.92vh;
+}
+@media (max-width: 768px) {
+  #competencias p,
+  #presentation p,
+  #criterios p,
+  #criterios-2 p,
+  #objetivos .objetivos-rd p,
+  #criterios-rd p,
+  #actividades p {
+    font-size: 1.44vh;
+  }
 }
 
 #contextualizacion {
@@ -172,8 +234,13 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #competencias h2 {
   text-align: left;
 }
-#competencias .col-12 > .col-6:first-child {
+#competencias .col-12 > .col-md-6:first-child {
   border-right: 2px solid #005477;
+}
+@media (max-width: 768px) {
+  #competencias .col-12 > .col-md-6:first-child {
+    border-right: none;
+  }
 }
 
 #instrumentos .examenes {
