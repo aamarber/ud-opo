@@ -146,12 +146,12 @@ class Slide extends HTMLElement {
 
     hydrateNextPreviousButton(nextElementId, previousElementId){
         const previousElement = !previousElementId ? '' : `
-        <div class="col-1 offset-10">
+        <div class="col-2 offset-8">
                     <a class="slider-button" href="#${previousElementId}"><i class="bi bi-chevron-up"></i></a>
         </div>`;
 
         const nextElement = !nextElementId ? '' : `
-        <div class="col-1 ${!previousElement ? 'offset-11' : ''}">
+        <div class="col-2 ${!previousElement ? 'offset-10' : ''}">
             <a class="slider-button" href="#${nextElementId}"><i class="bi bi-chevron-down"></i></a>
         </div>`;
 

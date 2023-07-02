@@ -62,6 +62,7 @@ nav.navbar .navbar-nav .nav-item {
   justify-content: space-between;
   border: solid black 2px;
   border-top: none;
+  background-color: white;
   min-width: 180px;
   min-height: 60px;
   padding: 1em;
