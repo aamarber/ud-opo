@@ -9,6 +9,10 @@ nav.navbar{
 
     height: sizes.$navbar-size;
 
+    .navbar-collapse{
+        flex-grow: initial;
+    }
+
     .navbar-nav{
         .nav-item{
             display: flex;

@@ -1,11 +1,13 @@
 @use './sizes';
 @use './colors';
 
-$multiplier: 0.7;
-
-@mixin smaller-h2(){
+@mixin smaller-h2($multiplier){
     h2{
         font-size: sizes.$title-size * $multiplier;
+
+        @include sizes.media-query(md) { 
+            font-size: sizes.$title-size * ($multiplier * 0.5);
+        }
     }
 }
 
@@ -14,7 +16,7 @@ $multiplier: 0.7;
         text-align: center;
     }
 
-    @include smaller-h2();
+    @include smaller-h2(0.7);
 }
 
 #competencias,
@@ -24,20 +26,32 @@ $multiplier: 0.7;
 #objetivos .objetivos-rd,
 #criterios-rd,
 #actividades{
-    @include smaller-h2();
+    @include smaller-h2(0.7);
 
-    $smaller-secondary-title-size: sizes.$secondary-title-size * $multiplier;
+    $smaller-secondary-title-size: sizes.$secondary-title-size * 0.7;
 
     h3{
         font-size: $smaller-secondary-title-size;
+
+        @include sizes.media-query(md) { 
+            font-size: $smaller-secondary-title-size * 0.5;
+        }
     }
 
     h4{
         font-size: $smaller-secondary-title-size * 0.7;
+
+        @include sizes.media-query(md) { 
+            font-size: $smaller-secondary-title-size * 0.35;
+        }
     }
 
     p{
         font-size: sizes.$secondary-title-size * 0.4;
+
+        @include sizes.media-query(md) { 
+            font-size: sizes.$secondary-title-size * 0.3;
+        }
     }
 }
 

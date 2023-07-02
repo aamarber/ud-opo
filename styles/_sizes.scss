@@ -9,3 +9,23 @@ $secondary-title-size: $title-size * 0.4;
 $font-size: 16px;
 
 $slider-buttons-size: 5em;
+
+$bs-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin media-query($name){
+    $size: map-get($bs-breakpoints, $name);
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

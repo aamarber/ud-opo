@@ -5,12 +5,20 @@ body{
     font-family: Poppins;
     font-size: sizes.$font-size;
 
+    @include sizes.media-query(md) { 
+        font-size: sizes.$font-size * 0.5;
+    }
+
     &.container-fluid{
         padding: 0;
     }
 
     p, li, a{
         font-size: sizes.$secondary-title-size * 0.5;
+
+        @include sizes.media-query(md) { 
+            font-size: sizes.$secondary-title-size * 0.3;
+        }
     }
 
     .slides-container{
