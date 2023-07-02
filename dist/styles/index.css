@@ -237,3 +237,9 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #competencias .col-12 > .col-md-6:first-child {
   border-right: 2px solid #005477;
 }
+
+#instrumentos .examenes {
+  border-top: 2px solid #005477;
+  margin-top: 1em;
+  padding-top: 1em;
+}

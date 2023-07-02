@@ -81,3 +81,11 @@
         border-right: 2px solid colors.$main-contrast-color;
     }
 }
+
+#instrumentos{
+    .examenes{
+        border-top: 2px solid colors.$main-contrast-color;
+        margin-top: 1em;
+        padding-top: 1em;
+    }
+}
