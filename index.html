@@ -24,9 +24,6 @@
         <svg class="nav-icon presentation">
           <circle></circle>
         </svg>
-        <div class="nav-item d-none">
-          <a class="nav-link" href="#presentation-2">Presentación 2</a>
-        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#contextualizacion">Contextualización</a>
@@ -93,19 +90,19 @@
   <div class="row col-12 container-fluid slides-container" data-bs-spy="scroll" data-bs-target="#main-navbar"
     data-bs-smooth-scroll="true">
     <slide-component id="presentation" title="¿Quién soy?" image="./images/CRNT-1.jpg" image-position="right"
+      text-h-0="Aarón Martín Bermejo"
       text-h-1="Ingeniero Técnico en Informática de Sistemas UPV 2009-2012"
       text-p-2="Máster en Ingeniería Software y Métodos Formales UPV 2012-2013" text-p-3=""
       text-h-4="Ingeniero Software 2010-2021" text-p-5="Backend, Frontend, DevOps, QA..."
       text-p-6="ITI, ZeppelinTV, SNCF..." text-h-7="PT Sistemas y Aplicaciones Informáticas 2021-"
       text-p-8="FP Básica - Tutor 1º - IES Conselleria"
       text-p-9="DAW, DAM: Sistemas, <strong>DIW</strong> - Tutor 1º DAM - CEEDCV" next-slide="contextualizacion">
-      <a href=""></a>
     </slide-component>
 
     <slide-component id="contextualizacion" title="Contextualización"
       image="./images/3210129399_Illustration about software development formal but_xl-beta-v2-2-2.png"
       image-position="left" next-slide="objetivos">
-      <h3>PT Sistemas y Aplicaciones Informáticas</h3>
+      <h3>PS Sistemas y Aplicaciones Informáticas</h3>
       <h3>DAW - DIW</h3>
       <h3>CEEDCV</h3>
       <h3>Centro de Educación a Distancia de la Comunidad Valenciana</h3>
@@ -190,16 +187,18 @@
       text-p-3="Personalizadas, refuerzo, repaso, dudas, soporte..." text-p-4="Instrumento más potente"
       next-slide="materiales"></slide-component>
 
-    <slide-component id="materiales" title="Materiales"
+    <slide-component id="materiales" title="Materiales - Vídeos"
       image="./images/1957878966_Illustration about software development formal but_xl-beta-v2-2-2.png"
-      image-position="right" text-h-1="Vídeos" next-slide="actividades">
+      image-position="right" next-slide="actividades">
       <section class="row videos-container">
         <section class="col-12 centered">
           <h4><a href="https://www.youtube.com/playlist?list=PLBFwWg3MlcMe9WiqxKW4jywvKXfcfSjYt">Bootstrap I Introducción, Layout</a></h4>
         </section>
         <section class="col-3 video-container">
-          <video controls src="./videos/Video 01 Introduction to bootstrap.mp4"
+          <video controls
           poster="./videos/01.png">
+          <source src="./videos/Video 01 Introduction to bootstrap.mp4" type="video/mp4">
+          <source src="http://wearedurga.com/static/Video 01 Introduction to bootstrap.mp4" type="video/mp4">
           <track
             label="Castellano"
             kind="subtitles"
@@ -209,8 +208,10 @@
           </video>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 02 Instalacion de bootstrap.mp4"
+          <video controls
           poster="./videos/02.png">
+          <source src="./videos/Video 02 Instalacion de bootstrap.mp4" type="video/mp4">
+          <source src="http://wearedurga.com/static/Video 02 Instalacion de bootstrap.mp4" type="video/mp4">
           <track
             label="Castellano"
             kind="subtitles"
@@ -220,7 +221,9 @@
         </video>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 03 Breakpoints y Containers.mp4" poster="./videos/03.png">
+          <video controls poster="./videos/03.png">
+            <source src="./videos/Video 03 Breakpoints y Containers.mp4" type="video/mp4">
+            <source src="http://wearedurga.com/static/Video 03 Breakpoints y Containers.mp4" type="video/mp4">
             <track
             label="Castellano"
             kind="subtitles"
@@ -230,7 +233,9 @@
           </video>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 04 Layouts, columnas.mp4" poster="./videos/04.png">
+          <video controls poster="./videos/04.png">
+            <source src="./videos/Video 04 Layouts, columnas.mp4" type="video/mp4">
+            <source src="http://wearedurga.com/static/Video 04 Layouts, columnas.mp4" type="video/mp4">
             <track
             label="Castellano"
             kind="subtitles"
@@ -243,7 +248,9 @@
           <h4><a href="https://www.youtube.com/playlist?list=PLBFwWg3MlcMcax2fwgHn-1xUxQMNo5oh6">Bootstrap II, Componentes y Formularios</a></h4>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 05 Componentes.mp4" poster="./videos/05.png">
+          <video controls poster="./videos/05.png">
+            <source src="./videos/Video 05 Componentes.mp4" type="video/mp4">
+            <source src="http://wearedurga.com/static/Video 05 Componentes.mp4" type="video/mp4">
             <track
             label="Castellano"
             kind="subtitles"
@@ -253,7 +260,9 @@
           </video>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 06 Componentes II.mp4" poster="./videos/06.png">
+          <video controls poster="./videos/06.png">
+            <source src="./videos/Video 06 Componentes II.mp4" type="video/mp4">
+            <source src="http://wearedurga.com/static/Video 06 Componentes II.mp4" type="video/mp4">
             <track
             label="Castellano"
             kind="subtitles"
@@ -263,7 +272,9 @@
           </video>
         </section>
         <section class="col-3">
-          <video controls src="./videos/Video 07 Formularios.mp4" poster="./videos/07.png">
+          <video controls poster="./videos/07.png">
+            <source src="./videos/Video 07 Formularios.mp4" type="video/mp4">
+            <source src="http://wearedurga.com/static/V_07_Formularios.mp4" type="video/mp4">
             <track
             label="Castellano"
             kind="subtitles"
