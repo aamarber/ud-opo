@@ -234,6 +234,6 @@ nav.navbar .navbar-nav .nav-item:has(.nav-link.active):nth-child(5) {
 #competencias h2 {
   text-align: left;
 }
-#competencias .col-12 > .col-6:first-child {
+#competencias .col-12 > .col-md-6:first-child {
   border-right: 2px solid #005477;
 }
